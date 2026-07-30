@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 5: Months and Seasons - Learn French</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" type="module"></script>
+    <title>Lesson 5: Le Temps - Learn French</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" type="module" onload="speak('Lesson 5 - Le Temps')"></script>
 </head>
 
 <body>
     <header>
         <div class="header-content">
-            <h1>Lesson 5: Les Mois et les Saisons (Months and Seasons)</h1>
+            <h1>Lesson 5: Le Temps</h1>
         </div>
     </header>
 
     <nav class="side-toolbar">
-        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
-        <a href="lesson4.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
-        <a href="lesson6.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+        <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="./lesson4.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="./lesson6.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
     </nav>
     <main class="lesson-page">
         <div class="lesson-intro">
@@ -36,7 +37,7 @@
             </div>
         </div>
           <section class="content-section">
-            <h2 style="cursor: pointer;" onclick="speak('Les Douze Mois de l\'Année')">📅 Les Douze Mois de l'Année (The Twelve Months of the Year)</h2>
+            <h2 style="cursor: pointer;" onclick="speak('Les Douze Mois de l’Année')">📅 Les Douze Mois de l'Année (The Twelve Months of the Year)</h2>
             <p class="section-intro">Click each French month to hear the pronunciation!</p>
 
             <div style="display: flex; flex-direction: column; gap: 10px; max-width: 600px; margin: 0 auto 2rem auto;">
@@ -396,7 +397,7 @@
                         </div>
                     </div>
                     <!-- Lina 2 -->
-                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Ah bon ! C\'est quand ?', 'female')">
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Ah bon ! C’est quand ?', 'female')">
                         <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
                             <strong style="color: #d6336c;">Lina:</strong> Ah bon ! C'est quand ?
                         </div>
@@ -513,7 +514,7 @@
 
                 <!-- Été -->
                 <div style="background: #fff9db; padding: 30px 20px; border-radius: 20px; text-align: center; cursor: pointer; transition: transform 0.2s; border: 3px solid #fab005; box-shadow: var(--shadow-sm);"
-                    onclick="speak('L\'Été')" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    onclick="speak('L’Été')" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 3.5rem; margin-bottom: 10px;">☀️</div>
                     <h3 style="color: #e67700; margin: 10px 0 5px 0; font-size: 1.6rem;">L'Été</h3>
                     <p style="color: #fcc419; font-weight: bold; margin: 0;">Summer</p>
@@ -521,7 +522,7 @@
 
                 <!-- Automne -->
                 <div style="background: #fff4e6; padding: 30px 20px; border-radius: 20px; text-align: center; cursor: pointer; transition: transform 0.2s; border: 3px solid #fd7e14; box-shadow: var(--shadow-sm);"
-                    onclick="speak('L\'Automne')" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    onclick="speak('L’Automne')" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 3.5rem; margin-bottom: 10px;">🍂</div>
                     <h3 style="color: #d9480f; margin: 10px 0 5px 0; font-size: 1.6rem;">L'Automne</h3>
                     <p style="color: #ff922b; font-weight: bold; margin: 0;">Autumn</p>
@@ -529,7 +530,7 @@
 
                 <!-- Hiver -->
                 <div style="background: #e7f5ff; padding: 30px 20px; border-radius: 20px; text-align: center; cursor: pointer; transition: transform 0.2s; border: 3px solid #339af0; box-shadow: var(--shadow-sm);"
-                    onclick="speak('L\'Hiver')" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    onclick="speak('L’Hiver')" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 3.5rem; margin-bottom: 10px;">❄️</div>
                     <h3 style="color: #1864ab; margin: 10px 0 5px 0; font-size: 1.6rem;">L'Hiver</h3>
                     <p style="color: #4dabf7; font-weight: bold; margin: 0;">Winter</p>
@@ -612,13 +613,13 @@
             <h2 style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Questions sur les Saisons et la Météo')">💬 Questions sur les Saisons & la Météo</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 3rem;">
                 <div style="background: #fff5f5; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
-                    onclick="speak('Quelle est ta saison préférée ? Ma saison préférée est l\'été.')"
+                    onclick="speak('Quelle est ta saison préférée ? Ma saison préférée est l’été.')"
                     onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                     <p style="font-weight: bold; color: var(--primary-red); font-size: 1.3rem; margin-bottom: 10px;">❓ Quelle est ta saison préférée ?</p>
                     <p style="font-size: 1.2rem;">👉 Ma saison préférée est l'été.</p>
                 </div>
                 <div style="background: #e0f2fe; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
-                    onclick="speak('Pourquoi ? Parce qu\'il fait beau et chaud.')"
+                    onclick="speak('Pourquoi ? Parce qu’il fait beau et chaud.')"
                     onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                     <p style="font-weight: bold; color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 10px;">❓ Pourquoi ? (Why?)</p>
                     <p style="font-size: 1.2rem;">👉 Parce qu'il fait beau et chaud.</p>
@@ -733,7 +734,7 @@
 
         <!-- Game 2: Months and Birthday Matching -->
         <section class="content-section game-section" style="background: #fff5f5; border-left: 5px solid #fa5252; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-top: 3rem;">
-            <h2 style="color: #e03131; margin-bottom: 1rem; text-align: center; cursor: pointer;" onclick="speak('Jeu 2 : Les Mois et l\'Anniversaire')">🎮 Jeu 2 : Les Mois et l'Anniversaire</h2>
+            <h2 style="color: #e03131; margin-bottom: 1rem; text-align: center; cursor: pointer;" onclick="speak('Jeu 2 : Les Mois et l’Anniversaire')">🎮 Jeu 2 : Les Mois et l'Anniversaire</h2>
             <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted); font-size: 1.2rem;">Match the French words to their English translations!</p>
             
             <div class="game-container">
@@ -856,7 +857,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 3rem;">
                 <!-- New Year's Day -->
                 <div style="background: white; border: 2px solid var(--primary-blue); border-radius: 15px; padding: 20px; box-shadow: var(--shadow-sm); cursor: pointer; transition: transform 0.2s;"
-                    onclick="speak('Le premier janvier : Le Jour de l\'An')" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    onclick="speak('Le premier janvier : Le Jour de l’An')" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 2.5rem; margin-bottom: 10px;">🎆</div>
                     <h4 style="color: var(--primary-blue); margin: 0;">Le Jour de l'An</h4>
                     <p style="font-weight: bold; color: var(--primary-red);">Le 1er Janvier</p>
@@ -927,9 +928,9 @@
             { fr: 'Il neige', target: 'It is snowing', color: '#339af0' },
             { fr: 'Il pleut', target: 'It is raining', color: '#40c057' },
             { fr: 'Le Printemps', target: 'Spring', color: '#2b8a3e' },
-            { fr: 'L\'Été', target: 'Summer', color: '#e67700' },
-            { fr: 'L\'Automne', target: 'Autumn', color: '#d9480f' },
-            { fr: 'L\'Hiver', target: 'Winter', color: '#1864ab' }
+            { fr: 'L’Été', target: 'Summer', color: '#e67700' },
+            { fr: 'L’Automne', target: 'Autumn', color: '#d9480f' },
+            { fr: 'L’Hiver', target: 'Winter', color: '#1864ab' }
         ];
 
         // Game 2: Months & Birthday Data (Matching Model)
@@ -1180,12 +1181,6 @@
             speakLine();
         }
 
-        document.addEventListener('DOMContentLoaded', function () {
-            speak("Lesson 5")
-            setTimeout(() => {
-                speak("Les Mois et les Saisons")
-            }, 1000);
-        });
     </script>
 </body>
 </html>

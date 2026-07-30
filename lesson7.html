@@ -7,8 +7,9 @@
     <meta name="description"
         content="Learn French family members and professions. Practice possessive adjectives and presenting your family. Lesson 7 for 4th graders." />
     <title>Lesson 7: Ma Famille - Learn French with Fun!</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" type="module"></script>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" type="module" onload="speak('Lesson 7 - La Famille et les Professions')"></script>
 </head>
 
 <body>
@@ -20,9 +21,9 @@
     </header>
 
     <nav class="side-toolbar">
-        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
-        <a href="lesson6.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
-        <a href="lesson8.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+        <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="./lesson6.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="./lesson8.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
     </nav>
 
     <main class="lesson-page">
@@ -73,7 +74,7 @@
                     <h3>La grand-mère</h3>
                     <p class="translation">The grandmother</p>
                 </div>
-                <div class="vocab-card" onclick="speak('L\'oncle')">
+                <div class="vocab-card" onclick="speak('L’oncle')">
                     <div class="vocab-image">🧔‍♂️</div>
                     <h3>L'oncle</h3>
                     <p class="translation">The uncle</p>
@@ -181,7 +182,7 @@
                 <div class="tu-section" style="border-color: var(--accent-yellow);">
                     <h3>🆔 Identifying People</h3>
                     <p>To answer, we use <strong>C'est</strong> for one person and <strong>Ce sont</strong> for many!</p>
-                    <div class="example-phrase" onclick="speak('Qui est-ce ? C\'est mon père')">
+                    <div class="example-phrase" onclick="speak('Qui est-ce ? C’est mon père')">
                         <em>"Qui est-ce ?"</em><br>
                         <strong>C'est</strong> mon père.<br>
                         <small>(This is my father.)</small>
@@ -208,15 +209,15 @@
             <h2>🗣️ Presenting my family</h2>
             <div class="example-box">
                 <div class="example-grid">
-                    <div class="example-item" onclick="speak('C\'est ma mère. Elle est professeur.')">
+                    <div class="example-item" onclick="speak('C’est ma mère. Elle est professeur.')">
                         <span class="french">C'est ma mère. Elle est professeur.</span>
                         <span class="english">This is my mother. She is a teacher.</span>
                     </div>
-                    <div class="example-item" onclick="speak('C\'est mon oncle. Il est pilote.')">
+                    <div class="example-item" onclick="speak('C’est mon oncle. Il est pilote.')">
                         <span class="french">C'est mon oncle. Il est pilote.</span>
                         <span class="english">This is my uncle. He is a pilot.</span>
                     </div>
-                    <div class="example-item" onclick="speak('C\'est ma tante. Elle est médecin.')">
+                    <div class="example-item" onclick="speak('C’est ma tante. Elle est médecin.')">
                         <span class="french">C'est ma tante. Elle est médecin.</span>
                         <span class="english">This is my aunt. She is a doctor.</span>
                     </div>
@@ -236,7 +237,7 @@
                     <div onclick="speak('Qui est-ce ?', 'female')">
                         <strong>Lina:</strong> Qui est-ce ? <small>(Who is this?)</small>
                     </div>
-                    <div onclick="speak('C\'est mon frère Léo. Il est étudiant.', 'male')">
+                    <div onclick="speak('C’est mon frère Léo. Il est étudiant.', 'male')">
                         <strong>Max:</strong> C'est mon frère Léo. Il est étudiant. <small>(This is my brother Leo. He is a student.)</small>
                     </div>
                     <div onclick="speak('Et ton père ? Quelle est sa profession ?', 'female')">
@@ -359,7 +360,6 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             initProfGame();
-            speak("Lesson 7 : La Famille et les Professions");
         });
     </script>
 </body>

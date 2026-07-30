@@ -7,7 +7,9 @@
     <meta name="description"
         content="Learn French numbers 1-100 and how to tell time. Essential Lesson 2 for 4th graders." />
     <title>Lesson 2: Numbers & Time - Learn French with Fun!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" type="module" onload="speak('Lesson 2 - On Compte!')"></script>
 </head>
 
 <body>
@@ -19,9 +21,9 @@
     </header>
 
     <nav class="side-toolbar">
-        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
-        <a href="lesson1.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
-        <a href="lesson3.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+        <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="./lesson1.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="./lesson3.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
     </nav>
     <main class="lesson-page">
         <section class="lesson-intro">
@@ -156,11 +158,11 @@
                     <!-- Informal -->
                     <div class="example-box"
                         style="margin-top: 0; border-left: 8px solid var(--accent-green); background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h4 onclick="speak('Conversation informelle')"
+                        <h3 onclick="speak('Conversation informelle')"
                             style="cursor: pointer; color: var(--accent-green); display: flex; align-items: center; gap: 10px; margin-top: 0;">
                             🤝 Informal <span class="badge"
                                 style="background: var(--accent-green); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem;">TU</span>
-                        </h4>
+                        </h3>
                         <div style="display: flex; flex-direction: column; gap: 1rem;">
                             <div class="video-wrapper" style="position: relative; max-width: 180px; padding-bottom: 180px; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 0.5rem;">
                                 <iframe src="https://www.youtube.com/embed/6dtoYs-2TDs" referrerpolicy="strict-origin-when-cross-origin"
@@ -198,11 +200,11 @@
                     <!-- Formal -->
                     <div class="example-box"
                         style="margin-top: 0; border-left: 8px solid var(--primary-blue); background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h4 onclick="speak('Conversation formelle')"
+                        <h3 onclick="speak('Conversation formelle')"
                             style="cursor: pointer; color: var(--primary-blue); display: flex; align-items: center; gap: 10px; margin-top: 0;">
                             🎩 Formal <span class="badge"
                                 style="background: var(--primary-blue); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem;">VOUS</span>
-                        </h4>
+                        </h3>
                         <div style="display: flex; flex-direction: column; gap: 1rem;">
                             <div class="example-item" onclick="speak('Quel âge avez-vous?', 'male')"
                                 style="padding: 10px; border-radius: 8px; background: rgba(42, 82, 190, 0.05); cursor: pointer; transition: 0.3s; border: 1px solid transparent;"
@@ -566,8 +568,7 @@
 
                 <!-- 5:10 PM -->
                 <div class="vocab-card" onclick="speak('il est cinq heures dix du soir')">
-                    <div class="analog-clock"
-                        style="background: rgba(var(--primary-blue-rgb), 0.05); border-color: var(--primary-blue);">
+                    <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
                                     class="six">6</span><span class="nine">9</span></div>
@@ -619,7 +620,7 @@
                 </div>
 
                 <!-- Douze heures de l'après midi -->
-                <div class="vocab-card" onclick="speak('Il est douze heures de l\'après-midi')">
+                <div class="vocab-card" onclick="speak('Il est douze heures de l’après-midi')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -870,7 +871,7 @@
                         <div style="flex: 1; text-align: right; color: var(--text-muted); font-style: italic; font-size: 1rem;">It is 9:35.</div>
                     </div>
 
-                    <div class="roleplay-row" onclick="speak('Aaah,d\'accord! Merci beaucoup !', 'male')"
+                    <div class="roleplay-row" onclick="speak('Aaah,d’accord! Merci beaucoup !', 'male')"
                         style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid #f1f5f9; cursor: pointer; transition: background 0.2s;">
                         <div style="flex: 1.2;">
                             <span style="display: block; font-weight: 800; color: var(--primary-blue); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Personne A</span>
@@ -1199,7 +1200,7 @@
                 </div>
                 <div style="text-align: center; margin-top: 3rem;">
                     <a href="https://langpractice.com/french/numbers/listening#1,0,10" target="_blank" style="display: inline-block; color: var(--primary-blue); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--primary-blue); padding-bottom: 5px; font-size: 1.2rem; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
-                        🎮 click for more numbers listening games
+                        🎮 Click for more number listening games
                     </a>
                 </div>
                 <div style="text-align: center; margin-top: 3rem;">
@@ -1240,7 +1241,7 @@
                         <h3>Le Luxembourg</h3>
                         <p class="translation">Luxembourg</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('L\'Allemagne')">
+                    <div class="vocab-card" onclick="speak('L’Allemagne')">
                         <div class="vocab-image">🇩🇪</div>
                         <h3>L'Allemagne</h3>
                         <p class="translation">Germany</p>
@@ -1250,12 +1251,12 @@
                         <h3>La Suisse</h3>
                         <p class="translation">Switzerland</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('L\'Italie')">
+                    <div class="vocab-card" onclick="speak('L’Italie')">
                         <div class="vocab-image">🇮🇹</div>
                         <h3>L'Italie</h3>
                         <p class="translation">Italy</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('L\'Espagne')">
+                    <div class="vocab-card" onclick="speak('L’Espagne')">
                         <div class="vocab-image">🇪🇸</div>
                         <h3>L'Espagne</h3>
                         <p class="translation">Spain</p>
@@ -1276,15 +1277,7 @@
     <footer>
         <p>Keep counting! You're brilliant! 🚀</p>
     </footer>
-    <script src="script.js" type="module"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            speak("Lesson 2")
-            setTimeout(() => {
-                speak("On Compte!")
-            }, 1000);
-        });
-
         // --- Shared Utilities ---
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {

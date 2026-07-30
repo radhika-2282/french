@@ -7,8 +7,9 @@
     <meta name="description"
         content="Learn French colors, fruits, and vegetables. Master the use of C'est and Ce sont. Lesson 6 for 4th graders." />
     <title>Lesson 6: Le Miam-Miam - Learn French with Fun!</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" type="module"></script>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" type="module" onload="speak('Lesson 6 - Le Miam-Miam')"></script>
 </head>
 
 <body>
@@ -20,9 +21,9 @@
     </header>
 
     <nav class="side-toolbar">
-        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
-        <a href="lesson5.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
-        <a href="lesson7.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+        <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="./lesson5.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="./lesson7.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
     </nav>
 
     <main class="lesson-page">
@@ -117,7 +118,7 @@
             <h2>✍️ Grammaire : C'est ou Ce sont ?</h2>
 
             <div class="tip-box" style="margin-bottom: 2.5rem; border-left: 5px solid var(--accent-yellow); background: #fffcf0;">
-                <h3 onclick="speak('Qu\'est-ce que c\'est ?')" style="cursor: pointer; color: var(--text-main); margin-bottom: 0.5rem;">❓ The Question: Qu'est-ce que c'est ?</h3>
+                <h3 onclick="speak('Qu’est-ce que c’est ?')" style="cursor: pointer; color: var(--text-main); margin-bottom: 0.5rem;">❓ The Question: Qu'est-ce que c'est ?</h3>
                 <p>This phrase means <strong>"What is it?"</strong> or <strong>"What are they?"</strong>. It stays the same whether you are asking about one thing or many!</p>
             </div>
 
@@ -126,29 +127,29 @@
                 <div class="tu-section" style="border-color: var(--primary-blue);">
                     <h3>☝️ Singular (C'est)</h3>
                     <p>Use for one person or thing.</p>
-                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? C\'est une pomme rouge')">
+                    <div class="example-phrase" onclick="speak('Qu’est-ce que c’est ? C’est une pomme rouge')">
                         <em>"Qu'est-ce que c'est ?"</em><br>
                         <strong>C'est</strong> une pomme rouge.<br>
-                        <small>(It is a red apple.)</small>
+                        <small>It is a red apple.</small>
                     </div>
-                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? C\'est une banane jaune')">
+                    <div class="example-phrase" onclick="speak('Qu’est-ce que c’est ? C’est une banane jaune')">
                         <em>"Qu'est-ce que c'est ?"</em><br>
                         <strong>C'est</strong> une banane jaune.<br>
-                        <small>(It is a yellow banana.)</small>
+                        <small>It is a yellow banana.</small>
                     </div>
                 </div>
                 <div class="vous-section" style="border-color: var(--primary-red);">
                     <h3>🙌 Plural (Ce sont)</h3>
                     <p>Use for more than one person or thing.</p>
-                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? Ce sont des raisins violets')">
+                    <div class="example-phrase" onclick="speak('Qu’est-ce que c’est ? Ce sont des raisins violets')">
                         <em>"Qu'est-ce que c'est ?"</em><br>
                         <strong>Ce sont</strong> des raisins violets.<br>
-                        <small>(They are purple grapes.)</small>
+                        <small>They are purple grapes.</small>
                     </div>
-                    <div class="example-phrase" onclick="speak('Qu\'est-ce que c\'est ? Ce sont des légumes verts')">
+                    <div class="example-phrase" onclick="speak('Qu’est-ce que c’est ? Ce sont des légumes verts')">
                         <em>"Qu'est-ce que c'est ?"</em><br>
                         <strong>Ce sont</strong> des légumes verts.<br>
-                        <small>(They are green vegetables.)</small>
+                        <small>They are green vegetables.</small>
                     </div>
                 </div>
             </div>
@@ -168,15 +169,15 @@
                         <strong style="color: var(--primary-blue);">Max:</strong> Bonjour ! Bienvenue au marché !
                         <small>(Hello! Welcome to the market!)</small>
                     </div>
-                    <div style="cursor: pointer;" onclick="speak('Bonjour ! Qu\'est-ce que c\'est ?', 'female')">
+                    <div style="cursor: pointer;" onclick="speak('Bonjour ! Qu’est-ce que c’est ?', 'female')">
                         <strong style="color: var(--primary-red);">Lina:</strong> Bonjour ! Qu'est-ce que c'est ?
                         <small>(Hello! What is it?)</small>
                     </div>
-                    <div style="cursor: pointer;" onclick="speak('C\'est une pomme rouge.', 'male')">
+                    <div style="cursor: pointer;" onclick="speak('C’est une pomme rouge.', 'male')">
                         <strong style="color: var(--primary-blue);">Max:</strong> C'est une pomme rouge.
                         <small>(It is a red apple.)</small>
                     </div>
-                    <div style="cursor: pointer;" onclick="speak('Et ça, qu\'est-ce que c\'est ?', 'female')">
+                    <div style="cursor: pointer;" onclick="speak('Et ça, qu’est-ce que c’est ?', 'female')">
                         <strong style="color: var(--primary-red);">Lina:</strong> Et ça, qu'est-ce que c'est ?
                         <small>(And that, what is it?)</small>
                     </div>
@@ -184,7 +185,7 @@
                         <strong style="color: var(--primary-blue);">Max:</strong> Ce sont des raisins violets.
                         <small>(They are purple grapes.)</small>
                     </div>
-                    <div style="cursor: pointer;" onclick="speak('Miam-miam ! C\'est délicieux !', 'female')">
+                    <div style="cursor: pointer;" onclick="speak('Miam-miam ! C’est délicieux !', 'female')">
                         <strong style="color: var(--primary-red);">Lina:</strong> Miam-miam ! C'est délicieux !
                         <small>(Yum-yum! It's delicious!)</small>
                     </div>
@@ -301,7 +302,6 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             initFoodGame();
-            speak("Lesson 6 : Le Miam-Miam");
         });
     </script>
 </body>

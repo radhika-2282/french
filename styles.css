@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fredoka:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fredoka:wght@400;600&family=Noto+Color+Emoji&display=swap');
+
+
 
 :root {
     --primary-blue: #2A52BE;
@@ -24,7 +26,7 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit','Noto Color Emoji', sans-serif;
     background-color: var(--bg-light);
     color: var(--text-main);
     line-height: 1.6;
@@ -38,7 +40,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Fredoka','Noto Color Emoji', sans-serif;
     font-weight: 600;
 }
 
@@ -424,6 +426,10 @@ header p {
     font-size: 3rem;
     color: var(--primary-blue);
     margin: 1rem 0;
+}
+
+.vocab-image {
+    font-size: 3rem;
 }
 
 .french-word {

@@ -7,8 +7,9 @@
     <meta name="description"
         content="Learn French animals and adjectives. Practice describing pets and wild animals. Lesson 8 for 4th graders." />
     <title>Lesson 8: Les Animaux - Learn French with Fun!</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" type="module"></script>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" type="module" onload=" speak('Lesson 8 - Les Animaux')"></script>
 </head>
 
 <body>
@@ -20,9 +21,9 @@
     </header>
 
     <nav class="side-toolbar">
-        <a href="index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
-        <a href="lesson7.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
-        <a href="lesson9.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+        <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="./lesson7.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="./lesson9.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
     </nav>
 
     <main class="lesson-page">
@@ -95,7 +96,7 @@
                     <h3>Le lion</h3>
                     <p class="translation">The lion</p>
                 </div>
-                <div class="vocab-card" onclick="speak('L\'éléphant')">
+                <div class="vocab-card" onclick="speak('L’éléphant')">
                     <div class="vocab-image">🐘</div>
                     <h3>L'éléphant</h3>
                     <p class="translation">The elephant</p>
@@ -115,7 +116,7 @@
                     <h3>Le tigre</h3>
                     <p class="translation">The tiger</p>
                 </div>
-                <div class="vocab-card" onclick="speak('L\'oiseau')">
+                <div class="vocab-card" onclick="speak('L’oiseau')">
                     <div class="vocab-image">🐦</div>
                     <h3>L'oiseau</h3>
                     <p class="translation">The bird</p>
@@ -125,7 +126,7 @@
                     <h3>Le zèbre</h3>
                     <p class="translation">The zebra</p>
                 </div>
-                <div class="vocab-card" onclick="speak('L\'ours')">
+                <div class="vocab-card" onclick="speak('L’ours')">
                     <div class="vocab-image">🐻</div>
                     <h3>L'ours</h3>
                     <p class="translation">The bear</p>
@@ -145,7 +146,7 @@
             <div class="comparison-container">
                 <div class="tu-section" style="border-color: var(--primary-blue);">
                     <h3>📏 Size & Power</h3>
-                    <div class="example-phrase" onclick="speak('L\'éléphant est grand')">
+                    <div class="example-phrase" onclick="speak('L’éléphant est grand')">
                         <strong>Grand</strong> (Big) - L'éléphant est <strong>grand</strong>.
                     </div>
                     <div class="example-phrase" onclick="speak('Le chat est petit')">
@@ -176,7 +177,7 @@
             <p class="section-intro">How to answer "Yes" and "No" correctly in French!</p>
             <div class="example-box">
                 <div class="example-grid">
-                    <div class="example-item" onclick="speak('Tu aimes le chien ? Oui, j\'aime le chien !')">
+                    <div class="example-item" onclick="speak('Tu aimes le chien ? Oui, j’aime le chien !')">
                         <span class="french"><strong>Oui</strong> (Yes)</span>
                         <span class="english">"Tu aimes le chien ?" -> "<strong>Oui</strong>, j'aime le chien !"</span>
                     </div>
@@ -184,7 +185,7 @@
                         <span class="french"><strong>Non</strong> (No)</span>
                         <span class="english">"Tu es un chat ?" -> "<strong>Non</strong>, je suis un enfant !"</span>
                     </div>
-                    <div class="example-item" onclick="speak('Tu n\'aimes pas le lion ? Si, je l\'adore !')">
+                    <div class="example-item" onclick="speak('Tu n’aimes pas le lion ? Si, je l’adore !')">
                         <span class="french"><strong>Si</strong> (Contradictory Yes)</span>
                         <span class="english">"Tu n'aimes pas le lion ?" -> "<strong>Si</strong>, je l'adore !"</span>
                     </div>
@@ -203,7 +204,7 @@
                     <div onclick="speak('Quel est ton animal préféré ?', 'female')">
                         <strong>Lina:</strong> Quel est ton animal préféré ? <small>(What is your favorite animal?)</small>
                     </div>
-                    <div onclick="speak('Mon animal préféré est le lion parce qu\'il est fort !', 'male')">
+                    <div onclick="speak('Mon animal préféré est le lion parce qu’il est fort !', 'male')">
                         <strong>Max:</strong> Mon animal préféré est le lion parce qu'il est fort ! <small>(My favorite is the lion because he is strong!)</small>
                     </div>
                 </div>
@@ -321,7 +322,6 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             initAnimalGame();
-            speak("Lesson 8 : Les Animaux");
         });
     </script>
 </body>
