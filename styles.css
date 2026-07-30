@@ -675,6 +675,7 @@ header p {
     border: 1px solid #f1f5f9;
     transition: all 0.3s ease;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .phrase-card:hover,
@@ -712,6 +713,7 @@ header p {
     border-radius: var(--radius-md);
     overflow: hidden;
     border: 1px solid #e2e8f0;
+    padding: 5px;
 }
 
 .conjugation-row {
@@ -724,9 +726,6 @@ header p {
     transition: background 0.2s;
 }
 
-.conjugation-row:last-child {
-    border-bottom: none;
-}
 
 .conjugation-row:hover {
     background: #f8fafc;
