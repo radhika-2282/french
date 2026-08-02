@@ -8,6 +8,7 @@
         content="Learn French colors, fruits, and vegetables. Master the use of C'est and Ce sont. Lesson 6 for 4th graders." />
     <title>Lesson 6: Le Miam-Miam - Learn French with Fun!</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" type="module" onload="speak('Lesson 6 - Le Miam-Miam')"></script>
 </head>
@@ -42,73 +43,110 @@
         <!-- Colors Section -->
         <section class="content-section">
             <h2>🌈 Les Couleurs (Colors)</h2>
-            <div class="vocabulary-grid">
-                <div class="vocab-card" onclick="speak('Rouge')" style="border-bottom: 5px solid #ff4d4d;">
-                    <div class="vocab-image">🔴</div>
+            <div class="grid min-200">
+                <div class="center-card" onclick="speak('Rouge')" style="border-bottom: 5px solid #ff4d4d;">
+                    <div class="emoji">🔴</div>
                     <h3>Rouge</h3>
-                    <p class="translation">Red</p>
+                    <p class="font-semibold red">Red</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Bleu')" style="border-bottom: 5px solid #4d94ff;">
-                    <div class="vocab-image">🔵</div>
+                <div class="center-card" onclick="speak('Bleu')" style="border-bottom: 5px solid #4d94ff;">
+                    <div class="emoji">🔵</div>
                     <h3>Bleu</h3>
-                    <p class="translation">Blue</p>
+                    <p class="font-semibold red">Blue</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Jaune')" style="border-bottom: 5px solid #ffff4d;">
-                    <div class="vocab-image">🟡</div>
+                <div class="center-card" onclick="speak('Jaune')" style="border-bottom: 5px solid #ffff4d;">
+                    <div class="emoji">🟡</div>
                     <h3>Jaune</h3>
-                    <p class="translation">Yellow</p>
+                    <p class="font-semibold red">Yellow</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Vert')" style="border-bottom: 5px solid #4dff4d;">
-                    <div class="vocab-image">🟢</div>
+                <div class="center-card" onclick="speak('Vert')" style="border-bottom: 5px solid #4dff4d;">
+                    <div class="emoji">🟢</div>
                     <h3>Vert</h3>
-                    <p class="translation">Green</p>
+                    <p class="font-semibold red">Green</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Orange')" style="border-bottom: 5px solid #ff944d;">
-                    <div class="vocab-image">🟠</div>
+                <div class="center-card" onclick="speak('Orange')" style="border-bottom: 5px solid #ff944d;">
+                    <div class="emoji">🟠</div>
                     <h3>Orange</h3>
-                    <p class="translation">Orange</p>
+                    <p class="font-semibold red">Orange</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Violet')" style="border-bottom: 5px solid #944dff;">
-                    <div class="vocab-image">🟣</div>
+                <div class="center-card" onclick="speak('Violet')" style="border-bottom: 5px solid #944dff;">
+                    <div class="emoji">🟣</div>
                     <h3>Violet</h3>
-                    <p class="translation">Purple</p>
+                    <p class="font-semibold red">Purple</p>
+                </div>
+                <div class="center-card" onclick="speak('Blanc')" style="border-bottom: 5px solid #ffffff;">
+                    <div class="emoji">⚪</div>
+                    <h3>Blanc</h3>
+                    <p class="font-semibold red">White</p>
+                </div>
+                <div class="center-card" onclick="speak('Noir')" style="border-bottom: 5px solid #000000;">
+                    <div class="emoji">⚫</div>
+                    <h3>Noir</h3>
+                    <p class="font-semibold red">Black</p>
                 </div>
             </div>
         </section>
 
+      <!-- colors Song -->
+      <section class="content-section" style="text-align: center">
+        <h2>🎵 Les Couleurs (Chanson)</h2>
+        <div
+          class="video-wrapper"
+          style="
+            position: relative;
+            max-width: 300px;
+            padding-bottom: 300px;
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin: 1rem auto;
+          ">
+          <iframe
+            src="https://www.youtube.com/embed/m50U33brThk"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Greetings Song"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"></iframe>
+        </div>
+        <p style="margin-top: 1rem; color: #555">Learn the colours with this song!</p>
+      </section>
+
         <!-- Fruits & Veggies Section -->
         <section class="content-section">
             <h2>🍎 Le Miam-Miam (Fruits & Veggies)</h2>
-            <div class="vocabulary-grid">
-                <div class="vocab-card" onclick="speak('La pomme')">
-                    <div class="vocab-image">🍎</div>
+            <div class="grid min-200">
+                <div class="center-card" onclick="speak('La pomme')">
+                    <div class="emoji">🍎</div>
                     <h3>La pomme</h3>
-                    <p class="translation">The apple</p>
+                    <p class="font-semibold red">The apple</p>
                 </div>
-                <div class="vocab-card" onclick="speak('La banane')">
-                    <div class="vocab-image">🍌</div>
+                <div class="center-card" onclick="speak('La banane')">
+                    <div class="emoji">🍌</div>
                     <h3>La banane</h3>
-                    <p class="translation">The banana</p>
+                    <p class="font-semibold red">The banana</p>
                 </div>
-                <div class="vocab-card" onclick="speak('La carotte')">
-                    <div class="vocab-image">🥕</div>
+                <div class="center-card" onclick="speak('La carotte')">
+                    <div class="emoji">🥕</div>
                     <h3>La carotte</h3>
-                    <p class="translation">The carrot</p>
+                    <p class="font-semibold red">The carrot</p>
                 </div>
-                <div class="vocab-card" onclick="speak('La tomate')">
-                    <div class="vocab-image">🍅</div>
+                <div class="center-card" onclick="speak('La tomate')">
+                    <div class="emoji">🍅</div>
                     <h3>La tomate</h3>
-                    <p class="translation">The tomato</p>
+                    <p class="font-semibold red">The tomato</p>
                 </div>
-                <div class="vocab-card" onclick="speak('Le raisin')">
-                    <div class="vocab-image">🍇</div>
+                <div class="center-card" onclick="speak('Le raisin')">
+                    <div class="emoji">🍇</div>
                     <h3>Le raisin</h3>
-                    <p class="translation">The grapes</p>
+                    <p class="font-semibold red">The grapes</p>
                 </div>
-                <div class="vocab-card" onclick="speak('La fraise')">
-                    <div class="vocab-image">🍓</div>
+                <div class="center-card" onclick="speak('La fraise')">
+                    <div class="emoji">🍓</div>
                     <h3>La fraise</h3>
-                    <p class="translation">The strawberry</p>
+                    <p class="font-semibold red">The strawberry</p>
                 </div>
             </div>
         </section>

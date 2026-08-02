@@ -38,7 +38,7 @@
         <section class="content-section">
             <h2 style="cursor: pointer;" onclick="speak('Les Jours de la Semaine')">📅 Les Jours de la Semaine (Days of
                 the Week)</h2>
-            <p class="section-intro">Click each French day to hear the pronunciation!</p>
+            <h3 class="font-bold">Click each French day to hear the pronunciation!</h3>
 
             <div style="text-align: center; margin-top: 1rem; margin-bottom: 2rem;">
                 <div class="video-wrapper"
@@ -283,7 +283,7 @@
 
             <div
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 3rem;">
-                <div style="background: #f1f5f9; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                <div style="background: #f1f5f9; padding: 20px; border: 2px solid rgb(226, 232, 240); border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
                     onclick="speak('Quel est le deuxième jour de la semaine ? Mardi est le deuxième jour.')"
                     onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                     <p style="font-weight: bold; color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 10px;">❓
@@ -465,87 +465,87 @@
             <h2 style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Les Matières Scolaires')">📚 Les
                 Matières Scolaires (School Subjects)</h2>
             <p class="section-intro">What's your favorite subject? Learn them all in French!</p>
-            <div class="subjects-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div
+                style="margin: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                 <!-- Row 1 -->
-                <div class="subject-card math" onclick="speak('Les mathématiques')">
+                <div class="left-card" onclick="speak('Les mathématiques')">
                     <div class="subject-icon">📐</div>
                     <h3>Les Maths</h3>
-                    <p class="translation">Mathematics (Maths)</p>
+                    <p class="font-semibold red">Mathematics (Maths)</p>
                 </div>
-                <div class="subject-card science" onclick="speak('Les sciences')">
+                <div class="left-card" onclick="speak('Les sciences')">
                     <div class="subject-icon">🧪</div>
                     <h3>Les Sciences</h3>
-                    <p class="translation">Science</p>
+                    <p class="font-semibold red">Science</p>
                 </div>
-                <div class="subject-card computer" onclick="speak('L’informatique')">
+                <div class="left-card" onclick="speak('L’informatique')">
                     <div class="subject-icon">💻</div>
                     <h3>L’informatique</h3>
-                    <p class="translation">ICT / Computer Science</p>
+                    <p class="font-semibold red">ICT / Computer Science</p>
                 </div>
                 <!-- Row 2 -->
-                <div class="subject-card french" onclick="speak('Le français')">
+                <div class="left-card" onclick="speak('Le français')">
                     <div class="subject-icon">🇫🇷</div>
                     <h3>Le Français</h3>
-                    <p class="translation">French</p>
+                    <p class="font-semibold red">French</p>
                 </div>
-                <div class="subject-card spanish" onclick="speak('L’espagnol')">
+                <div class="left-card" onclick="speak('L’espagnol')">
                     <div class="subject-icon">🇪🇸</div>
                     <h3>L’Espagnol</h3>
-                    <p class="translation">Spanish</p>
+                    <p class="font-semibold red">Spanish</p>
                 </div>
-                <div class="subject-card english" onclick="speak('L’anglais')">
+                <div class="left-card" onclick="speak('L’anglais')">
                     <div class="subject-icon">🇬🇧</div>
                     <h3>L’Anglais</h3>
-                    <p class="translation">English</p>
+                    <p class="font-semibold red">English</p>
                 </div>
                 <!-- Row 3 -->
-                <div class="subject-card art" onclick="speak('L’art')">
+                <div class="left-card" onclick="speak('L’art')">
                     <div class="subject-icon">🎨</div>
                     <h3>L’Art</h3>
-                    <p class="translation">Art</p>
+                    <p class="font-semibold red">Art</p>
                 </div>
-                <div class="subject-card drawing" onclick="speak('Le dessin')">
+                <div class="left-card" onclick="speak('Le dessin')">
                     <div class="subject-icon">✏️</div>
                     <h3>Le Dessin</h3>
-                    <p class="translation">Drawing</p>
+                    <p class="font-semibold red">Drawing</p>
                 </div>
-                <div class="subject-card music" onclick="speak('La musique')">
+                <div class="left-card" onclick="speak('La musique')">
                     <div class="subject-icon">🎵</div>
                     <h3>La Musique</h3>
-                    <p class="translation">Music</p>
+                    <p class="font-semibold red">Music</p>
                 </div>
                 <!-- Row 4 -->
-                <div class="subject-card geography" onclick="speak('La géographie')">
+                <div class="left-card" onclick="speak('La géographie')">
                     <div class="subject-icon">🌍</div>
                     <h3>La Géographie</h3>
-                    <p class="translation">Geography</p>
+                    <p class="font-semibold red">Geography</p>
                 </div>
-                <div class="subject-card history" onclick="speak('L’histoire')">
+                <div class="left-card" onclick="speak('L’histoire')">
                     <div class="subject-icon">🏛️</div>
                     <h3>L’Histoire</h3>
-                    <p class="translation">History</p>
+                    <p class="font-semibold red">History</p>
                 </div>
-                <div class="subject-card pe" onclick="speak('L’éducation physique et sportive')">
+                <div class="left-card" onclick="speak('L’éducation physique et sportive')">
                     <div class="subject-icon">⚽</div>
                     <h3>L’EPS</h3>
-                    <p class="translation">Physical Education (PE)</p>
+                    <p class="font-semibold red">Physical Education (PE)</p>
                 </div>
                 <!-- Row 5 -->
-                <div class="subject-card swimming" onclick="speak('La natation')">
+                <div class="left-card" onclick="speak('La natation')">
                     <div class="subject-icon">🏊‍♂️</div>
                     <h3>La Natation</h3>
-                    <p class="translation">Swimming</p>
+                    <p class="font-semibold red">Swimming</p>
                 </div>
-                <div class="subject-card tennis" onclick="speak('Le tennis')">
+                <div class="left-card" onclick="speak('Le tennis')">
                     <div class="subject-icon">🎾</div>
                     <h3>Le Tennis</h3>
-                    <p class="translation">Tennis</p>
+                    <p class="font-semibold red">Tennis</p>
                 </div>
-                <div class="subject-card volleyball" onclick="speak('Le volleyball')">
+                <div class="left-card" onclick="speak('Le volleyball')">
                     <div class="subject-icon">🏐</div>
                     <h3>Le Volleyball</h3>
-                    <p class="translation">Volleyball</p>
+                    <p class="font-semibold red">Volleyball</p>
                 </div>
             </div>
         </section>
@@ -844,7 +844,7 @@
                     <div
                         style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         N</div>
-                    <div style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s;"
+                    <div style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s;"
                         onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                         <strong style="color: var(--accent-green);">Nick:</strong> Bonjour!
                     </div>
@@ -857,7 +857,7 @@
                         style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         L</div>
                     <div
-                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; border-left: 4px solid var(--primary-blue);">
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
                         <strong style="color: var(--primary-blue);">Leo:</strong> Aujourd’hui, c’est vendredi.
                     </div>
                 </div>
@@ -865,7 +865,7 @@
                 <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
                     onclick="speak('Oui, et demain c’est samedi.', 'female')">
                     <div
-                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right; border-right: 4px solid #e91e63;">
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
                         <strong style="color: #e91e63;">Maya:</strong> Oui, et demain c’est samedi.
                     </div>
                     <div
@@ -879,7 +879,7 @@
                         style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         N</div>
                     <div
-                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; border-left: 4px solid var(--accent-green);">
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
                         <strong style="color: var(--accent-green);">Nick:</strong> Samedi et dimanche, c’est le
                         week-end!
                     </div>
@@ -924,7 +924,7 @@
                 <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
                     onclick="speak('Les maths, c’est difficile!', 'female')">
                     <div
-                        style="background: #fdf2f8; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
                         <strong style="color: #e91e63;">Maya:</strong> Les maths, c’est difficile!
                     </div>
                     <div
@@ -938,7 +938,7 @@
                         style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         N</div>
                     <div
-                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
                         <strong style="color: var(--accent-green);">Nick:</strong> Oui, les maths sont un peu
                         difficiles.
                     </div>
@@ -951,7 +951,7 @@
                         style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         L</div>
                     <div
-                        style="background: #eff6ff; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
                         <strong style="color: var(--primary-blue);">Leo:</strong> Quelle est ta matière préférée, Nick?
                     </div>
                 </div>
@@ -962,7 +962,7 @@
                         style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         N</div>
                     <div
-                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
                         <strong style="color: var(--accent-green);">Nick:</strong> Ma matière préférée est les sciences.
                         Et toi?
                     </div>
@@ -1031,7 +1031,7 @@
                         style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         N</div>
                     <div
-                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
                         <strong style="color: var(--accent-green);">Nick:</strong> Moi, je lis un livre et je joue avec
                         mes amis.
                     </div>
@@ -1055,7 +1055,7 @@
                         style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                         N</div>
                     <div
-                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
                         <strong style="color: var(--accent-green);">Nick:</strong> Au revoir! À lundi
                     </div>
                 </div>
@@ -1078,11 +1078,11 @@
             <h2 style="color: var(--primary-blue); text-align: center; font-size: 2.2rem; margin-bottom: 2rem; cursor: pointer;"
                 onclick="speak('Les Verbes d’Action')">🔄 Les Verbes d'Action (Action Verbs)</h2>
             <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; width: 100%;">
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; width: 100%;">
 
                 <!-- Regarder -->
                 <div class="verb-section"
-                    style="background: #f8fafc; padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--primary-blue);">
+                    style="padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--primary-blue);">
                     <h3 onclick="speak('Regarder')" style="cursor: pointer; color: var(--primary-blue);">Regarder (To
                         watch)</h3>
                     <div class="conjugation-table">
@@ -1091,8 +1091,7 @@
                         <div class="conjugation-row" onclick="speak('Tu regardes')"><span class="pronoun">Tu</span>
                             <span class="verb">regardes</span>
                         </div>
-                        <div class="conjugation-row" onclick="speak('Il regarde')"><span class="pronoun">Il / Elle /
-                                On</span>&nbsp;<span class="verb">regarde</span></div>
+                        <div class="conjugation-row" onclick="speak('Il regarde')"><span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">regarde</span></div>
                         <div class="conjugation-row" onclick="speak('Nous regardons')"><span class="pronoun">Nous</span>
                             <span class="verb">regardons</span>
                         </div>
@@ -1106,7 +1105,7 @@
 
                 <!-- Jouer -->
                 <div class="verb-section"
-                    style="background: #f8fafc; padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--accent-yellow);">
+                    style="padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--accent-yellow);">
                     <h3 onclick="speak('Jouer')" style="cursor: pointer; color: var(--accent-yellow);">Jouer (To play)
                     </h3>
                     <div class="conjugation-table">
@@ -1114,8 +1113,7 @@
                                 class="verb">joue</span></div>
                         <div class="conjugation-row" onclick="speak('Tu joues')"><span class="pronoun">Tu</span> <span
                                 class="verb">joues</span></div>
-                        <div class="conjugation-row" onclick="speak('Il joue')"><span class="pronoun">Il / Elle /
-                                On</span>&nbsp;<span class="verb">joue</span></div>
+                        <div class="conjugation-row" onclick="speak('Il joue')"><span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">joue</span></div>
                         <div class="conjugation-row" onclick="speak('Nous jouons')"><span class="pronoun">Nous</span>
                             <span class="verb">jouons</span>
                         </div>
@@ -1129,15 +1127,14 @@
 
                 <!-- Lire -->
                 <div class="verb-section"
-                    style="background: #f8fafc; padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--primary-red);">
+                    style="padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--primary-red);">
                     <h3 onclick="speak('Lire')" style="cursor: pointer; color: var(--primary-red);">Lire (To read)</h3>
                     <div class="conjugation-table">
                         <div class="conjugation-row" onclick="speak('Je lis')"><span class="pronoun">Je</span> <span
                                 class="verb">lis</span></div>
                         <div class="conjugation-row" onclick="speak('Tu lis')"><span class="pronoun">Tu</span> <span
                                 class="verb">lis</span></div>
-                        <div class="conjugation-row" onclick="speak('Il lit')"><span class="pronoun">Il / Elle /
-                                On</span>&nbsp;<span class="verb">lit</span></div>
+                        <div class="conjugation-row" onclick="speak('Il lit')"><span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">lit</span></div>
                         <div class="conjugation-row" onclick="speak('Nous lisons')"><span class="pronoun">Nous</span>
                             <span class="verb">lisons</span>
                         </div>
@@ -1151,7 +1148,7 @@
 
                 <!-- Faire -->
                 <div class="verb-section"
-                    style="background: #f8fafc; padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--accent-green);">
+                    style="padding: 1.5rem; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--accent-green);">
                     <h3 onclick="speak('Faire')" style="cursor: pointer; color: var(--accent-green);">Faire (To do/make)
                     </h3>
                     <div class="conjugation-table">
@@ -1159,8 +1156,7 @@
                                 class="verb">fais</span></div>
                         <div class="conjugation-row" onclick="speak('Tu fais')"><span class="pronoun">Tu</span> <span
                                 class="verb">fais</span></div>
-                        <div class="conjugation-row" onclick="speak('Il fait')"><span class="pronoun">Il / Elle /
-                                On</span>&nbsp;<span class="verb">fait</span></div>
+                        <div class="conjugation-row" onclick="speak('Il fait')"><span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">fait</span></div>
                         <div class="conjugation-row" onclick="speak('Nous faisons')"><span class="pronoun">Nous</span>
                             <span class="verb">faisons</span>
                         </div>

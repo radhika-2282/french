@@ -54,6 +54,14 @@ header {
     z-index: 1000;
 }
 
+button{
+  font-family: inherit;
+}
+
+ul {
+  list-style-position: inside;
+}
+
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -394,51 +402,84 @@ header p {
     color: var(--primary-blue);
 }
 
-/* Vocabulary & Numbers Grid */
-.vocabulary-grid,
-.numbers-grid {
+
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.vocab-card,
+/* minimum width of elements in grid */
+.grid.min-200 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid.min-280 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid.min-300 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid.min-400 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* gap between elements */
+.grid.gap-small {
+    gap: 1rem;
+}
+
+
+
+.center-card,
 .number-card {
+    display: grid;
+    place-items: center;
+    text-align: center;
     background: white;
     padding: 2.5rem 1.5rem;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
-    text-align: center;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #f1f5f9;
 }
 
-.vocab-card:hover,
+.center-card:hover,
 .number-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 25px -5px rgba(42, 82, 190, 0.1);
     border-color: var(--primary-blue);
 }
 
-.number-card h3 {
-    font-size: 3rem;
-    color: var(--primary-blue);
-    margin: 1rem 0;
+.center-card p {
+    font-weight: 600;
+    color: var(--primary-red);
 }
 
-.vocab-image {
+.number-card {
+    padding: 1rem;
+}
+
+.number-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.number-card p {
+    font-weight: 600;
+    color: var(--primary-red);
+}
+
+.emoji {
     font-size: 3rem;
 }
 
 .french-word {
     font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-red);
-}
-
-.translation {
     font-weight: 600;
     color: var(--primary-red);
 }
@@ -576,39 +617,6 @@ header p {
     transform: translateY(-50%);
 }
 
-/* Comparison container (Tu vs Vous) */
-.comparison-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.tu-section,
-.vous-section {
-    background: white;
-    padding: 2.5rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    border-top: 8px solid;
-}
-
-.tu-section {
-    border-color: var(--accent-green);
-}
-
-.vous-section {
-    border-color: var(--primary-blue);
-}
-
-.example-phrase {
-    margin-top: 2rem;
-    padding: 1rem;
-    background: #f8fafc;
-    border-left: 4px solid var(--primary-red);
-    border-radius: 0 12px 12px 0;
-}
-
 .example-box {
     background: white;
     padding: 2.5rem;
@@ -618,48 +626,25 @@ header p {
     border: 1px solid var(--glass-border);
 }
 
-.example-box h3 {
-    color: var(--primary-blue);
-    margin-bottom: 1.5rem;
-    font-size: 1.4rem;
-}
 
-.example-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.example-item {
-    padding: 1.25rem;
-    background: var(--bg-light);
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.example-item:hover {
-    transform: translateY(-5px);
+.left-card {
     background: white;
-    border-color: var(--accent-yellow);
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);;
+    border: 1px solid #f1f5f9;
 }
 
-.example-item .french {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--primary-red);
+.left-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(42, 82, 190, 0.1);
+    border-color: var(--primary-blue);
 }
 
-.example-item .english {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    font-style: italic;
-}
+
+
 
 /* PHRASE CARDS & PRONOUNS */
 .phrase-card,
@@ -734,7 +719,7 @@ header p {
 .conjugation-row .pronoun {
     font-weight: 600;
     color: var(--text-muted);
-    width: 80px;
+    flex: 1;
 }
 
 .conjugation-row .verb {
@@ -779,6 +764,7 @@ header p {
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(10px);
     margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .game-header {
@@ -1083,3 +1069,129 @@ footer {
     color: var(--primary-red);
     font-weight: 600;
 }
+
+/* muted italic */
+.mu-it {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* in conjugation row fill remaining space */
+.conjugation-row > .mu-it{
+    flex: 1;
+}
+
+
+/* -- text sizes -- */
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+/* -- text sizes end -- */
+
+
+/* -- font weights -- */
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+/* -- font weights end-- */
+
+
+
+/* -- text colors -- */
+*:is(span, h1, h2, h3, h4, p, strong).red {
+  color: var(--primary-red);
+}
+
+*:is(span, h1, h2, h3, h4, p, strong).blue {
+  color: var(--primary-blue)
+}
+/* -- text colors end -- */
+
+
+/* note: the default is to give the accent on the left */
+.accent-box {
+    cursor: pointer;
+    background: white;
+    flex: 1 1 250px;
+    padding: 1rem;
+    border-radius: 5px 20px 20px 5px;
+    border-left: 4px solid;
+    transition: transform 0.2s;
+}
+
+/* accent-box but accent on top */
+.accent-box.top {
+    border-left: none;
+    border-radius: 5px 5px 20px 20px;
+    border-top: 4px solid;
+}
+
+
+/* accent-box colors */
+.accent-box.red{
+    border-color: var(--primary-red);
+}
+
+.accent-box.blue{
+    border-color: var(--primary-blue);
+}
+
+.accent-box.green{
+    border-color: var(--accent-green);
+}
+
+.accent-box.yellow{
+    border-color: var(--accent-yellow);
+}
+/* accent-box colors end */
+
+/* accent-box widths */
+.accent-box.w-lg{ /* large width */
+    border-width: 8px;
+}
+/* accent-box widths end */
+
+
+
+
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-grey {
+    background-color: var(--bg-light)
+}
+/* fill vertical flexbox containers horizontally */
+.fill-hr {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+

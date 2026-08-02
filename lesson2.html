@@ -43,99 +43,94 @@
             <h2 onclick="speak('Les nombres  de  0  à  60')" style="cursor: pointer;"
                 title="Click to hear pronunciation">🔢 Les Nombres de 0 à 20 </h2>
 
-            <div
-                style="max-width: 600px; margin: 0 auto; background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-                <!-- Number 0 centered above columns -->
-                <div class="number-card" onclick="speak('0')"
-                    style="padding: 1rem; margin: 0 auto 1.5rem; width: fit-content; min-width: 200px;">
-                    <h3 style="font-size: 1.5rem; margin: 0;">0</h3>
-                    <p class="french-word" style="font-size: 1rem; margin: 0;">zéro</p>
-                </div>
+            <div>
+                <div class="grid min-200 gap-small">
+                    <div class="number-card" onclick="speak('0')">
+                        <h3>0</h3>
+                        <p>zéro</p>
+                    </div>     
 
-                <div
-                    style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(10, auto); grid-auto-flow: column; gap: 1rem;">
-                    <!-- Column 1: 1-10 -->
-                    <div class="number-card" onclick="speak('1')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">1</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">un</p>
+                    <div class="number-card" onclick="speak('1')">
+                        <h3>1</h3>
+                        <p>un</p>
                     </div>
-                    <div class="number-card" onclick="speak('2')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">2</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">deux</p>
+                    <div class="number-card" onclick="speak('2')" >
+                        <h3>2</h3>
+                        <p>deux</p>
                     </div>
-                    <div class="number-card" onclick="speak('3')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">3</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trois</p>
+                    <div class="number-card" onclick="speak('3')" >
+                        <h3>3</h3>
+                        <p>trois</p>
                     </div>
-                    <div class="number-card" onclick="speak('4')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">4</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quatre</p>
+                    <div class="number-card" onclick="speak('4')" >
+                        <h3>4</h3>
+                        <p>quatre</p>
                     </div>
-                    <div class="number-card" onclick="speak('5')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">5</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinq</p>
+                    <div class="number-card" onclick="speak('5')" >
+                        <h3>5</h3>
+                        <p>cinq</p>
                     </div>
-                    <div class="number-card" onclick="speak('6')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">6</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">six</p>
+                    <div class="number-card" onclick="speak('6')" >
+                        <h3>6</h3>
+                        <p>six</p>
                     </div>
-                    <div class="number-card" onclick="speak('7')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">7</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">sept</p>
+                    <div class="number-card" onclick="speak('7')" >
+                        <h3>7</h3>
+                        <p>sept</p>
                     </div>
-                    <div class="number-card" onclick="speak('8')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">8</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">huit</p>
+                    <div class="number-card" onclick="speak('8')" >
+                        <h3>8</h3>
+                        <p>huit</p>
                     </div>
-                    <div class="number-card" onclick="speak('9')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">9</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">neuf</p>
+                    <div class="number-card" onclick="speak('9')" >
+                        <h3>9</h3>
+                        <p>neuf</p>
                     </div>
-                    <div class="number-card" onclick="speak('10')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">10</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix</p>
+                    <div class="number-card" onclick="speak('10')" >
+                        <h3>10</h3>
+                        <p>dix</p>
                     </div>
 
                     <!-- Column 2: 11-20 -->
-                    <div class="number-card" onclick="speak('11')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">11</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">onze</p>
+                    <div class="number-card" onclick="speak('11')" >
+                        <h3>11</h3>
+                        <p>onze</p>
                     </div>
-                    <div class="number-card" onclick="speak('12')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">12</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">douze</p>
+                    <div class="number-card" onclick="speak('12')" >
+                        <h3>12</h3>
+                        <p>douze</p>
                     </div>
-                    <div class="number-card" onclick="speak('13')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">13</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">treize</p>
+                    <div class="number-card" onclick="speak('13')" >
+                        <h3>13</h3>
+                        <p>treize</p>
                     </div>
-                    <div class="number-card" onclick="speak('14')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">14</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quatorze</p>
+                    <div class="number-card" onclick="speak('14')" >
+                        <h3>14</h3>
+                        <p>quatorze</p>
                     </div>
-                    <div class="number-card" onclick="speak('15')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">15</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quinze</p>
+                    <div class="number-card" onclick="speak('15')" >
+                        <h3>15</h3>
+                        <p>quinze</p>
                     </div>
-                    <div class="number-card" onclick="speak('16')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">16</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">seize</p>
+                    <div class="number-card" onclick="speak('16')" >
+                        <h3>16</h3>
+                        <p>seize</p>
                     </div>
-                    <div class="number-card" onclick="speak('17')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">17</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix-sept</p>
+                    <div class="number-card" onclick="speak('17')" >
+                        <h3>17</h3>
+                        <p>dix-sept</p>
                     </div>
-                    <div class="number-card" onclick="speak('18')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">18</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix-huit</p>
+                    <div class="number-card" onclick="speak('18')" >
+                        <h3>18</h3>
+                        <p>dix-huit</p>
                     </div>
-                    <div class="number-card" onclick="speak('19')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">19</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">dix-neuf</p>
+                    <div class="number-card" onclick="speak('19')" >
+                        <h3>19</h3>
+                        <p>dix-neuf</p>
                     </div>
-                    <div class="number-card" onclick="speak('20')" style="padding: 1rem; margin: 0;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">20</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt</p>
+                    <div class="number-card" onclick="speak('20')" >
+                        <h3>20</h3>
+                        <p>vingt</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +141,7 @@
                         title="French Numbers 1-20 Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                 </div>
-                <p style="color: var(--text-muted); font-style: italic;">Sing along to practice your numbers from 1 to 20!</p>
+                <p class="mu-it">Sing along to practice your numbers from 1 to 20!</p>
             </div>
 
             <div style="margin-top: 4rem; display: flex; flex-direction: column; gap: 2rem;">
@@ -240,247 +235,246 @@
                     style="color: var(--primary-blue); margin-bottom: 2rem; font-size: 1.5rem; text-align: center; cursor: pointer;"
                     title="Click to hear pronunciation">🔢 Les nombres de 21 à 60</h3>
 
-                <div class="numbers-grid"
-                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; align-items: stretch;">
+                <div class="grid min-200 gap-small">
                     <!-- 21 -->
                     <div class="number-card" onclick="speak('21')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">21</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt et un</p>
+                        >
+                        <h3>21</h3>
+                        <p>vingt et un</p>
                     </div>
                     <!-- 22 -->
                     <div class="number-card" onclick="speak('22')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">22</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-deux</p>
+                        >
+                        <h3>22</h3>
+                        <p>vingt-deux</p>
                     </div>
                     <!-- 23 -->
                     <div class="number-card" onclick="speak('23')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">23</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-trois</p>
+                        >
+                        <h3>23</h3>
+                        <p>vingt-trois</p>
                     </div>
                     <!-- 24 -->
                     <div class="number-card" onclick="speak('24')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">24</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-quatre</p>
+                        >
+                        <h3>24</h3>
+                        <p>vingt-quatre</p>
                     </div>
                     <!-- 25 -->
                     <div class="number-card" onclick="speak('25')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">25</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-cinq</p>
+                        >
+                        <h3>25</h3>
+                        <p>vingt-cinq</p>
                     </div>
                     <!-- 26 -->
                     <div class="number-card" onclick="speak('26')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">26</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-six</p>
+                        >
+                        <h3>26</h3>
+                        <p>vingt-six</p>
                     </div>
                     <!-- 27 -->
                     <div class="number-card" onclick="speak('27')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">27</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-sept</p>
+                        >
+                        <h3>27</h3>
+                        <p>vingt-sept</p>
                     </div>
                     <!-- 28 -->
                     <div class="number-card" onclick="speak('28')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">28</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-huit</p>
+                        >
+                        <h3>28</h3>
+                        <p>vingt-huit</p>
                     </div>
                     <!-- 29 -->
                     <div class="number-card" onclick="speak('29')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">29</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">vingt-neuf</p>
+                        >
+                        <h3>29</h3>
+                        <p>vingt-neuf</p>
                     </div>
                     <!-- 30 -->
                     <div class="number-card" onclick="speak('30')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">30</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente</p>
+                        >
+                        <h3>30</h3>
+                        <p>trente</p>
                     </div>
                     <!-- 31 -->
                     <div class="number-card" onclick="speak('31')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">31</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente et un</p>
+                        >
+                        <h3>31</h3>
+                        <p>trente et un</p>
                     </div>
                     <!-- 32 -->
                     <div class="number-card" onclick="speak('32')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">32</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-deux</p>
+                        >
+                        <h3>32</h3>
+                        <p>trente-deux</p>
                     </div>
                     <!-- 33 -->
                     <div class="number-card" onclick="speak('33')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">33</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-trois</p>
+                        >
+                        <h3>33</h3>
+                        <p>trente-trois</p>
                     </div>
                     <!-- 34 -->
                     <div class="number-card" onclick="speak('34')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">34</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-quatre</p>
+                        >
+                        <h3>34</h3>
+                        <p>trente-quatre</p>
                     </div>
                     <!-- 35 -->
                     <div class="number-card" onclick="speak('35')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">35</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-cinq</p>
+                        >
+                        <h3>35</h3>
+                        <p>trente-cinq</p>
                     </div>
                     <!-- 36 -->
                     <div class="number-card" onclick="speak('36')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">36</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-six</p>
+                        >
+                        <h3>36</h3>
+                        <p>trente-six</p>
                     </div>
                     <!-- 37 -->
                     <div class="number-card" onclick="speak('37')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">37</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-sept</p>
+                        >
+                        <h3>37</h3>
+                        <p>trente-sept</p>
                     </div>
                     <!-- 38 -->
                     <div class="number-card" onclick="speak('38')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">38</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-huit</p>
+                        >
+                        <h3>38</h3>
+                        <p>trente-huit</p>
                     </div>
                     <!-- 39 -->
                     <div class="number-card" onclick="speak('39')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">39</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">trente-neuf</p>
+                        >
+                        <h3>39</h3>
+                        <p>trente-neuf</p>
                     </div>
                     <!-- 40 -->
                     <div class="number-card" onclick="speak('40')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">40</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante</p>
+                        >
+                        <h3>40</h3>
+                        <p>quarante</p>
                     </div>
                     <!-- 41 -->
                     <div class="number-card" onclick="speak('41')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">41</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante et un</p>
+                        >
+                        <h3>41</h3>
+                        <p>quarante et un</p>
                     </div>
                     <!-- 42 -->
                     <div class="number-card" onclick="speak('42')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">42</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-deux</p>
+                        >
+                        <h3>42</h3>
+                        <p>quarante-deux</p>
                     </div>
                     <!-- 43 -->
                     <div class="number-card" onclick="speak('43')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">43</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-trois</p>
+                        >
+                        <h3>43</h3>
+                        <p>quarante-trois</p>
                     </div>
                     <!-- 44 -->
                     <div class="number-card" onclick="speak('44')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">44</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-quatre</p>
+                        >
+                        <h3>44</h3>
+                        <p>quarante-quatre</p>
                     </div>
                     <!-- 45 -->
                     <div class="number-card" onclick="speak('45')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">45</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-cinq</p>
+                        >
+                        <h3>45</h3>
+                        <p>quarante-cinq</p>
                     </div>
                     <!-- 46 -->
                     <div class="number-card" onclick="speak('46')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">46</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-six</p>
+                        >
+                        <h3>46</h3>
+                        <p>quarante-six</p>
                     </div>
                     <!-- 47 -->
                     <div class="number-card" onclick="speak('47')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">47</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-sept</p>
+                        >
+                        <h3>47</h3>
+                        <p>quarante-sept</p>
                     </div>
                     <!-- 48 -->
                     <div class="number-card" onclick="speak('48')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">48</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-huit</p>
+                        >
+                        <h3>48</h3>
+                        <p>quarante-huit</p>
                     </div>
                     <!-- 49 -->
                     <div class="number-card" onclick="speak('49')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">49</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">quarante-neuf</p>
+                        >
+                        <h3>49</h3>
+                        <p>quarante-neuf</p>
                     </div>
                     <!-- 50 -->
                     <div class="number-card" onclick="speak('50')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">50</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante</p>
+                        >
+                        <h3>50</h3>
+                        <p>cinquante</p>
                     </div>
                     <!-- 51 -->
                     <div class="number-card" onclick="speak('51')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">51</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante et un</p>
+                        >
+                        <h3>51</h3>
+                        <p>cinquante et un</p>
                     </div>
                     <!-- 52 -->
                     <div class="number-card" onclick="speak('52')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">52</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-deux</p>
+                        >
+                        <h3>52</h3>
+                        <p>cinquante-deux</p>
                     </div>
                     <!-- 53 -->
                     <div class="number-card" onclick="speak('53')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">53</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-trois</p>
+                        >
+                        <h3>53</h3>
+                        <p>cinquante-trois</p>
                     </div>
                     <!-- 54 -->
                     <div class="number-card" onclick="speak('54')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">54</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-quatre</p>
+                        >
+                        <h3>54</h3>
+                        <p>cinquante-quatre</p>
                     </div>
                     <!-- 55 -->
                     <div class="number-card" onclick="speak('55')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">55</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-cinq</p>
+                        >
+                        <h3>55</h3>
+                        <p>cinquante-cinq</p>
                     </div>
                     <!-- 56 -->
                     <div class="number-card" onclick="speak('56')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">56</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-six</p>
+                        >
+                        <h3>56</h3>
+                        <p>cinquante-six</p>
                     </div>
                     <!-- 57 -->
                     <div class="number-card" onclick="speak('57')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">57</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-sept</p>
+                        >
+                        <h3>57</h3>
+                        <p>cinquante-sept</p>
                     </div>
                     <!-- 58 -->
                     <div class="number-card" onclick="speak('58')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">58</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-huit</p>
+                        >
+                        <h3>58</h3>
+                        <p>cinquante-huit</p>
                     </div>
                     <!-- 59 -->
                     <div class="number-card" onclick="speak('59')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">59</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">cinquante-neuf</p>
+                        >
+                        <h3>59</h3>
+                        <p>cinquante-neuf</p>
                     </div>
                     <!-- 60 -->
                     <div class="number-card" onclick="speak('60')"
-                        style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">60</h3>
-                        <p class="french-word" style="font-size: 1rem; margin: 0;">soixante</p>
+                        >
+                        <h3>60</h3>
+                        <p>soixante</p>
                     </div>
                 </div>
             </div>
@@ -494,9 +488,9 @@
                 Il est quelle heure ? <span style="font-style: italic; color: #64748b; font-size: 1rem;">– What time is
                     it?</span></p>
 
-            <div class="vocabulary-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="grid min-200" style="grid-template-columns: repeat(3, 1fr);">
                 <!-- 1:00 -->
-                <div class="vocab-card" onclick="speak('Il est une heure')">
+                <div class="center-card" onclick="speak('Il est une heure')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -509,11 +503,11 @@
                         </div>
                     </div>
                     <h3>Il est une heure</h3>
-                    <p class="translation">It's 1:00</p>
+                    <p class="font-semibold red">It's 1:00</p>
                 </div>
 
                 <!-- 2:00 -->
-                <div class="vocab-card" onclick="speak('Il est deux heures')">
+                <div class="center-card" onclick="speak('Il est deux heures')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -526,11 +520,11 @@
                         </div>
                     </div>
                     <h3>Il est deux heures</h3>
-                    <p class="translation">It's 2:00</p>
+                    <p class="font-semibold red">It's 2:00</p>
                 </div>
 
                 <!-- 3:00 -->
-                <div class="vocab-card" onclick="speak('Il est trois heures')">
+                <div class="center-card" onclick="speak('Il est trois heures')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -543,14 +537,14 @@
                         </div>
                     </div>
                     <h3>Il est trois heures</h3>
-                    <p class="translation">It's 3:00</p>
+                    <p class="font-semibold red">It's 3:00</p>
                 </div>
             </div>
 
-            <div class="vocabulary-grid"
+            <div class="grid min-200"
                 style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
                 <!-- 10:05 AM -->
-                <div class="vocab-card" onclick="speak('il est dix heures cinq du matin')">
+                <div class="center-card" onclick="speak('il est dix heures cinq du matin')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -563,11 +557,11 @@
                         </div>
                     </div>
                     <h3>Il est dix heures cinq du matin</h3>
-                    <p class="translation">It's 10:05 in the morning (10:05 AM)</p>
+                    <p class="font-semibold red">It's 10:05 in the morning (10:05 AM)</p>
                 </div>
 
                 <!-- 5:10 PM -->
-                <div class="vocab-card" onclick="speak('il est cinq heures dix du soir')">
+                <div class="center-card" onclick="speak('il est cinq heures dix du soir')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -580,13 +574,13 @@
                         </div>
                     </div>
                     <h3>Il est cinq heures dix du soir</h3>
-                    <p class="translation">It's 5:10 in the evening (5:10 PM)</p>
+                    <p class="font-semibold red">It's 5:10 in the evening (5:10 PM)</p>
                 </div>
             </div>
 
-            <div class="vocabulary-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 3rem;">
+            <div class="grid min-200" style="grid-template-columns: repeat(3, 1fr); margin-top: 3rem;">
                 <!-- Midi -->
-                <div class="vocab-card" onclick="speak('Il est midi')">
+                <div class="center-card" onclick="speak('Il est midi')">
                     <div class="analog-clock" style="background: rgba(255, 215, 0, 0.1); border-color: gold;">
                         <div class="clock-face">
                             <div class="clock-center" style="background: gold;"></div>
@@ -598,11 +592,11 @@
                         </div>
                     </div>
                     <h3>Il est midi</h3>
-                    <p class="translation">It's Noon (Mid afternoon)</p>
+                    <p class="font-semibold red">It's Noon (Mid afternoon)</p>
                 </div>
 
                 <!-- Minuit -->
-                <div class="vocab-card" onclick="speak('Il est minuit')">
+                <div class="center-card" onclick="speak('Il est minuit')">
                     <div class="analog-clock" style="background: #1e293b; border-color: #64748b;">
                         <div class="clock-face">
                             <div class="clock-center" style="background: #64748b;"></div>
@@ -616,11 +610,11 @@
                         </div>
                     </div>
                     <h3>Il est minuit</h3>
-                    <p class="translation">It's Midnight</p>
+                    <p class="font-semibold red">It's Midnight</p>
                 </div>
 
                 <!-- Douze heures de l'après midi -->
-                <div class="vocab-card" onclick="speak('Il est douze heures de l’après-midi')">
+                <div class="center-card" onclick="speak('Il est douze heures de l’après-midi')">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -634,14 +628,14 @@
                         </div>
                     </div>
                     <h3>Il est douze heures de l'après midi</h3>
-                    <p class="translation">It's afternoon 12 (12:00 PM)</p>
+                    <p class="font-semibold red">It's afternoon 12 (12:00 PM)</p>
                 </div>
             </div>
 
-            <div class="vocabulary-grid"
+            <div class="grid min-200"
                 style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; gap: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
                 <!-- 5:15 consolidated with 3 buttons -->
-                <div class="vocab-card" style="cursor: default; padding: 1.5rem;">
+                <div class="center-card" style="cursor: default; padding: 1.5rem;">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -670,12 +664,12 @@
                             15 = quart (quarter)
                         </button>
                     </div>
-                    <p class="translation" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:15 /
+                    <p class="font-semibold red" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:15 /
                         Quarter past five)</p>
                 </div>
 
                 <!-- 5:30 consolidated with 3 buttons -->
-                <div class="vocab-card" style="cursor: default; padding: 1.5rem;">
+                <div class="center-card" style="cursor: default; padding: 1.5rem;">
                     <div class="analog-clock">
                         <div class="clock-face">
                             <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
@@ -704,15 +698,15 @@
                             30 = demie (half)
                         </button>
                     </div>
-                    <p class="translation" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:30 / Half
+                    <p class="font-semibold red" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:30 / Half
                         past five)</p>
                 </div>
             </div>
 
-            <div class="vocabulary-grid"
+            <div class="grid min-200"
                 style="grid-template-columns: 1fr; margin-top: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
                 <!-- 5:45 consolidated Card with 3-Column Layout -->
-                <div class="vocab-card"
+                <div class="center-card"
                     style="cursor: default; padding: 2rem; display: flex; flex-direction: row; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;">
 
                     <!-- Column 1: Clock -->
@@ -765,10 +759,10 @@
             </div>
 
             <!-- Advanced Time Modules -->
-            <div class="vocabulary-grid"
+            <div class="grid min-200"
                 style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; gap: 2rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
                 <!-- 5:35 Module -->
-                <div class="vocab-card"
+                <div class="center-card"
                     style="cursor: default; padding: 1.5rem; display: flex; flex-direction: row; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
                     <div class="analog-clock" style="width: 100px; height: 100px; flex-shrink: 0;">
                         <div class="clock-face">
@@ -803,7 +797,7 @@
                 </div>
 
                 <!-- 6:50 Module -->
-                <div class="vocab-card"
+                <div class="center-card"
                     style="cursor: default; padding: 1.5rem; display: flex; flex-direction: row; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
                     <div class="analog-clock" style="width: 100px; height: 100px; flex-shrink: 0;">
                         <div class="clock-face">
@@ -846,7 +840,7 @@
                         style="display: block; font-size: 1rem; color: #64748b; font-weight: 500; margin-top: 8px; font-style: italic;">(Role
                         Play : Asking the time)</span>
                 </h2>
-                <div class="vocab-card"
+                <div class="tip-box"
                     style="padding: 0; overflow: hidden; max-width: 900px; margin: 0 auto; border: 1px solid #e2e8f0; background: #fff; box-shadow: var(--shadow-md);">
 
                     <div class="roleplay-row" onclick="speak('Bonjour Madame ! Quelle heure est-il, s’il vous plaît ?', 'male')"
@@ -932,175 +926,175 @@
                     </p>
                 </div>
 
-                <div class="numbers-grid"
+                <div class="grid min-200"
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; align-items: stretch;">
                     
                     <!-- 60s & 70s Pattern -->
-                    <div class="number-card" onclick="speak('61')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">61</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante et un</p>
+                    <div class="number-card" onclick="speak('61')" >
+                        <h3>61</h3>
+                        <p>soixante et un</p>
                     </div>
-                    <div class="number-card" onclick="speak('62')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">62</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-deux</p>
+                    <div class="number-card" onclick="speak('62')" >
+                        <h3>62</h3>
+                        <p>soixante-deux</p>
                     </div>
-                    <div class="number-card" onclick="speak('63')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">63</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-trois</p>
+                    <div class="number-card" onclick="speak('63')" >
+                        <h3>63</h3>
+                        <p>soixante-trois</p>
                     </div>
-                    <div class="number-card" onclick="speak('64')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">64</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-quatre</p>
+                    <div class="number-card" onclick="speak('64')" >
+                        <h3>64</h3>
+                        <p>soixante-quatre</p>
                     </div>
-                    <div class="number-card" onclick="speak('65')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">65</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-cinq</p>
+                    <div class="number-card" onclick="speak('65')" >
+                        <h3>65</h3>
+                        <p>soixante-cinq</p>
                     </div>
-                    <div class="number-card" onclick="speak('66')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">66</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-six</p>
+                    <div class="number-card" onclick="speak('66')" >
+                        <h3>66</h3>
+                        <p>soixante-six</p>
                     </div>
-                    <div class="number-card" onclick="speak('67')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">67</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-sept</p>
+                    <div class="number-card" onclick="speak('67')" >
+                        <h3>67</h3>
+                        <p>soixante-sept</p>
                     </div>
-                    <div class="number-card" onclick="speak('68')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">68</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-huit</p>
+                    <div class="number-card" onclick="speak('68')" >
+                        <h3>68</h3>
+                        <p>soixante-huit</p>
                     </div>
-                    <div class="number-card" onclick="speak('69')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">69</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-neuf</p>
+                    <div class="number-card" onclick="speak('69')" >
+                        <h3>69</h3>
+                        <p>soixante-neuf</p>
                     </div>
-                    <div class="number-card" onclick="speak('70')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; border-color: var(--primary-red);">
+                    <div class="number-card" onclick="speak('70')" >
                         <h3 style="font-size: 1.5rem; margin: 0; color: var(--primary-red);">70</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-dix</p>
+                        <p>soixante-dix</p>
                     </div>
-                    <div class="number-card" onclick="speak('71')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">71</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante et onze</p>
+                    <div class="number-card" onclick="speak('71')" >
+                        <h3>71</h3>
+                        <p>soixante et onze</p>
                     </div>
-                    <div class="number-card" onclick="speak('72')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">72</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-douze</p>
+                    <div class="number-card" onclick="speak('72')" >
+                        <h3>72</h3>
+                        <p>soixante-douze</p>
                     </div>
-                    <div class="number-card" onclick="speak('73')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">73</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-treize</p>
+                    <div class="number-card" onclick="speak('73')" >
+                        <h3>73</h3>
+                        <p>soixante-treize</p>
                     </div>
-                    <div class="number-card" onclick="speak('74')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">74</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-quatorze</p>
+                    <div class="number-card" onclick="speak('74')" >
+                        <h3>74</h3>
+                        <p>soixante-quatorze</p>
                     </div>
-                    <div class="number-card" onclick="speak('75')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">75</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-quinze</p>
+                    <div class="number-card" onclick="speak('75')" >
+                        <h3>75</h3>
+                        <p>soixante-quinze</p>
                     </div>
-                    <div class="number-card" onclick="speak('76')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">76</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-seize</p>
+                    <div class="number-card" onclick="speak('76')" >
+                        <h3>76</h3>
+                        <p>soixante-seize</p>
                     </div>
-                    <div class="number-card" onclick="speak('77')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">77</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-dix-sept</p>
+                    <div class="number-card" onclick="speak('77')" >
+                        <h3>77</h3>
+                        <p>soixante-dix-sept</p>
                     </div>
-                    <div class="number-card" onclick="speak('78')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">78</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-dix-huit</p>
+                    <div class="number-card" onclick="speak('78')" >
+                        <h3>78</h3>
+                        <p>soixante-dix-huit</p>
                     </div>
-                    <div class="number-card" onclick="speak('79')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">79</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">soixante-dix-neuf</p>
+                    <div class="number-card" onclick="speak('79')" >
+                        <h3>79</h3>
+                        <p>soixante-dix-neuf</p>
                     </div>
 
                     <!-- 80s Pattern -->
-                    <div class="number-card" onclick="speak('80')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; border-color: var(--primary-red);">
+                    <div class="number-card" onclick="speak('80')" >
                         <h3 style="font-size: 1.5rem; margin: 0; color: var(--primary-red);">80</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingts</p>
+                        <p>quatre-vingts</p>
                     </div>
-                    <div class="number-card" onclick="speak('81')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">81</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-un</p>
+                    <div class="number-card" onclick="speak('81')" >
+                        <h3>81</h3>
+                        <p>quatre-vingt-un</p>
                     </div>
-                    <div class="number-card" onclick="speak('82')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">82</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-deux</p>
+                    <div class="number-card" onclick="speak('82')" >
+                        <h3>82</h3>
+                        <p>quatre-vingt-deux</p>
                     </div>
-                    <div class="number-card" onclick="speak('83')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">83</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-trois</p>
+                    <div class="number-card" onclick="speak('83')" >
+                        <h3>83</h3>
+                        <p>quatre-vingt-trois</p>
                     </div>
-                    <div class="number-card" onclick="speak('84')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">84</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-quatre</p>
+                    <div class="number-card" onclick="speak('84')" >
+                        <h3>84</h3>
+                        <p>quatre-vingt-quatre</p>
                     </div>
-                    <div class="number-card" onclick="speak('85')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">85</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-cinq</p>
+                    <div class="number-card" onclick="speak('85')" >
+                        <h3>85</h3>
+                        <p>quatre-vingt-cinq</p>
                     </div>
-                    <div class="number-card" onclick="speak('86')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">86</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-six</p>
+                    <div class="number-card" onclick="speak('86')" >
+                        <h3>86</h3>
+                        <p>quatre-vingt-six</p>
                     </div>
-                    <div class="number-card" onclick="speak('87')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">87</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-sept</p>
+                    <div class="number-card" onclick="speak('87')" >
+                        <h3>87</h3>
+                        <p>quatre-vingt-sept</p>
                     </div>
-                    <div class="number-card" onclick="speak('88')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">88</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-huit</p>
+                    <div class="number-card" onclick="speak('88')" >
+                        <h3>88</h3>
+                        <p>quatre-vingt-huit</p>
                     </div>
-                    <div class="number-card" onclick="speak('89')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">89</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-neuf</p>
+                    <div class="number-card" onclick="speak('89')" >
+                        <h3>89</h3>
+                        <p>quatre-vingt-neuf</p>
                     </div>
 
                     <!-- 90s Pattern -->
-                    <div class="number-card" onclick="speak('90')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; border-color: var(--primary-red);">
+                    <div class="number-card" onclick="speak('90')" >
                         <h3 style="font-size: 1.5rem; margin: 0; color: var(--primary-red);">90</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-dix</p>
+                        <p>quatre-vingt-dix</p>
                     </div>
-                    <div class="number-card" onclick="speak('91')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">91</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-onze</p>
+                    <div class="number-card" onclick="speak('91')" >
+                        <h3>91</h3>
+                        <p>quatre-vingt-onze</p>
                     </div>
-                    <div class="number-card" onclick="speak('92')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">92</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-douze</p>
+                    <div class="number-card" onclick="speak('92')" >
+                        <h3>92</h3>
+                        <p>quatre-vingt-douze</p>
                     </div>
-                    <div class="number-card" onclick="speak('93')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">93</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-treize</p>
+                    <div class="number-card" onclick="speak('93')" >
+                        <h3>93</h3>
+                        <p>quatre-vingt-treize</p>
                     </div>
-                    <div class="number-card" onclick="speak('94')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">94</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-quatorze</p>
+                    <div class="number-card" onclick="speak('94')" >
+                        <h3>94</h3>
+                        <p>quatre-vingt-quatorze</p>
                     </div>
-                    <div class="number-card" onclick="speak('95')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">95</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-quinze</p>
+                    <div class="number-card" onclick="speak('95')" >
+                        <h3>95</h3>
+                        <p>quatre-vingt-quinze</p>
                     </div>
-                    <div class="number-card" onclick="speak('96')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">96</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-seize</p>
+                    <div class="number-card" onclick="speak('96')" >
+                        <h3>96</h3>
+                        <p>quatre-vingt-seize</p>
                     </div>
-                    <div class="number-card" onclick="speak('97')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">97</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-dix-sept</p>
+                    <div class="number-card" onclick="speak('97')" >
+                        <h3>97</h3>
+                        <p>quatre-vingt-dix-sept</p>
                     </div>
-                    <div class="number-card" onclick="speak('98')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">98</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-dix-huit</p>
+                    <div class="number-card" onclick="speak('98')" >
+                        <h3>98</h3>
+                        <p>quatre-vingt-dix-huit</p>
                     </div>
-                    <div class="number-card" onclick="speak('99')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <h3 style="font-size: 1.5rem; margin: 0;">99</h3>
-                        <p class="french-word" style="font-size: 0.95rem; margin: 0;">quatre-vingt-dix-neuf</p>
+                    <div class="number-card" onclick="speak('99')" >
+                        <h3>99</h3>
+                        <p>quatre-vingt-dix-neuf</p>
                     </div>
 
                     <!-- 100 -->
-                    <div class="number-card" onclick="speak('100')" style="padding: 1rem; margin: 0; min-height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; border-color: var(--accent-green);">
-                        <h3 style="font-size: 1.5rem; margin: 0; color: var(--accent-green);">100</h3>
-                        <p class="french-word" style="font-size: 1.1rem; margin: 0;">cent</p>
+                    <div class="number-card" onclick="speak('100')" >
+                        <h3>100</h3>
+                        <p>cent</p>
                     </div>
                 </div>
             </div>
@@ -1135,7 +1129,7 @@
                                 <div id="question-indicator"
                                     style="font-weight: 600; color: var(--text-muted); background: #eee; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 1.5rem;">
                                     Set 1 • 1/5</div>
-                                <div class="vocab-card" id="audio-trigger" onclick="playCurrentNumber()"
+                                <div class="center-card" id="audio-trigger" onclick="playCurrentNumber()"
                                     style="width: 120px; height: 120px; margin: 0 auto 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--primary-blue); box-shadow: var(--shadow-md);">
                                     <span style="font-size: 2.5rem;">🔊</span>
                                     <span
@@ -1176,7 +1170,7 @@
                                 <div id="time-question-indicator"
                                     style="font-weight: 600; color: var(--text-muted); background: #eee; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 1.5rem;">
                                     Set 1 • 1/5</div>
-                                <div class="vocab-card" id="time-audio-trigger" onclick="playCurrentTime()"
+                                <div class="center-card" id="time-audio-trigger" onclick="playCurrentTime()"
                                     style="width: 120px; height: 120px; margin: 0 auto 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--primary-red); box-shadow: var(--shadow-md);">
                                     <span style="font-size: 2.5rem;">🔊</span>
                                     <span
@@ -1230,46 +1224,46 @@
                         France and its neighbors</p>
                 </div>
 
-                <div class="vocabulary-grid" style="margin-top: 2rem;">
-                    <div class="vocab-card" onclick="speak('La Belgique')">
-                        <div class="vocab-image">🇧🇪</div>
+                <div class="grid min-200" style="margin-top: 2rem;">
+                    <div class="center-card" onclick="speak('La Belgique')">
+                        <div class="emoji">🇧🇪</div>
                         <h3>La Belgique</h3>
-                        <p class="translation">Belgium</p>
+                        <p class="font-semibold red">Belgium</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('Le Luxembourg')">
-                        <div class="vocab-image">🇱🇺</div>
+                    <div class="center-card" onclick="speak('Le Luxembourg')">
+                        <div class="emoji">🇱🇺</div>
                         <h3>Le Luxembourg</h3>
-                        <p class="translation">Luxembourg</p>
+                        <p class="font-semibold red">Luxembourg</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('L’Allemagne')">
-                        <div class="vocab-image">🇩🇪</div>
+                    <div class="center-card" onclick="speak('L’Allemagne')">
+                        <div class="emoji">🇩🇪</div>
                         <h3>L'Allemagne</h3>
-                        <p class="translation">Germany</p>
+                        <p class="font-semibold red">Germany</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('La Suisse')">
-                        <div class="vocab-image">🇨🇭</div>
+                    <div class="center-card" onclick="speak('La Suisse')">
+                        <div class="emoji">🇨🇭</div>
                         <h3>La Suisse</h3>
-                        <p class="translation">Switzerland</p>
+                        <p class="font-semibold red">Switzerland</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('L’Italie')">
-                        <div class="vocab-image">🇮🇹</div>
+                    <div class="center-card" onclick="speak('L’Italie')">
+                        <div class="emoji">🇮🇹</div>
                         <h3>L'Italie</h3>
-                        <p class="translation">Italy</p>
+                        <p class="font-semibold red">Italy</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('L’Espagne')">
-                        <div class="vocab-image">🇪🇸</div>
+                    <div class="center-card" onclick="speak('L’Espagne')">
+                        <div class="emoji">🇪🇸</div>
                         <h3>L'Espagne</h3>
-                        <p class="translation">Spain</p>
+                        <p class="font-semibold red">Spain</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('Monaco')">
-                        <div class="vocab-image">🇲🇨</div>
+                    <div class="center-card" onclick="speak('Monaco')">
+                        <div class="emoji">🇲🇨</div>
                         <h3>Monaco</h3>
-                        <p class="translation">Monaco</p>
+                        <p class="font-semibold red">Monaco</p>
                     </div>
-                    <div class="vocab-card" onclick="speak('Le Royaume-Uni')">
-                        <div class="vocab-image">🇬🇧</div>
+                    <div class="center-card" onclick="speak('Le Royaume-Uni')">
+                        <div class="emoji">🇬🇧</div>
                         <h3>Le Royaume-Uni</h3>
-                        <p class="translation">United Kingdom</p>
+                        <p class="font-semibold red">United Kingdom</p>
                     </div>
                 </div>
             </section>
@@ -1516,7 +1510,7 @@
             container.innerHTML = "";
             options.forEach(opt => {
                 const btn = document.createElement('button');
-                btn.className = "vocab-card";
+                btn.className = "center-card";
                 btn.style.margin = "0";
                 btn.style.padding = "2rem 1rem";
                 btn.style.fontSize = "2rem";
