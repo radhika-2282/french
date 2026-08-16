@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { createHtmlPlugin } from 'vite-plugin-html';
 import injectHTML from 'vite-plugin-html-inject';
 import path from 'path'
 

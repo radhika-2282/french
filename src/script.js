@@ -33,5 +33,5 @@ function speakWithBrowserVoice(text) {
 }
 
 window.speak = speak;
-
+speak(document.body.dataset.name)
 
