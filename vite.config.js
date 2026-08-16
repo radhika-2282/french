@@ -8,6 +8,8 @@ export default defineConfig({
     injectHTML()
   ],
   build: {
+    minify: false,
+    cssMinify: false,
     rollupOptions: {
       input: {
         // Define your main entry point
