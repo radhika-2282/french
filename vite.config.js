@@ -5,9 +5,6 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [
-    createHtmlPlugin({
-      minify: true,
-    }),
     injectHTML()
   ],
   build: {
