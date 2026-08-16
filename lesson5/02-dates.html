@@ -1,0 +1,81 @@
+<section class="content-section">
+            <h2 style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Parler de la date et des mois')">💬 Parler de la date et des mois</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 3rem;">
+                <!-- Current Month -->
+                <div style="background: #f1f5f9; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Nous sommes en quel mois ? Nous sommes au mois de mars.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 10px;">❓ Nous sommes en quel mois ?</p>
+                    <p style="font-size: 1.2rem;">👉 Nous sommes au mois de mars.</p>
+                </div>
+
+                <!-- First Month -->
+                <div style="background: #e0f2fe; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quel est le premier mois de l’année ? C’est janvier.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 10px;">❓ Quel est le premier mois de l'année ?</p>
+                    <p style="font-size: 1.2rem;">👉 C'est janvier.</p>
+                </div>
+
+                <!-- Last Month -->
+                <div style="background: #fce7f3; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quel est le dernier mois de l’année ? Décembre est le dernier mois.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--primary-red); font-size: 1.3rem; margin-bottom: 10px;">❓ Quel est le dernier mois de l'année ?</p>
+                    <p style="font-size: 1.2rem;">👉 Décembre est le dernier mois.</p>
+                </div>
+
+                <!-- How many months -->
+                <div style="background: #fef3c7; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Il y a combien de mois dans une année ? Il y a douze mois.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--accent-yellow); font-size: 1.3rem; margin-bottom: 10px;">❓ Il y a combien de mois dans une année ?</p>
+                    <p style="font-size: 1.2rem;">👉 Il y a douze mois.</p>
+                </div>
+
+                <!-- Fourth month -->
+                <div style="background: #dcfce7; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quel est le quatrième mois de l’année ? Avril est le quatrième mois.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--accent-green); font-size: 1.3rem; margin-bottom: 10px;">❓ Quel est le quatrième mois de l'année ?</p>
+                    <p style="font-size: 1.2rem;">👉 Avril est le quatrième mois.</p>
+                </div>
+
+                <!-- Date Today (1st) -->
+                <div style="background: #f1f5f9; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quelle est la date aujourd’hui ? C’est le premier Mai.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 10px;">❓ Quelle est la date aujourd'hui? (1st)</p>
+                    <p style="font-size: 1.2rem;">👉 C'est le <strong style="color: var(--primary-red);">premier</strong> Mai.</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 5px;">*Use "premier" for the 1st of the month!</p>
+                </div>
+
+                <!-- Date Today (General) -->
+                <div style="background: #e0f2fe; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quelle est la date aujourd’hui ? C’est le cinq Mai. Nous sommes le cinq mai. On est le cinq mai.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 10px;">❓ Quelle est la date aujourd'hui? (General)</p>
+                    <div style="font-size: 1.2rem; display: flex; flex-direction: column; gap: 5px;">
+                        <span>👉 C'est le 5 Mai</span>
+                        <span>👉 Nous sommes le 5 mai</span>
+                        <span>👉 On est le 5 mai</span>
+                    </div>
+                </div>
+
+                <!-- Après Mars -->
+                <div style="background: #fef3c7; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quel mois vient après mars ? Avril vient après mars.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--accent-yellow); font-size: 1.3rem; margin-bottom: 10px;">❓ Quel mois vient après mars ?</p>
+                    <p style="font-size: 1.2rem;">👉 Avril vient après mars.</p>
+                </div>
+
+                <!-- Avant Mars -->
+                <div style="background: #dcfce7; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quel mois vient avant mars ? Février vient avant mars.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--accent-green); font-size: 1.3rem; margin-bottom: 10px;">❓ Quel mois vient avant mars ?</p>
+                    <p style="font-size: 1.2rem;">👉 Février vient avant mars.</p>
+                </div>
+            </div>
+        </section>

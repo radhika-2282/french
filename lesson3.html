@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lesson 3: Introductions - Learn French</title>
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./script.js" type="module" onload="speak('Lesson 3 - Se Présenter')"></script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="src/script.js" type="module" onload="speak('Lesson 3 - Se Présenter')"></script>
 </head>
 
 <body>
@@ -257,9 +257,11 @@
       <h2>🔤 Important Verbs</h2>
 
       <!-- Verb row: S'appeler, Avoir, Être -->
-      <div class="verbs-container" style="grid-template-columns: repeat(3, minmax(220px, 1fr)); display: grid; gap: 2rem; align-items: start;">
-        <!-- S'appeler section -->
-        <div class="verb-section" style="margin-bottom: 0;">
+      <!-- Verb rows: each verb tile on the left (20%), conversation area on the right -->
+      <div class="important-verbs-layout">
+        <!-- Row 1: S'appeler + existing conversation/focus -->
+        <div class="verb-row">
+          <div class="verb-side verb-section" style="margin-bottom: 0;">
           <h3>S'appeler (To call oneself)</h3>
           <div class="conjugation-table">
             <div class="conjugation-row" onclick="speak('Je m’appelle')">
@@ -295,104 +297,13 @@
             </div>
             <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Sing along to learn s'appeler!</p>
           </div>
-        </div>
+        
+          </div>
+          
 
-        <!-- Avoir Section -->
-        <div class="verb-section" style="margin-bottom: 0;">
-          <h3>Avoir (To have)</h3>
-          <div class="conjugation-table">
-            <div class="conjugation-row" onclick="speak('J’ai')">
-              <span class="pronoun">Je</span>
-              <span class="verb">ai (J'ai)</span>
-              <span class="mu-it text-xs">I
-                have</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Tu as')">
-              <span class="pronoun">Tu</span>
-              <span class="verb">as</span>
-              <span class="mu-it text-xs">You have</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Il a, Elle a, On a')">
-              <span class="pronoun">Il/Elle/On</span>
-              <span class="verb">a</span>
-              <span class="mu-it text-xs">He/She/One has</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Nous avons')">
-              <span class="pronoun">Nous</span>
-              <span class="verb">avons</span>
-              <span class="mu-it text-xs">We have</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Vous avez')">
-              <span class="pronoun">Vous</span>
-              <span class="verb">avez</span>
-              <span class="mu-it text-xs">You have</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Ils ont, Elles ont')">
-              <span class="pronoun">Ils/Elles</span>
-              <span class="verb">ont</span>
-              <span class="mu-it text-xs">They have</span>
-            </div>
-          </div>
-          <div style="text-align: center; margin-top: 1.5rem;">
-            <div class="video-wrapper" style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
-              <iframe src="https://www.youtube.com/embed/sVfbb5oo_3w" referrerpolicy="strict-origin-when-cross-origin"
-                title="Avoir Verb Practice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-            </div>
-            <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice conjugating Avoir with this video!</p>
-          </div>
-        </div>
-
-        <!-- Être Section -->
-        <div class="verb-section" style="margin-bottom: 0;">
-          <h3>Être (To be)</h3>
-          <div class="conjugation-table">
-            <div class="conjugation-row" onclick="speak('Je suis')">
-              <span class="pronoun">Je</span>
-              <span class="verb">suis</span>
-              <span class="mu-it text-xs">I am</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Tu es')">
-              <span class="pronoun">Tu</span>
-              <span class="verb">es</span>
-              <span class="mu-it text-xs">You are</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Il est, Elle est, On est')">
-              <span class="pronoun">Il/Elle/On</span>
-              <span class="verb">est</span>
-              <span class="mu-it text-xs">He/She/One is</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Nous sommes')">
-              <span class="pronoun">Nous</span>
-              <span class="verb">sommes</span>
-              <span class="mu-it text-xs">We are</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Vous êtes')">
-              <span class="pronoun">Vous</span>
-              <span class="verb">êtes</span>
-              <span class="mu-it text-xs">You
-                are</span>
-            </div>
-            <div class="conjugation-row" onclick="speak('Ils sont, Elles sont')">
-              <span class="pronoun">Ils/Elles</span>
-              <span class="verb">sont</span>
-              <span class="mu-it text-xs">They
-                are</span>
-            </div>
-          </div>
-          <div style="text-align: center; margin-top: 1.5rem;">
-            <div class="video-wrapper" style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
-              <iframe src="https://www.youtube.com/embed/9YzzAoLzEgg?start=20&end=56" referrerpolicy="strict-origin-when-cross-origin"
-                title="Être Verb Practice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-            </div>
-            <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice conjugating Être with this video!</p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow); margin-top: 3rem;">
+      <div class="conversation-side">
+            <div class="dialogue-section"
+              style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
         <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Comment tu
           t'appelles ?</h3>
         <div style="display: flex; flex-direction: column; gap: 1.2rem;">
@@ -432,8 +343,8 @@
 
         </div>
       </div>
-      <!-- Explanation for 'On' -->
-      <div class="accent-box yellow" style="margin-top: 2rem;">
+            <!-- Explanation for 'On' -->
+            <div class="tip-box" style="margin-top: 2rem; border-left: 5px solid var(--accent-yellow); background: #fffdf0;">
         <h3 class="blue" style="margin-bottom: 1rem;">💡 Focus on "On"</h3>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
           <div>
@@ -455,6 +366,296 @@
                 <strong>On a</strong> = we have / one has
               </li>
             </ul>
+          </div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Avoir + placeholder conversation -->
+        <div class="verb-row">
+          <div class="verb-side verb-section" style="margin-bottom: 0;">
+            <h3>Avoir (To have)</h3>
+            <div class="conjugation-table">
+              <div class="conjugation-row" onclick="speak('J\'ai')">
+                <span class="pronoun">Je</span>
+                <span class="verb">ai (J'ai)</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(I
+                  have)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Tu as')">
+                <span class="pronoun">Tu</span>
+                <span class="verb">as</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You
+                  have)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Il a, Elle a, On a')">
+                <span class="pronoun">Il/Elle/On</span>
+                <span class="verb">a</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(He/She/One
+                  has)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Nous avons')">
+                <span class="pronoun">Nous</span>
+                <span class="verb">avons</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(We
+                  have)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Vous avez')">
+                <span class="pronoun">Vous</span>
+                <span class="verb">avez</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You
+                  have)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Ils ont, Elles ont')">
+                <span class="pronoun">Ils/Elles</span>
+                <span class="verb">ont</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(They
+                  have)</span>
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 1.5rem;">
+              <div class="video-wrapper" style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+                <iframe src="https://www.youtube.com/embed/sVfbb5oo_3w" referrerpolicy="strict-origin-when-cross-origin"
+                  title="Avoir Verb Practice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                  allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+              </div>
+              <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice conjugating Avoir with this video!</p>
+            </div>
+          </div>
+          <div class="conversation-side">
+            <div class="dialogue-section"
+              style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
+              <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Avoir</h3>
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+                <div onclick="speak('J\'ai un stylo')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);">J'ai un stylo.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">I have a pen.</span>
+                </div>
+
+                <div onclick="speak('As-tu un ordinateur ?')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);">As-tu un ordinateur ?</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">Do you have a computer?</span>
+                </div>
+
+                <div onclick="speak('Il a une règle')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);">Il a une règle.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">He has a ruler.</span>
+                </div>
+
+                <div onclick="speak('Elle n\'a pas un taille-crayon')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);">Elle n'a pas un taille-crayon.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">She does not have a pencil sharpener.</span>
+                </div>
+
+                <div onclick="speak('Nous avons des livres')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);">Nous avons des livres.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">We have books.</span>
+                </div>
+
+                <div onclick="speak('Vous avez une colle ?')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);">Vous avez une colle ?</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">Do you have a glue stick?</span>
+                </div>
+
+                <div onclick="speak('Ils ont cours de français maintenant')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);">Ils ont cours de français maintenant.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">They have French class now.</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="content-section" style="margin: 0; padding: 0;">
+          <div class="tip-box" style="border-left: 5px solid var(--accent-green); background: #f8fafc; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+            <h3 style="margin: 0 0 0.4rem; text-align: center; color: var(--primary-blue);">Les Objets de Classe</h3>
+            <p style="margin: 0 0 1.5rem; text-align: center; color: var(--text-muted); font-style: italic;">Click each item to hear it in French.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr)); gap: 1rem;">
+              <div onclick="speak('Une gomme')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🧽</div>
+                <strong>Une gomme</strong>
+              </div>
+              <div onclick="speak('Une table')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🪑</div>
+                <strong>Une table</strong>
+              </div>
+              <div onclick="speak('Un taille-crayon')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">✏️</div>
+                <strong>Un taille-crayon</strong>
+              </div>
+              <div onclick="speak('Un crayon')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">✏️</div>
+                <strong>Un crayon</strong>
+              </div>
+
+              <div onclick="speak('Un livre')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📖</div>
+                <strong>Un livre</strong>
+              </div>
+              <div onclick="speak('Une horloge')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🕒</div>
+                <strong>Une horloge</strong>
+              </div>
+              <div onclick="speak('Un sac à dos')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🎒</div>
+                <strong>Un sac à dos</strong>
+              </div>
+              <div onclick="speak('Un stylo')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🖊️</div>
+                <strong>Un stylo</strong>
+              </div>
+
+              <div onclick="speak('Une chaise')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🪑</div>
+                <strong>Une chaise</strong>
+              </div>
+              <div onclick="speak('Des ciseaux')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">✂️</div>
+                <strong>Des ciseaux</strong>
+              </div>
+              <div onclick="speak('Une colle')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🧴</div>
+                <strong>Une colle</strong>
+              </div>
+              <div onclick="speak('Une règle')" style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+                <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📏</div>
+                <strong>Une règle</strong>
+              </div>
+            </div>
+
+            <div class="tip-box" style="margin-top: 1.5rem; border-left: 5px solid var(--accent-yellow); background: #fffdf0;">
+              <h4 style="margin-bottom: 0.5rem; color: var(--primary-blue);">💡 Focus: Un, Une, Des</h4>
+              <p style="margin: 0;"><strong>Un</strong> is for one masculine thing (un livre, un stylo).</p>
+              <p style="margin: 0.35rem 0 0;"><strong>Une</strong> is for one feminine thing (une gomme, une règle).</p>
+              <p style="margin: 0.35rem 0 0;"><strong>Des</strong> is for more than one thing (des ciseaux, des crayons).</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Row 3: Être + placeholder conversation -->
+        <div class="verb-row">
+          <div class="verb-side verb-section" style="margin-bottom: 0;">
+            <h3>Être (To be)</h3>
+            <div class="conjugation-table">
+              <div class="conjugation-row" onclick="speak('Je suis')">
+                <span class="pronoun">Je</span>
+                <span class="verb">suis</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(I am)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Tu es')">
+                <span class="pronoun">Tu</span>
+                <span class="verb">es</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You
+                  are)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Il est, Elle est, On est')">
+                <span class="pronoun">Il/Elle/On</span>
+                <span class="verb">est</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(He/She/One
+                  is)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Nous sommes')">
+                <span class="pronoun">Nous</span>
+                <span class="verb">sommes</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(We
+                  are)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Vous êtes')">
+                <span class="pronoun">Vous</span>
+                <span class="verb">êtes</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(You
+                  are)</span>
+              </div>
+              <div class="conjugation-row" onclick="speak('Ils sont, Elles sont')">
+                <span class="pronoun">Ils/Elles</span>
+                <span class="verb">sont</span>
+                <span class="trans" style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(They
+                  are)</span>
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 1.5rem;">
+              <div class="video-wrapper" style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+                <iframe src="https://www.youtube.com/embed/K0Lv8oCLbGc" referrerpolicy="strict-origin-when-cross-origin"
+                  title="Être Verb Practice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                  allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+              </div>
+              <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice conjugating Être with this video!</p>
+
+              <p style="margin: 1.1rem 0 0.6rem; color: var(--primary-blue); font-weight: 700;">Nationalities</p>
+              <div class="video-wrapper" style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+                <iframe src="https://www.youtube.com/embed/oRC1-TAs1EY" referrerpolicy="strict-origin-when-cross-origin"
+                  title="French Nationalities" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                  allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="conversation-side">
+            <div class="dialogue-section"
+              style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
+              <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Être</h3>
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+                <div onclick="speak('Je suis indienne')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👧</span>Je suis indienne.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">I am Indian. (female)</span>
+                </div>
+
+                <div onclick="speak('Tu es indien ?')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👦</span>Tu es indien ?</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">Are you Indian? (male)</span>
+                </div>
+
+                <div onclick="speak('Il est américain')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👨</span>Il est américain.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">He is American.</span>
+                </div>
+
+                <div onclick="speak('Elle est américaine')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👩</span>Elle est américaine.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">She is American.</span>
+                </div>
+
+                <div onclick="speak('Nous sommes étudiants')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👨‍🎓👩‍🎓</span>Nous sommes étudiants.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">We are students.</span>
+                </div>
+
+                <div onclick="speak('Vous êtes français ?')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👫</span>Vous êtes français ?</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">Are you French?</span>
+                </div>
+
+                <div onclick="speak('Ils sont australiens')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👨👨</span>Ils sont australiens.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">They are Australian. (male/mixed)</span>
+                </div>
+
+                <div onclick="speak('Elles sont japonaises')"
+                  style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+                  <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👩👩</span>Elles sont japonaises.</strong>
+                  <span style="color: var(--text-muted); font-style: italic; text-align: right;">They are Japanese. (female)</span>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,642 @@
+<section class="content-section">
+  <h2 onclick="speak('Jeux de rôle')" style="cursor: pointer" title="Click to hear pronunciation">🎭 Jeux de rôle - Role play</h2>
+
+  <div style="display: flex; flex-direction: column; gap: 3rem">
+    <!-- Informal Dialogue -->
+    <div class="example-box" style="margin-top: 0; border-left: 8px solid var(--accent-green)">
+      <h3
+        onclick="speak('Conversation informelle')"
+        style="cursor: pointer; color: var(--accent-green); display: flex; align-items: center; gap: 10px">
+        🤝 Conversation informelle
+        <span class="badge" style="background: var(--accent-green); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem">TU</span>
+      </h3>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted)">A casual chat between friends Marie and Alex.</p>
+
+      <div style="background: white; padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1rem">
+        <!-- Marie -->
+        <div
+          onclick="speak('Salut !', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            M
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Marie</p>
+            <p class="text-base">Salut !</p>
+          </div>
+          <span class="mu-it text-sm">Hi!</span>
+        </div>
+
+        <!-- Alex -->
+        <div
+          onclick="speak('Salut ! Comment ça va ?', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            A
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Alex</p>
+            <p class="text-base">Salut ! Comment ça va ?</p>
+          </div>
+          <span class="mu-it text-sm">Hi! How are you?</span>
+        </div>
+
+        <!-- Marie -->
+        <div
+          onclick="speak('Ça va bien. Merci. Et toi ?', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            M
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Marie</p>
+            <p class="text-base">Ça va bien. Merci. Et toi ?</p>
+          </div>
+          <span class="mu-it text-sm">I'm fine. Thank you. And you?</span>
+        </div>
+
+        <!-- Alex -->
+        <div
+          onclick="speak('Ça va très bien.', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            A
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Alex</p>
+            <p class="text-base">Ça va très bien.</p>
+          </div>
+          <span class="mu-it text-sm">I’m very good.</span>
+        </div>
+
+        <!-- Marie -->
+        <div
+          onclick="speak('Comment tu t’appelles ?', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            M
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Marie</p>
+            <p class="text-base">Comment tu t’appelles ?</p>
+          </div>
+          <span class="mu-it text-sm">What is your name?</span>
+        </div>
+
+        <!-- Alex -->
+        <div
+          onclick="speak('Je m’appelle Alex. Et toi ?', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            A
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Alex</p>
+            <p class="text-base">Je m’appelle Alex. Et toi ?</p>
+          </div>
+          <span class="mu-it text-sm">My name is Alex. And you?</span>
+        </div>
+
+        <!-- Marie -->
+        <div
+          onclick="speak('Je m’appelle Marie.', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            M
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Marie</p>
+            <p class="text-base">Je m’appelle Marie.</p>
+          </div>
+          <span class="mu-it text-sm">My name is Marie.</span>
+        </div>
+
+        <!-- Alex -->
+        <div
+          onclick="speak('Enchanté !', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            A
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Alex</p>
+            <p class="text-base">Enchanté !</p>
+          </div>
+          <span class="mu-it text-sm">Nice to meet you!</span>
+        </div>
+
+        <!-- Marie -->
+        <div
+          onclick="speak('Enchantée !', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            M
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Marie</p>
+            <p class="text-base">Enchantée !</p>
+          </div>
+          <span class="mu-it text-sm">Nice to meet you!</span>
+        </div>
+
+        <!-- Alex -->
+        <div
+          onclick="speak('Bon, je dois partir.', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            A
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Alex</p>
+            <p class="text-base">Bon, je dois partir.</p>
+          </div>
+          <span class="mu-it text-sm">Well, I have to leave.</span>
+        </div>
+
+        <!-- Marie -->
+        <div
+          onclick="speak('D’accord, à demain !', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            M
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Marie</p>
+            <p class="text-base">D’accord, à demain !</p>
+          </div>
+          <span class="mu-it text-sm">OK, see you tomorrow!</span>
+        </div>
+
+        <!-- Alex -->
+        <div
+          onclick="speak('À demain ! Salut !', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(42, 82, 190, 0.05); border: none">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            A
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Alex</p>
+            <p class="text-base">À demain ! Salut !</p>
+          </div>
+          <span class="mu-it text-sm">See you tomorrow! Bye!</span>
+        </div>
+
+        <!-- Marie -->
+        <div
+          onclick="speak('Salut !', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; background: rgba(233, 30, 99, 0.05); border: none">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            M
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Marie</p>
+            <p class="text-base">Salut !</p>
+          </div>
+          <span class="mu-it text-sm">Bye!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formal Dialogue -->
+    <div class="example-box" style="margin-top: 0; border-left: 8px solid var(--primary-blue)">
+      <h3 onclick="speak('Conversation formelle')" style="cursor: pointer; color: var(--primary-blue); display: flex; align-items: center; gap: 10px">
+        🎩 Conversation formelle
+        <span class="badge" style="background: var(--primary-blue); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem"
+          >VOUS</span
+        >
+      </h3>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted)">A polite exchange between Paul and Madame Sophie.</p>
+
+      <div style="background: white; padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; gap: 1rem">
+        <div
+          onclick="speak('Bonjour Madame. Comment allez-vous ?', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05)">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            P
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Paul</p>
+            <p class="text-base">Bonjour Madame. Comment allez-vous ?</p>
+          </div>
+          <span class="mu-it text-sm">Good morning Madam. How are you?</span>
+        </div>
+
+        <div
+          onclick="speak('Bonjour Monsieur. Je vais bien, merci. Et vous ?', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05)">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            S
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Sophie</p>
+            <p class="text-base">Bonjour Monsieur. Je vais bien, merci. Et vous ?</p>
+          </div>
+          <span class="mu-it text-sm">Good morning Sir. I am doing well, thank you. And you?</span>
+        </div>
+
+        <div
+          onclick="speak('Très bien, merci. Comment vous appelez-vous ?', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05)">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            P
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Paul</p>
+            <p class="text-base">Très bien, merci. Comment vous appelez-vous ?</p>
+          </div>
+          <span class="mu-it text-sm">Very well, thank you. What is your name?</span>
+        </div>
+
+        <div
+          onclick="speak('Je m’appelle Sophie. Et vous ?', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05)">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            S
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Sophie</p>
+            <p class="text-base">Je m'appelle Sophie. Et vous ?</p>
+          </div>
+          <span class="mu-it text-sm">My name is Sophie. And you?</span>
+        </div>
+
+        <div
+          onclick="speak('Je m’appelle Paul. Ravi de faire votre connaissance, Madame.', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05)">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            P
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Paul</p>
+            <p class="text-base">Je m’appelle Paul. Ravi de faire votre connaissance, Madame.</p>
+          </div>
+          <span class="mu-it text-sm">My name is Paul. Nice to meet you, Madam.</span>
+        </div>
+
+        <div
+          onclick="speak('Moi de même, Monsieur.', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05)">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            S
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Sophie</p>
+            <p class="text-base">Moi de même, Monsieur.</p>
+          </div>
+          <span class="mu-it text-sm">Nice to meet you too, Sir.</span>
+        </div>
+
+        <div
+          onclick="speak('Bonne journée, Madame.', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05)">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            P
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Paul</p>
+            <p class="text-base">Bonne journée, Madame.</p>
+          </div>
+          <span class="mu-it text-sm">Have a good day, Madam.</span>
+        </div>
+
+        <div
+          onclick="speak('Bonne journée, Monsieur. À bientôt !', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05)">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            S
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Sophie</p>
+            <p class="text-base">Bonne journée, Monsieur. À bientôt !</p>
+          </div>
+          <span class="mu-it text-sm">Have a good day, Sir. See you soon!</span>
+        </div>
+
+        <div
+          onclick="speak('Au revoir Madame.', 'male')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(42, 82, 190, 0.05)">
+          <div
+            style="
+              background: var(--primary-blue);
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            P
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: var(--primary-blue); font-size: 0.8rem">Paul</p>
+            <p class="text-base">Au revoir Madame.</p>
+          </div>
+          <span class="mu-it text-sm">Goodbye Madam.</span>
+        </div>
+
+        <div
+          onclick="speak('Au revoir Monsieur.', 'female')"
+          class="left-card"
+          style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05)">
+          <div
+            style="
+              background: #e91e63;
+              color: white;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              flex-shrink: 0;
+            ">
+            S
+          </div>
+          <div style="flex-grow: 1">
+            <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem">Sophie</p>
+            <p class="text-base">Au revoir Monsieur.</p>
+          </div>
+          <span class="mu-it text-sm">Goodbye Sir.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

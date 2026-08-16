@@ -1,0 +1,75 @@
+<!-- Spelling Names -->
+      <section class="content-section">
+        <h2>⌨️ Spelling Names</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem">
+          <!-- Key Question -->
+          <div style="display: flex; flex-direction: column; gap: 1rem">
+            <div class="accent-box red bg-white fill-hr" onclick="speak('Comment ça s’épelle')">
+              <h3>Comment ça s’épelle?</h3>
+              <span class="mu-it text-base">How do you spell it?</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin: 0; padding: 0 0.5rem">
+              Use this question to ask someone how to spell their name or any word.
+            </p>
+          </div>
+
+          <!-- Mini-Conversation -->
+          <div class="accent-box blue bg-white">
+            <h4 class="blue" style="margin-top: 0; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 8px">
+              💬 Mini-Conversation
+            </h4>
+            <div style="display: flex; flex-direction: column; gap: 0.8rem">
+              <div
+                onclick="speak('Bonjour ! Comment tu t’appelles ?', 'female')"
+                style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s"
+                onmouseover="this.style.background = 'white'"
+                onmouseout="this.style.background = 'transparent'">
+                <strong>A:</strong>
+                <span style="color: var(--primary-blue)">Bonjour ! Comment tu t’appelles ?</span>
+              </div>
+              <div
+                onclick="speak('Je m’appelle Lucas', 'male')"
+                style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s; margin-bottom: 0.5rem"
+                onmouseover="this.style.background = 'white'"
+                onmouseout="this.style.background = 'transparent'">
+                <strong>B:</strong>
+                <span style="color: var(--text-main)">Je m’appelle Lucas.</span>
+              </div>
+              <hr style="border: none; border-top: 1px dashed #ccc; margin: 0.5rem 0" />
+              <div
+                onclick="speak('Comment ça s’épelle ?', 'female')"
+                style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s"
+                onmouseover="this.style.background = 'white'"
+                onmouseout="this.style.background = 'transparent'">
+                <strong>A:</strong>
+                <span style="color: var(--primary-blue)">Comment ça s’épelle ?</span>
+              </div>
+              <div
+                onclick="speak('El - U - say - ah - s', 'male')"
+                style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s; margin-bottom: 0.5rem"
+                onmouseover="this.style.background = 'white'"
+                onmouseout="this.style.background = 'transparent'">
+                <strong>B:</strong>
+                <span style="color: var(--text-main)">L-U-C-A-S.</span>
+              </div>
+              <hr style="border: none; border-top: 1px dashed #ccc; margin: 0.5rem 0" />
+              <div
+                onclick="speak('Merci !', 'female')"
+                style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s"
+                onmouseover="this.style.background = 'white'"
+                onmouseout="this.style.background = 'transparent'">
+                <strong>A:</strong>
+                <span style="color: var(--primary-blue)">Merci !</span>
+              </div>
+              <div
+                onclick="speak('De rien !', 'male')"
+                style="cursor: pointer; padding: 4px 8px; border-radius: 6px; transition: background 0.2s"
+                onmouseover="this.style.background = 'white'"
+                onmouseout="this.style.background = 'transparent'">
+                <strong>B:</strong>
+                <span style="color: var(--text-main)">De rien !</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

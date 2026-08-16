@@ -1,0 +1,160 @@
+<!-- French Speaking Countries -->
+      <section class="content-section">
+        <h2 onclick="speak('Culture et Civilisation: Les Pays Francophones')" style="cursor: pointer" title="Click to hear pronunciation">
+          🌍 Culture et Civilisation: Les Pays Francophones(French Speaking Countries)
+        </h2>
+
+        <div
+          style="
+            text-align: center;
+            margin: 2rem 0;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+          ">
+          <img
+            src="/images/map.jpg"
+            alt="Map of French Speaking Countries"
+            style="max-width: 100%; height: auto; border-radius: var(--radius-md)" />
+          <p class="mu-it text-sm" style="margin-top: 1rem">Map of French-speaking countries around the world</p>
+        </div>
+        <!-- French Speaking Countries Map -->
+
+        <div class="tip-box">
+          <p>
+            French is an official language in
+            <strong>29 countries</strong> around the world! These countries are spread across different regions:
+          </p>
+          <ul style="margin-top: 1rem; list-style-type: none">
+            <li>🌍 <strong>Europe</strong> (like France, Belgium, Switzerland)</li>
+            <li>🌍 <strong>Africa</strong> (largest number of French-speaking countries)</li>
+            <li>🌍 <strong>North America</strong> (Canada)</li>
+            <li>🌍 <strong>Caribbean & Pacific islands</strong> (Haiti, French Polynesia)</li>
+          </ul>
+        </div>
+
+        <h3 style="margin-top: 2rem">Click on a country to hear its name in French:</h3>
+        <div class="grid min-200">
+          <div class="center-card" onclick="speak('La France')">
+            <div class="emoji">🇫🇷</div>
+            <h3>La France</h3>
+            <p>France</p>
+          </div>
+          <div class="center-card" onclick="speak('Le Canada')">
+            <div class="emoji">🇨🇦</div>
+            <h3>Le Canada</h3>
+            <p>Canada</p>
+          </div>
+          <div class="center-card" onclick="speak('La Belgique')">
+            <div class="emoji">🇧🇪</div>
+            <h3>La Belgique</h3>
+            <p>Belgium</p>
+          </div>
+          <div class="center-card" onclick="speak('La Suisse')">
+            <div class="emoji">🇨🇭</div>
+            <h3>La Suisse</h3>
+            <p>Switzerland</p>
+          </div>
+          <div class="center-card" onclick="speak('Le Sénégal')">
+            <div class="emoji">🇸🇳</div>
+            <h3>Le Sénégal</h3>
+            <p>Senegal</p>
+          </div>
+          <div class="center-card" onclick="speak('La Côte d’Ivoire')">
+            <div class="emoji">🇨🇮</div>
+            <h3>La Côte d'Ivoire</h3>
+            <p>Ivory Coast</p>
+          </div>
+          <div class="center-card" onclick="speak('Le Cameroun')">
+            <div class="emoji">🇨🇲</div>
+            <h3>Le Cameroun</h3>
+            <p>Cameroon</p>
+          </div>
+          <div class="center-card" onclick="speak('Le Burkina Faso')">
+            <div class="emoji">🇧🇫</div>
+            <h3>Le Burkina Faso</h3>
+            <p>Burkina Faso</p>
+          </div>
+          <div class="center-card" onclick="speak('Madagascar')">
+            <div class="emoji">🇲🇬</div>
+            <h3>Madagascar</h3>
+            <p>Madagascar</p>
+          </div>
+          <div class="center-card" onclick="speak('Haïti')">
+            <div class="emoji">🇭🇹</div>
+            <h3>Haïti</h3>
+            <p>Haiti</p>
+          </div>
+          <div class="center-card" onclick="speak('Le Luxembourg')">
+            <div class="emoji">🇱🇺</div>
+            <h3>Le Luxembourg</h3>
+            <p>Luxembourg</p>
+          </div>
+          <div class="center-card" onclick="speak('Monaco')">
+            <div class="emoji">🇲🇨</div>
+            <h3>Monaco</h3>
+            <p>Monaco</p>
+          </div>
+          <div class="center-card" onclick="speak('L’Algérie')">
+            <div class="emoji">🇩🇿</div>
+            <h3>L'Algérie</h3>
+            <p>Algeria</p>
+          </div>
+          <div class="center-card" onclick="speak('L’Île Maurice')">
+            <div class="emoji">🇲🇺</div>
+            <h3>L'Île Maurice</h3>
+            <p>Mauritius</p>
+          </div>
+          <div class="center-card" onclick="speak('Les Seychelles')">
+            <div class="emoji">🇸🇨</div>
+            <h3>Les Seychelles</h3>
+            <p>Seychelles</p>
+          </div>
+          <div class="center-card" onclick="speak('Le Mali')">
+            <div class="emoji">🇲🇱</div>
+            <h3>Le Mali</h3>
+            <p>Mali</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem">
+          <div
+            class="video-wrapper"
+            style="
+              position: relative;
+              max-width: 300px;
+              padding-bottom: 300px;
+              height: 0;
+              overflow: hidden;
+              border-radius: 16px;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+              margin: 1rem auto;
+            ">
+            <iframe
+              id="francophone-video"
+              src="https://www.youtube.com/embed/LUhJ9x3xcOM?enablejsapi=1"
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="French Around the World"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"></iframe>
+          </div>
+          <p class="mu-it">Watch this video to see where French is spoken around the world!</p>
+        </div>
+        <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      let player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("francophone-video", {
+          events: {
+            onReady: function (event) {
+              // Sets playback speed to 0.75 for slower, clearer speech
+              event.target.setPlaybackRate(0.75);
+            },
+          },
+        });
+      }
+    </script>
+      </section>

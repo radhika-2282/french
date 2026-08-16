@@ -3,7 +3,7 @@ function speak(word) {
     let fileHash = md5(word);
     // 1. Construct the path to the voice file
     // Assumes 'public' is the root directory of your web server
-    const audioPath = `./voices/${fileHash}.mp3`;
+    const audioPath = `/voices/${fileHash}.mp3`;
 
     // 2. Create a new Audio object and play it
     const audio = new Audio(audioPath);
@@ -19,8 +19,6 @@ function speak(word) {
     });
         
 }
-
-    
 
 function speakWithBrowserVoice(text) {
     if (!('speechSynthesis' in window)) return;

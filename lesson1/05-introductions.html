@@ -1,0 +1,77 @@
+<!-- Introductions & Names -->
+<section class="content-section">
+    <h2>👋 Introductions & Names</h2>
+
+    <div class="example-box">
+        <h3 class="text-2xl blue">❓ Asking for Names</h3>
+        <div class="grid min-200">
+        <div class="left-card" onclick="speak('Comment tu t’appelles')">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+            <span class="text-xl font-bold red">Comment tu t'appelles?</span>
+            <span
+                class="badge"
+                style="background: var(--accent-green); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold"
+                >INFORMAL</span
+            >
+            </div>
+            <span class="mu-it text-base">What is your name?</span>
+        </div>
+        <div class="left-card" onclick="speak('Comment vous appelez-vous')">
+            <div style="display: flex; justify-content: space-between; align-items: center">
+            <span class="text-xl font-bold red">Comment vous appelez-vous?</span>
+            <span
+                class="badge"
+                style="background: var(--primary-blue); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold"
+                >FORMAL</span
+            >
+            </div>
+            <span class="mu-it text-base">What is your name?</span>
+        </div>
+        </div>
+    </div>
+
+    <!-- Side-by-Side Layout -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem">
+        <div class="example-box">
+        <h3 class="text-2xl blue">👤 Saying your name</h3>
+        <div class="grid min-200" style="grid-template-columns: 1fr; gap: 1rem">
+            <div class="center-card" onclick="speak('Je m’appelle')">
+            <div class="emoji">👤</div>
+            <h3>Je m'appelle...</h3>
+            <p>My name is...</p>
+            </div>
+            <div class="center-card" onclick="speak('Je suis')">
+            <div class="emoji">🪪</div>
+            <h3>Je suis...</h3>
+            <p>I am...</p>
+            </div>
+            <div class="center-card" onclick="speak('Moi c’est')">
+            <div class="emoji">🗣️</div>
+            <h3>Moi, c'est...</h3>
+            <p>Me, this is... (Informal)</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="example-box">
+        <h3 class="text-2xl blue">💡 Practice Introductions</h3>
+        <div class="grid min-200" style="grid-template-columns: 1fr; gap: 1rem">
+            <div class="center-card" onclick="speak('Je m’appelle Alice')">
+            <div class="emoji">👩‍🏫</div>
+            <h3>Je m'appelle Alice.</h3>
+            <p>My name is Alice.</p>
+            </div>
+            <div class="center-card" onclick="speak('Je suis Marc')">
+            <div class="emoji">👨‍💼</div>
+            <h3>Je suis Marc.</h3>
+            <p>I am Marc.</p>
+            </div>
+            <div class="center-card" onclick="speak('Moi c’est Thomas')">
+            <div class="emoji">👦</div>
+            <h3>Moi, c'est Thomas.</h3>
+            <p>Me, this is Thomas.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>

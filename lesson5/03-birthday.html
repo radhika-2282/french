@@ -1,0 +1,112 @@
+<section class="content-section" style="background: linear-gradient(135deg, #fff5f5 0%, #fff0f6 100%); border: 2px solid #ffdeeb; padding: 2.5rem; border-radius: 20px; margin-bottom: 3rem;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: nowrap; white-space: nowrap;">
+                <h2 style="color: #d6336c; font-size: 2rem; margin: 0; cursor: pointer;" onclick="speak('Joyeux Anniversaire')">Joyeux Anniversaire</h2>
+                <img src="images/birthday_cake.png" alt="Birthday Cake" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 5px solid white; box-shadow: var(--shadow-md); flex-shrink: 0;">
+                <h2 style="color: #d6336c; font-size: 2rem; margin: 0; cursor: pointer;" onclick="speak('Bon Anniversaire')">Bon Anniversaire</h2>
+            </div>
+            
+            <h3 style="color: #d6336c; text-align: center; margin-bottom: 2rem; cursor: pointer;" onclick="speak('Chantons ! Joyeux Anniversaire')">🎶 Chantons ! (Let's Sing!)</h3>
+            
+            <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; background: white; padding: 2rem; border-radius: 15px; box-shadow: var(--shadow-md);">
+                <!-- Stanza 1 -->
+                <div style="border-left: 4px solid #f06595; padding-left: 20px;">
+                    <div style="margin-bottom: 1.5rem; cursor: pointer;" onclick="speak('Joyeux anniversaire!')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Joyeux anniversaire !</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Happy Birthday!</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem; cursor: pointer;" onclick="speak('Heureux anniversaire!')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Heureux anniversaire !</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Happy Birthday!</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem; cursor: pointer;" onclick="speak('Tous nos vœux sont sincères,')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Tous nos vœux sont sincères,</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">All our wishes are sincere,</p>
+                    </div>
+                    <div style="cursor: pointer;" onclick="speak('Pour ton anniversaire!')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Pour ton anniversaire !</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">For your birthday!</p>
+                    </div>
+                </div>
+
+                <!-- Stanza 2 -->
+                <div style="border-left: 4px solid #f06595; padding-left: 20px;">
+                    <div style="margin-bottom: 1.5rem; cursor: pointer;" onclick="speak('Tes amis aujourd’hui,')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Tes amis aujourd’hui,</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Your friends today,</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem; cursor: pointer;" onclick="speak('Se sont tous réunis.')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Se sont tous réunis.</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Have gathered.</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem; cursor: pointer;" onclick="speak('Ton bonheur on l’espère,')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Ton bonheur on l’espère,</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">We hope for your happiness,</p>
+                    </div>
+                    <div style="cursor: pointer;" onclick="speak('Pour ton anniversaire!')">
+                        <p style="font-weight: bold; color: #d6336c; font-size: 1.2rem; margin: 0;">Pour ton anniversaire !</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">For your birthday!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Audio Player Section -->
+            <div style="background: white; border-radius: 20px; padding: 2rem; box-shadow: var(--shadow-md); margin-top: 2rem; border: 2px solid #ffdeeb;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; max-width: 600px; margin: 0 auto;">
+                    <!-- Audio Icon -->
+                    <div style="width: 80px; height: 80px; background: #fff0f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0; border: 3px solid #ffdeeb; box-shadow: 0 4px 10px rgba(214, 51, 108, 0.1);">
+                        🎵
+                    </div>
+                    
+                    <!-- Info & Controls -->
+                    <div style="flex-grow: 1;">
+                        <h3 style="color: #d6336c; margin: 0 0 5px 0; font-size: 1.2rem;">Chanson : Joyeux Anniversaire</h3>
+                        <p style="color: var(--text-muted); margin: 0 0 15px 0; font-size: 0.9rem;">Écoutez la chanson traditionnelle</p>
+                        
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <button id="play-pause-btn" onclick="toggleAudio()" style="background: #d6336c; color: white; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; transition: all 0.2s; box-shadow: 0 4px 8px rgba(214, 51, 108, 0.3);">
+                                <span id="play-icon">▶️</span>
+                            </button>
+                            
+                            <div style="flex-grow: 1; height: 8px; background: #f1f5f9; border-radius: 4px; position: relative; overflow: hidden; cursor: pointer;" onclick="seekAudio(event)">
+                                <div id="audio-progress" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: #d6336c; border-radius: 4px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hidden YouTube Player Container -->
+                <div id="youtube-audio-player" style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none;"></div>
+            </div>
+        </section>
+        <section class="content-section">
+            <h2 style="color: var(--primary-red); cursor: pointer;" onclick="speak('Questions sur l’Anniversaire')">❓ Questions sur l'Anniversaire</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 3rem;">
+                <!-- Birthday Date -->
+                <div style="background: #fff5f5; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quelle est la date de ton anniversaire ? Mon anniversaire , c’est le quinze janvier.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: var(--primary-red); font-size: 1.3rem; margin-bottom: 10px;">❓ Quelle est la date de ton anniversaire ?</p>
+                    <p style="font-size: 1.2rem;">👉 Mon anniversaire, c’est le 15 janvier.</p>
+                </div>
+
+                <!-- Birthday Month -->
+                <div style="background: #fff0f6; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quant est ton anniversaire? Mon anniversaire est en janvier.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: #d6336c; font-size: 1.3rem; margin-bottom: 10px;">❓ Quand est ton anniversaire ?</p>
+                    <p style="font-size: 1.2rem;">👉 Mon anniversaire est en janvier.</p>
+                </div>
+
+                <!-- When were you born -->
+                <div style="background: #fdf2f8; padding: 20px; border-radius: 15px; cursor: pointer; transition: transform 0.2s;"
+                    onclick="speak('Quant es-tu né ? Quant êtes-vous né ? Je suis né en avril. Je suis né le douze avril deux mille dix-huit.')"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <p style="font-weight: bold; color: #c2255c; font-size: 1.3rem; margin-bottom: 10px;">❓ Quand es-tu né(e) ? / Quand êtes-vous né(e) ?</p>
+                    <div style="font-size: 1.2rem; display: flex; flex-direction: column; gap: 10px;">
+                        <span>👉 Je suis <strong style="color: #d6336c;">né(e)</strong> en avril.</span>
+                        <span>👉 Je suis <strong style="color: #d6336c;">né(e)</strong> le 12 avril 2018.</span>
+                        <span style="font-size: 0.95rem; color: var(--text-muted); font-style: italic;">(le douze avril deux mille dix-huit)</span>
+                    </div>
+                </div>
+            </div>
+        </section>

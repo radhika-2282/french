@@ -1,0 +1,271 @@
+ <!-- Role Play Section -->
+        <section class="content-section tip-box"
+            style="margin-top: 4rem; border-left: 5px solid var(--primary-red); background: #fff5f5; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md);">
+            <h2 style="color: var(--primary-red); text-align: center; font-size: 2.2rem; margin-bottom: 2rem; cursor: pointer;"
+                onclick="speak('Jeux de rôles')">🎭 Jeux de Rôles (Role-Play)</h2>
+
+            <!-- Picture Placeholder -->
+            <div
+                style="text-align: center; margin-bottom: 3rem; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 2px dashed var(--primary-red);">
+                <div style="font-size: 5rem; margin-bottom: 10px;">👦👧👱‍♂️</div>
+                <p style="color: var(--text-muted); font-style: italic;">Leo, Maya and Nick are chatting at school...
+                </p>
+            </div>
+
+            <div class="dialogue-container"
+                style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+                <!-- Greeting -->
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Salut tout le monde!', 'male')">
+                    <div
+                        style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        L</div>
+                    <div style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s;"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <strong style="color: var(--primary-blue);">Leo:</strong> Salut tout le monde!
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+                    onclick="speak('Salut Leo!', 'female')">
+                    <div style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s; text-align: right;"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <strong style="color: #e91e63;">Maya:</strong> Salut Leo!
+                    </div>
+                    <div
+                        style="background: #e91e63; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        M</div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;" onclick="speak('Bonjour!', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s;"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Bonjour!
+                    </div>
+                </div>
+
+                <!-- Discussion about Days -->
+                <div style="display: flex; align-items: flex-start; gap: 15px; margin-top: 10px;"
+                    onclick="speak('Aujourd’hui, c’est vendredi.', 'male')">
+                    <div
+                        style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        L</div>
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--primary-blue);">Leo:</strong> Aujourd’hui, c’est vendredi.
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+                    onclick="speak('Oui, et demain c’est samedi.', 'female')">
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
+                        <strong style="color: #e91e63;">Maya:</strong> Oui, et demain c’est samedi.
+                    </div>
+                    <div
+                        style="background: #e91e63; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        M</div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Samedi et dimanche, c’est le week-end!', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Samedi et dimanche, c’est le
+                        week-end!
+                    </div>
+                </div>
+
+                <!-- Discussion about Subjects -->
+                <div style="display: flex; align-items: flex-start; gap: 15px; margin-top: 10px;"
+                    onclick="speak('Quelle matière avez-vous le vendredi?', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Quelle matière avez-vous le vendredi?
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Le vendredi, j’ai les sciences, l’anglais et le sport.', 'male')">
+                    <div
+                        style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        L</div>
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--primary-blue);">Leo:</strong> Le vendredi, j’ai les sciences,
+                        l’anglais et le sport.
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+                    onclick="speak('Moi, j’ai les mathématiques.', 'female')">
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
+                        <strong style="color: #e91e63;">Maya:</strong> Moi, j’ai les mathématiques.
+                    </div>
+                    <div
+                        style="background: #e91e63; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        M</div>
+                </div>
+
+                <!-- About Difficulty -->
+                <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+                    onclick="speak('Les maths, c’est difficile!', 'female')">
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
+                        <strong style="color: #e91e63;">Maya:</strong> Les maths, c’est difficile!
+                    </div>
+                    <div
+                        style="background: #e91e63; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        M</div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Oui, les maths sont un peu difficiles.', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Oui, les maths sont un peu
+                        difficiles.
+                    </div>
+                </div>
+
+                <!-- Preferences -->
+                <div style="display: flex; align-items: flex-start; gap: 15px; margin-top: 10px;"
+                    onclick="speak('Quelle est ta matière préférée, Nick?', 'male')">
+                    <div
+                        style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        L</div>
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--primary-blue);">Leo:</strong> Quelle est ta matière préférée, Nick?
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Ma matière préférée est les sciences. Et toi?', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Ma matière préférée est les sciences.
+                        Et toi?
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+                    onclick="speak('Moi, j’aime le français.', 'female')">
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
+                        <strong style="color: #e91e63;">Maya:</strong> Moi, j’aime le français.
+                    </div>
+                    <div
+                        style="background: #e91e63; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        M</div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Moi, j’aime le sport.', 'male')">
+                    <div
+                        style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        L</div>
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--primary-blue);">Leo:</strong> Moi, j’aime le sport.
+                    </div>
+                </div>
+
+                <!-- Weekend Activities -->
+                <div style="display: flex; align-items: flex-start; gap: 15px; margin-top: 10px;"
+                    onclick="speak('Qu’est-ce que tu fais le week-end?', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Qu’est-ce que tu fais le week-end?
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Le week-end je joue au cricket.', 'male')">
+                    <div
+                        style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        L</div>
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--primary-blue);">Leo:</strong> Le week-end je joue au cricket.
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+                    onclick="speak('Moi, je regarde la télévision et je joue au tennis.', 'female')">
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
+                        <strong style="color: #e91e63;">Maya:</strong> Moi, je regarde la télévision et je joue au
+                        tennis.
+                    </div>
+                    <div
+                        style="background: #e91e63; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        M</div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Moi, je lis un livre et je joue avec mes amis.', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Moi, je lis un livre et je joue avec
+                        mes amis.
+                    </div>
+                </div>
+
+                <!-- Farewell -->
+                <div style="display: flex; align-items: flex-start; gap: 15px; margin-top: 10px;"
+                    onclick="speak('Super! Bon week-end!', 'male')">
+                    <div
+                        style="background: var(--primary-blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        L</div>
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--primary-blue);">Leo:</strong> Super! Bon week-end!
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;"
+                    onclick="speak('Au revoir! À lundi', 'male')">
+                    <div
+                        style="background: var(--accent-green); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        N</div>
+                    <div
+                        style="background: #f0fdf4; padding: 12px 20px; border-radius: 0 15px 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+                        <strong style="color: var(--accent-green);">Nick:</strong> Au revoir! À lundi
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+                    onclick="speak('À bientôt!', 'female')">
+                    <div
+                        style="background: white; padding: 12px 20px; border-radius: 15px 0 15px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; text-align: right;">
+                        <strong style="color: #e91e63;">Maya:</strong> À bientôt!
+                    </div>
+                    <div
+                        style="background: #e91e63; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                        M</div>
+                </div>
+            </div>
+        </section>

@@ -1,0 +1,352 @@
+<section class="content-section">
+            <h2 onclick="speak('Quelle heure est-il ?')" style="cursor: pointer;" title="Click to hear pronunciation">🕐
+                Quelle heure est-il ?</h2>
+            <p onclick="speak('Il est quelle heure ?')"
+                style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-top: -1rem; margin-bottom: 3rem; cursor: pointer;">
+                Il est quelle heure ? <span style="font-style: italic; color: #64748b; font-size: 1rem;">– What time is
+                    it?</span></p>
+
+            <div class="grid min-200" style="grid-template-columns: repeat(3, 1fr);">
+                <!-- 1:00 -->
+                <div class="center-card" onclick="speak('Il est une heure')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(30deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est une heure</h3>
+                    <p class="font-semibold red">It's 1:00</p>
+                </div>
+
+                <!-- 2:00 -->
+                <div class="center-card" onclick="speak('Il est deux heures')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(60deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est deux heures</h3>
+                    <p class="font-semibold red">It's 2:00</p>
+                </div>
+
+                <!-- 3:00 -->
+                <div class="center-card" onclick="speak('Il est trois heures')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(90deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est trois heures</h3>
+                    <p class="font-semibold red">It's 3:00</p>
+                </div>
+            </div>
+
+            <div class="grid min-200"
+                style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <!-- 10:05 AM -->
+                <div class="center-card" onclick="speak('il est dix heures cinq du matin')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(302.5deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(30deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est dix heures cinq du matin</h3>
+                    <p class="font-semibold red">It's 10:05 in the morning (10:05 AM)</p>
+                </div>
+
+                <!-- 5:10 PM -->
+                <div class="center-card" onclick="speak('il est cinq heures dix du soir')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(155deg)"></div>
+                                <div class="minute-hand" style="transform: rotate(60deg)"></div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est cinq heures dix du soir</h3>
+                    <p class="font-semibold red">It's 5:10 in the evening (5:10 PM)</p>
+                </div>
+            </div>
+
+            <div class="grid min-200" style="grid-template-columns: repeat(3, 1fr); margin-top: 3rem;">
+                <!-- Midi -->
+                <div class="center-card" onclick="speak('Il est midi')">
+                    <div class="analog-clock" style="background: rgba(255, 215, 0, 0.1); border-color: gold;">
+                        <div class="clock-face">
+                            <div class="clock-center" style="background: gold;"></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(0deg); width: 4px; height: 35%;"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Il est midi</h3>
+                    <p class="font-semibold red">It's Noon (Mid afternoon)</p>
+                </div>
+
+                <!-- Minuit -->
+                <div class="center-card" onclick="speak('Il est minuit')">
+                    <div class="analog-clock" style="background: #1e293b; border-color: #64748b;">
+                        <div class="clock-face">
+                            <div class="clock-center" style="background: #64748b;"></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand"
+                                    style="background: white; transform: rotate(0deg); width: 4px; height: 35%;"></div>
+                                <div class="minute-hand"
+                                    style="background: #cbd5e1; transform: rotate(0deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Il est minuit</h3>
+                    <p class="font-semibold red">It's Midnight</p>
+                </div>
+
+                <!-- Douze heures de l'après midi -->
+                <div class="center-card" onclick="speak('Il est douze heures de l’après-midi')">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(0deg); width: 4px; height: 35%;"></div>
+                                <div class="minute-hand" style="transform: rotate(0deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <h3>Il est douze heures de l'après midi</h3>
+                    <p class="font-semibold red">It's afternoon 12 (12:00 PM)</p>
+                </div>
+            </div>
+
+            <div class="grid min-200"
+                style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; gap: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <!-- 5:15 consolidated with 3 buttons -->
+                <div class="center-card" style="cursor: default; padding: 1.5rem;">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(157.5deg); width: 4px; height: 35%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(90deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px; width: 100%;">
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures quinze')"
+                            style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures quinze
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures et quart')"
+                            style="background: rgba(var(--accent-green-rgb), 0.05); border: 1px solid var(--accent-green); color: var(--accent-green); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures et quart
+                        </button>
+                        <button class="interactive-pill" onclick="speak('quart')"
+                            style="background: #f8fafc; border: 1px dashed #64748b; color: #64748b; padding: 8px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: 0.3s; width: 100%;">
+                            15 = quart (quarter)
+                        </button>
+                    </div>
+                    <p class="font-semibold red" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:15 /
+                        Quarter past five)</p>
+                </div>
+
+                <!-- 5:30 consolidated with 3 buttons -->
+                <div class="center-card" style="cursor: default; padding: 1.5rem;">
+                    <div class="analog-clock">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(165deg); width: 4px; height: 35%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(180deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px; width: 100%;">
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures trente')"
+                            style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures trente
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures et demie')"
+                            style="background: rgba(233, 30, 99, 0.05); border: 1px solid #e91e63; color: #e91e63; padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: 0.3s; width: 100%;">
+                            Il est cinq heures et demie
+                        </button>
+                        <button class="interactive-pill" onclick="speak('demie')"
+                            style="background: #f8fafc; border: 1px dashed #64748b; color: #64748b; padding: 8px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: 0.3s; width: 100%;">
+                            30 = demie (half)
+                        </button>
+                    </div>
+                    <p class="font-semibold red" style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">(It is 5:30 / Half
+                        past five)</p>
+                </div>
+            </div>
+
+            <div class="grid min-200"
+                style="grid-template-columns: 1fr; margin-top: 3rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                <!-- 5:45 consolidated Card with 3-Column Layout -->
+                <div class="center-card"
+                    style="cursor: default; padding: 2rem; display: flex; flex-direction: row; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+
+                    <!-- Column 1: Clock -->
+                    <div class="analog-clock" style="flex-shrink: 0; width: 130px; height: 130px;">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(172.5deg); width: 4px; height: 32%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(270deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: French Buttons -->
+                    <div
+                        style="display: flex; flex-direction: column; gap: 12px; flex: 1.2; min-width: 280px; padding-right: 20px; border-right: 1px solid rgba(0,0,0,0.05);">
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures quarante-cinq')"
+                            style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 12px; border-radius: 25px; cursor: pointer; font-weight: 600; transition: 0.3s; text-align: left; display: flex; align-items: center; gap: 10px; width: 100%;">
+                            <span style="font-size: 1.2rem;">🔊</span> Il est cinq heures quarante-cinq
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est cinq heures trois quarts')"
+                            style="background: rgba(var(--accent-green-rgb), 0.05); border: 1px solid var(--accent-green); color: var(--accent-green); padding: 12px; border-radius: 25px; cursor: pointer; font-weight: 600; transition: 0.3s; text-align: left; display: flex; align-items: center; gap: 10px; width: 100%;">
+                            <span style="font-size: 1.2rem;">🔊</span> Il est cinq heures trois quarts
+                        </button>
+                        <button class="interactive-pill" onclick="speak('Il est six heures moins le quart')"
+                            style="background: rgba(233, 30, 99, 0.05); border: 1px solid #e91e63; color: #e91e63; padding: 12px; border-radius: 25px; cursor: pointer; font-weight: 600; transition: 0.3s; text-align: left; display: flex; align-items: center; gap: 10px; width: 100%;">
+                            <span style="font-size: 1.2rem;">🔊</span> Il est six heures moins le quart
+                        </button>
+                        <button class="interactive-pill" onclick="speak('trois quarts')"
+                            style="background: #f8fafc; border: 1px dashed #64748b; color: #64748b; padding: 10px; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: 0.3s; width: 100%; text-align: center;">
+                            💡 45 = trois quarts
+                        </button>
+                    </div>
+
+                    <!-- Column 3: English Translation (Numerical Format) -->
+                    <div
+                        style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 12px; color: #64748b; font-size: 1rem; font-style: italic;">
+                        <div style="min-height: 50px; display: flex; align-items: center;">(It is 5:45)</div>
+                        <div style="min-height: 50px; display: flex; align-items: center;">(It is 5:45 / 3 quarts)</div>
+                        <div style="min-height: 50px; display: flex; align-items: center;">(It is quarter to 6:00)</div>
+                        <div
+                            style="min-height: 40px; display: flex; align-items: center; font-weight: bold; color: var(--text-muted); ">
+                            (45 = 3 quarters)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Time Modules -->
+            <div class="grid min-200"
+                style="grid-template-columns: repeat(2, 1fr); margin-top: 3rem; gap: 2rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
+                <!-- 5:35 Module -->
+                <div class="center-card"
+                    style="cursor: default; padding: 1.5rem; display: flex; flex-direction: row; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <div class="analog-clock" style="width: 100px; height: 100px; flex-shrink: 0;">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(167.5deg); width: 4px; height: 30%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(210deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <button class="interactive-pill" onclick="speak('Il est cinq heures trente-cinq')"
+                                style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.9rem;">
+                                🔊 il est cinq heures trente-cinq
+                            </button>
+                            <button class="interactive-pill" onclick="speak('Il est six heures moins vingt-cinq')"
+                                style="background: rgba(var(--accent-green-rgb), 0.05); border: 1px solid var(--accent-green); color: var(--accent-green); padding: 8px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.9rem;">
+                                🔊 il est six heures moins vingt-cinq
+                            </button>
+                        </div>
+                        <div
+                            style="margin-top: 10px; font-size: 0.85rem; color: #64748b; font-style: italic; display: flex; flex-direction: column; gap: 2px;">
+                            <span>(It is 5:35)</span>
+                            <span>(It is 25 minutes to 6:00)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6:50 Module -->
+                <div class="center-card"
+                    style="cursor: default; padding: 1.5rem; display: flex; flex-direction: row; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <div class="analog-clock" style="width: 100px; height: 100px; flex-shrink: 0;">
+                        <div class="clock-face">
+                            <div class="clock-numbers"><span class="twelve">12</span><span class="three">3</span><span
+                                    class="six">6</span><span class="nine">9</span></div>
+                            <div class="clock-hands">
+                                <div class="hour-hand" style="transform: rotate(205deg); width: 4px; height: 30%;">
+                                </div>
+                                <div class="minute-hand" style="transform: rotate(300deg); width: 2px; height: 45%;">
+                                </div>
+                            </div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <button class="interactive-pill" onclick="speak('il est six heures cinquante')"
+                                style="background: rgba(var(--primary-blue-rgb), 0.05); border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 10px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.95rem;">
+                                🔊 il est six heures cinquante
+                            </button>
+                            <button class="interactive-pill" onclick="speak('il est sept heures moins dix')"
+                                style="background: #fff5f5; border: 1px solid #ff6b6b; color: #ff6b6b; padding: 10px; border-radius: 20px; cursor: pointer; font-weight: 600; width: 100%; text-align: left; font-size: 0.95rem;">
+                                🔊 il est sept heures moins dix
+                            </button>
+                        </div>
+                        <div
+                            style="margin-top: 10px; font-size: 0.85rem; color: #64748b; font-style: italic; display: flex; flex-direction: column; gap: 2px;">
+                            <span>(It is 6:50)</span>
+                            <span>(It is 10 minutes to 7:00)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>

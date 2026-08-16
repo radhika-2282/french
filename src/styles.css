@@ -1195,3 +1195,43 @@ footer {
 }
 
 
+
+.dialogue-emoji {
+    display: inline-block;
+    font-size: 2em;
+    line-height: 1;
+    margin-right: 0.45rem;
+    vertical-align: middle;
+}
+
+.important-verbs-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.verb-row {
+    display: grid;
+    grid-template-columns: minmax(420px, 50%) minmax(0, 50%);
+    gap: 2rem;
+    align-items: start;
+}
+
+.conversation-side {
+    min-width: 0;
+}
+
+.upcoming-conversation-placeholder {
+    background: white;
+    border: 2px dashed #cbd5e1;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: 2rem;
+    min-height: 180px;
+}
+
+@media (max-width: 1000px) {
+    .verb-row {
+        grid-template-columns: 1fr;
+    }
+}

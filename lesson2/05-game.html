@@ -1,0 +1,405 @@
+<!-- Side-by-Side Games Container -->
+            <section class="content-section"
+                style="margin-top: 5rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; align-items: stretch;">
+
+                    <!-- Left: Numbers Game -->
+                    <div class="game-section" id="numbers-game-container"
+                        style="flex: 1; min-width: 320px; margin: 0; display: flex; flex-direction: column;">
+                        <div class="game-header">
+                            <h2>🎮 Les Nombres</h2>
+                            <p>Listen and click the digits!</p>
+                        </div>
+                        <div id="game-board"
+                            style="text-align: center; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                            <!-- Start Screen -->
+                            <div id="game-start-screen">
+                                <div style="font-size: 4rem; margin-bottom: 2rem;">🎲</div>
+                                <button onclick="initGame()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 1rem 2rem; border-radius: 50px; background: var(--primary-blue); color: white; border: none; font-weight: 800; cursor: pointer; margin: 0 auto;">Commencer
+                                    !</button>
+                            </div>
+                            <!-- Play Screen -->
+                            <div id="game-play-screen" style="display: none;">
+                                <div id="question-indicator"
+                                    style="font-weight: 600; color: var(--text-muted); background: #eee; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 1.5rem;">
+                                    Set 1 • 1/5</div>
+                                <div class="center-card" id="audio-trigger" onclick="playCurrentNumber()"
+                                    style="width: 120px; height: 120px; margin: 0 auto 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--primary-blue); box-shadow: var(--shadow-md);">
+                                    <span style="font-size: 2.5rem;">🔊</span>
+                                    <span
+                                        style="font-size: 0.7rem; font-weight: 700; color: var(--primary-blue); margin-top: 5px;">ÉCOUTEZ</span>
+                                </div>
+                                <div id="options-container"
+                                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem;"></div>
+                            </div>
+                            <!-- Result Screen -->
+                            <div id="game-end-screen" style="display: none;">
+                                <div id="final-appreciation" style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+                                <p id="game-result-text" style="color: var(--text-muted); margin-bottom: 1.5rem;"></p>
+                                <button id="next-btn" onclick="handleNextStep()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 0.8rem 2rem; border-radius: 50px; background: var(--accent-green); border: none; color: white; font-weight: 700; cursor: pointer;">Next
+                                    Set ➡️</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Time Game -->
+                    <div class="game-section" id="time-game-container"
+                        style="flex: 1; min-width: 320px; margin: 0; display: flex; flex-direction: column; background: linear-gradient(135deg, rgba(42, 82, 190, 0.05), rgba(224, 62, 82, 0.05)); border: 2px solid var(--accent-yellow);">
+                        <div class="game-header">
+                            <h2 style="color: var(--primary-red);">⏰ L'Heure</h2>
+                            <p>Listen and choose the clock!</p>
+                        </div>
+                        <div id="time-game-board"
+                            style="text-align: center; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                            <!-- Start Screen -->
+                            <div id="time-game-start-screen">
+                                <div style="font-size: 4rem; margin-bottom: 2rem;">🕰️</div>
+                                <button onclick="initTimeGame()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 1rem 2rem; border-radius: 50px; background: var(--primary-red); color: white; border: none; font-weight: 800; cursor: pointer; margin: 0 auto;">Commencer
+                                    !</button>
+                            </div>
+                            <!-- Play Screen -->
+                            <div id="time-game-play-screen" style="display: none;">
+                                <div id="time-question-indicator"
+                                    style="font-weight: 600; color: var(--text-muted); background: #eee; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 1.5rem;">
+                                    Set 1 • 1/5</div>
+                                <div class="center-card" id="time-audio-trigger" onclick="playCurrentTime()"
+                                    style="width: 120px; height: 120px; margin: 0 auto 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--primary-red); box-shadow: var(--shadow-md);">
+                                    <span style="font-size: 2.5rem;">🔊</span>
+                                    <span
+                                        style="font-size: 0.7rem; font-weight: 700; color: var(--primary-red); margin-top: 5px;">ÉCOUTEZ</span>
+                                </div>
+                                <div id="time-options-container"
+                                    style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 0.8rem;"></div>
+                            </div>
+                            <!-- Result Screen -->
+                            <div id="time-game-end-screen" style="display: none;">
+                                <div id="time-final-appreciation" style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+                                <p id="time-game-result-text" style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                                </p>
+                                <button id="time-next-btn" onclick="handleTimeNextStep()" class="nav-btn"
+                                    style="width: auto; height: auto; padding: 0.8rem 2rem; border-radius: 50px; background: var(--accent-green); border: none; color: white; font-weight: 700; cursor: pointer;">Next
+                                    Set ➡️</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://langpractice.com/french/numbers/listening#1,0,10" target="_blank" style="display: inline-block; color: var(--primary-blue); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--primary-blue); padding-bottom: 5px; font-size: 1.2rem; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                        🎮 Click for more number listening games
+                    </a>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://www.digitaldialects.com/iPad/French/time_learn.htm" target="_blank" style="display: inline-block; color: var(--primary-blue); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--primary-blue); padding-bottom: 5px; font-size: 1.2rem; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                        🎮 Tell the time in French: quiz and flashcards
+                    </a>
+                </div>
+            </section>
+
+<script>
+        // --- Shared Utilities ---
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // --- Numbers Listening Game Logic ---
+        const game = {
+            currentQuestion: 0,
+            currentSet: 1,
+            maxSets: 5,
+            targetNumber: 0,
+            canClick: true,
+            attempts: 0
+        };
+
+        function initGame() {
+            game.currentQuestion = 0;
+            game.currentSet = 1;
+            game.attempts = 0;
+            game.canClick = true;
+            showNumberScreen('game-play-screen');
+            nextQuestion();
+        }
+
+        function handleNextStep() {
+            if (game.currentSet < game.maxSets) {
+                game.currentSet++;
+                game.currentQuestion = 0;
+                game.attempts = 0;
+                showNumberScreen('game-play-screen');
+                nextQuestion();
+            } else {
+                initGame();
+            }
+        }
+
+        function showNumberScreen(id) {
+            ['game-start-screen', 'game-play-screen', 'game-end-screen'].forEach(s => {
+                const el = document.getElementById(s);
+                if (el) el.style.display = (s === id) ? 'block' : 'none';
+            });
+        }
+
+        // Fisher-Yates Shuffle for truly random options
+        function shuffleOptions(array) {
+            return shuffleArray([...array]);
+        }
+
+        function nextQuestion() {
+            game.currentQuestion++;
+            if (game.currentQuestion > 5) {
+                finishGame();
+                return;
+            }
+
+            game.canClick = true;
+            document.getElementById('question-indicator').innerText = `Set ${game.currentSet} • Question ${game.currentQuestion} / 5`;
+
+            game.targetNumber = Math.floor(Math.random() * 100) + 1;
+
+            let options = [game.targetNumber];
+            while (options.length < 3) {
+                let rand = Math.floor(Math.random() * 100) + 1;
+                if (!options.includes(rand)) options.push(rand);
+            }
+
+            options = shuffleOptions(options);
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = "";
+            options.forEach(num => {
+                const btn = document.createElement('button');
+                btn.className = "number-card";
+                btn.style.margin = "0";
+                btn.style.padding = "2rem 1rem";
+                btn.style.fontSize = "2rem";
+                btn.style.fontWeight = "800";
+                btn.innerHTML = num;
+                btn.onclick = () => handleChoice(num, btn);
+                container.appendChild(btn);
+            });
+
+            playCurrentNumber();
+        }
+
+        function playCurrentNumber() {
+            speak(game.targetNumber.toString());
+        }
+
+        function handleChoice(num, btn) {
+            if (!game.canClick || btn.disabled) return;
+            game.attempts++;
+
+            if (num === game.targetNumber) {
+                game.canClick = false;
+                btn.style.background = "#dcfce7";
+                btn.style.borderColor = "var(--accent-green)";
+                btn.style.color = "var(--accent-green)";
+                btn.innerHTML = num + " ✅";
+                setTimeout(() => nextQuestion(), 1200);
+            } else {
+                btn.style.background = "#fee2e2";
+                btn.style.borderColor = "var(--primary-red)";
+                btn.style.color = "var(--primary-red)";
+                btn.innerHTML = num + " ❌";
+                btn.disabled = true;
+                btn.style.cursor = "default";
+            }
+        }
+
+        function finishGame() {
+            showNumberScreen('game-end-screen');
+
+            let apFR = "", apEN = "", emo = "";
+            if (game.attempts === 5) { apFR = "Bravo !"; apEN = "Well done"; emo = "👏👏✨"; }
+            else if (game.attempts <= 8) { apFR = "Bien !"; apEN = "Good"; emo = "😊👍"; }
+            else { apFR = "Essaie encore !"; apEN = "Try again"; emo = "🎯🔥"; }
+
+            document.getElementById('final-appreciation').innerHTML = `
+                <div style="font-size: 4.5rem; margin-bottom: 1rem;">${emo}</div>
+                <div style="color: var(--primary-blue); font-size: 3rem;">${apFR}</div>
+                <div style="font-size: 1.3rem; color: var(--text-muted); font-weight: 600; margin-top: 5px; font-style: italic;">(${apEN})</div>
+            `;
+            document.getElementById('game-result-text').innerHTML = `Attempts: <b>${game.attempts}</b><br>Set ${game.currentSet} Complete!`;
+            setTimeout(() => speak(apFR), 500);
+
+            const btn = document.getElementById('next-btn');
+            if (game.currentSet < game.maxSets) {
+                btn.innerText = "Next Set ➡️";
+                btn.style.background = "var(--accent-green)";
+            } else {
+                btn.innerText = "Restart Game 🔄";
+                btn.style.background = "var(--primary-blue)";
+            }
+        }
+
+        // --- Time Listening Game Logic ---
+        const timeData = [
+            { fr: "Il est une heure", time: "1:00" },
+            { fr: "Il est deux heures et demie", time: "2:30" },
+            { fr: "Il est cinq heures et quart", time: "5:15" },
+            { fr: "Il est midi", time: "12:00" },
+            { fr: "Il est minuit", time: "00:00" },
+            { fr: "Il est six heures moins le quart", time: "5:45" },
+            { fr: "Il est sept heures moins dix", time: "6:50" },
+            { fr: "Il est huit heures vingt", time: "8:20" },
+            { fr: "Il est dix heures dix", time: "10:10" },
+            { fr: "Il est trois heures cinq", time: "3:05" },
+            { fr: "Il est quatre heures quarante-cinq", time: "4:45" },
+            { fr: "Il est neuf heures quinze", time: "9:15" },
+            { fr: "Il est onze heures vingt-cinq", time: "11:25" },
+            { fr: "Il est deux heures moins le quart", time: "1:45" },
+            { fr: "Il est cinq heures trente-cinq", time: "5:35" }
+        ];
+        /*  speak("Il est une heure")
+            speak("Il est deux heures et demie")
+            speak("Il est cinq heures et quart")
+            speak("Il est midi")
+            speak("Il est minuit")
+            speak("Il est six heures moins le quart")
+            speak("Il est sept heures moins dix")
+            speak("Il est huit heures vingt")
+            speak("Il est dix heures dix")
+            speak("Il est trois heures cinq")
+            speak("Il est quatre heures quarante-cinq")
+            speak("Il est neuf heures quinze")
+            speak("Il est onze heures vingt-cinq")
+            speak("Il est deux heures moins le quart")
+            speak("Il est cinq heures trente-cinq")
+            speak("Bien !")
+        */
+
+
+        const tGame = {
+            currentQuestion: 0,
+            currentSet: 1,
+            maxSets: 5,
+            target: null,
+            canClick: true,
+            attempts: 0
+        };
+
+        function initTimeGame() {
+            tGame.currentQuestion = 0;
+            tGame.currentSet = 1;
+            tGame.attempts = 0;
+            tGame.canClick = true;
+            showTimeScreen('time-game-play-screen');
+            nextTimeQuestion();
+        }
+
+        function handleTimeNextStep() {
+            if (tGame.currentSet < tGame.maxSets) {
+                tGame.currentSet++;
+                tGame.currentQuestion = 0;
+                tGame.attempts = 0;
+                showTimeScreen('time-game-play-screen');
+                nextTimeQuestion();
+            } else {
+                initTimeGame();
+            }
+        }
+
+        function showTimeScreen(id) {
+            ['time-game-start-screen', 'time-game-play-screen', 'time-game-end-screen'].forEach(s => {
+                const el = document.getElementById(s);
+                if (el) el.style.display = (s === id) ? 'block' : 'none';
+            });
+        }
+
+        function nextTimeQuestion() {
+            tGame.currentQuestion++;
+            if (tGame.currentQuestion > 5) {
+                finishTimeGame();
+                return;
+            }
+
+            tGame.canClick = true;
+            document.getElementById('time-question-indicator').innerText = `Set ${tGame.currentSet} • Question ${tGame.currentQuestion} / 5`;
+
+            const targetIdx = Math.floor(Math.random() * timeData.length);
+            tGame.target = timeData[targetIdx];
+
+            let options = [tGame.target];
+            while (options.length < 3) {
+                let rand = timeData[Math.floor(Math.random() * timeData.length)];
+                if (!options.some(o => o.time === rand.time)) options.push(rand);
+            }
+            options = shuffleArray(options);
+
+            const container = document.getElementById('time-options-container');
+            container.innerHTML = "";
+            options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = "center-card";
+                btn.style.margin = "0";
+                btn.style.padding = "2rem 1rem";
+                btn.style.fontSize = "2rem";
+                btn.style.fontWeight = "800";
+                btn.style.fontFamily = "'Courier New', Courier, monospace";
+                btn.innerHTML = (opt.time === "00:00") ? "00:00" : opt.time;
+                btn.onclick = () => handleTimeChoice(opt, btn);
+                container.appendChild(btn);
+            });
+
+            playCurrentTime();
+        }
+
+        function playCurrentTime() {
+            speak(tGame.target.fr);
+        }
+
+        function handleTimeChoice(opt, btn) {
+            if (!tGame.canClick || btn.disabled) return;
+            tGame.attempts++;
+
+            if (opt.time === tGame.target.time) {
+                tGame.canClick = false;
+                btn.style.background = "#dcfce7";
+                btn.style.borderColor = "var(--accent-green)";
+                btn.style.color = "var(--accent-green)";
+                btn.innerHTML = btn.innerHTML.replace(" ❌", "") + " ✅";
+                setTimeout(() => nextTimeQuestion(), 1200);
+            } else {
+                btn.style.background = "#fee2e2";
+                btn.style.borderColor = "var(--primary-red)";
+                btn.style.color = "var(--primary-red)";
+                if (!btn.innerHTML.includes("❌")) btn.innerHTML += " ❌";
+                btn.disabled = true;
+                btn.style.cursor = "default";
+            }
+        }
+
+        function finishTimeGame() {
+            showTimeScreen('time-game-end-screen');
+
+            let apFR = "", apEN = "", emo = "";
+            if (tGame.attempts === 5) { apFR = "Bravo !"; apEN = "Well done"; emo = "👏👏✨"; }
+            else if (tGame.attempts <= 8) { apFR = "Bien !"; apEN = "Good"; emo = "😊👍"; }
+            else { apFR = "Essaie encore !"; apEN = "Try again"; emo = "🎯🔥"; }
+
+            document.getElementById('time-final-appreciation').innerHTML = `
+                <div style="font-size: 4.5rem; margin-bottom: 1rem;">${emo}</div>
+                <div style="color: var(--primary-red); font-size: 3rem;">${apFR}</div>
+                <div style="font-size: 1.3rem; color: var(--text-muted); font-weight: 600; margin-top: 5px; font-style: italic;">(${apEN})</div>
+            `;
+            document.getElementById('time-game-result-text').innerHTML = `Attempts: <b>${tGame.attempts}</b><br>Set ${tGame.currentSet} Complete!`;
+            setTimeout(() => speak(apFR), 500);
+
+            const btn = document.getElementById('time-next-btn');
+            if (tGame.currentSet < tGame.maxSets) {
+                btn.innerText = "Next Set ➡️";
+                btn.style.background = "var(--accent-green)";
+            } else {
+                btn.innerText = "Restart Game 🔄";
+                btn.style.background = "var(--primary-red)";
+            }
+        }
+    </script>

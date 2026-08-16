@@ -1,0 +1,111 @@
+<section class="content-section" style="background: #fffafa; padding: 2.5rem; border-radius: 20px; border: 2px solid #fff0f6; margin-bottom: 3rem;">
+            <h2 style="color: #d6336c; text-align: center; margin-bottom: 2rem; cursor: pointer;" onclick="speak('Vocabulaire de la Fête et Jeu de Rôle')">🥳 Vocabulaire de la Fête et Jeu de Rôle</h2>
+            
+            <!-- Vocabulary Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 3rem;">
+                <div class="center-card" onclick="speak('Le gâteau')" style="background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); cursor: pointer; border-bottom: 3px solid #ffa94d;">
+                    <div style="font-size: 2.5rem; margin-bottom: 5px;">🎂</div>
+                    <p style="font-weight: bold; color: #d9480f; margin: 0;">Le gâteau</p>
+                </div>
+                <div class="center-card" onclick="speak('Les ballons')" style="background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); cursor: pointer; border-bottom: 3px solid #ff8787;">
+                    <div style="font-size: 2.5rem; margin-bottom: 5px;">🎈</div>
+                    <p style="font-weight: bold; color: #e03131; margin: 0;">Les ballons</p>
+                </div>
+                <div class="center-card" onclick="speak('Le cadeau')" style="background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); cursor: pointer; border-bottom: 3px solid #4dadf7;">
+                    <div style="font-size: 2.5rem; margin-bottom: 5px;">🎁</div>
+                    <p style="font-weight: bold; color: #1971c2; margin: 0;">Le cadeau</p>
+                </div>
+                <div class="center-card" onclick="speak('Les bougies')" style="background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); cursor: pointer; border-bottom: 3px solid #ffd43b;">
+                    <div style="font-size: 2.5rem; margin-bottom: 5px;">🕯️</div>
+                    <p style="font-weight: bold; color: #f08c00; margin: 0;">Les bougies</p>
+                </div>
+                <div class="center-card" onclick="speak('Les jeux')" style="background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); cursor: pointer; border-bottom: 3px solid #63e6be;">
+                    <div style="font-size: 2.5rem; margin-bottom: 5px;">🎮</div>
+                    <p style="font-weight: bold; color: #087f5b; margin: 0;">Les jeux</p>
+                </div>
+                <div class="center-card" onclick="speak('Les invités')" style="background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); cursor: pointer; border-bottom: 3px solid #be4bdb;">
+                    <div style="font-size: 2.5rem; margin-bottom: 5px;">👫</div>
+                    <p style="font-weight: bold; color: #862e9c; margin: 0;">Les invités</p>
+                </div>
+                <div class="center-card" onclick="speak('La fête')" style="background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); cursor: pointer; border-bottom: 3px solid #ff922b;">
+                    <div style="font-size: 2.5rem; margin-bottom: 5px;">🥳</div>
+                    <p style="font-weight: bold; color: #d9480f; margin: 0;">La fête</p>
+                </div>
+            </div>
+
+
+
+
+            <!-- Talking Children Illustration -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="images/children_talking.png" alt="Boy and Girl Talking" 
+                    style="max-width: 400px; width: 100%; border-radius: 15px; filter: drop-shadow(var(--shadow-md));">
+            </div>
+
+            <!-- Dialogue -->
+            <h3 style="color: #d6336c; text-align: center; margin-bottom: 1.5rem; cursor: pointer;" onclick="speak('Jeu de Rôle : Viens à mon anniversaire !')">🎭 Jeu de Rôle : Viens à mon anniversaire !</h3>
+            <div style="max-width: 700px; margin: 0 auto; background: white; padding: 2rem; border-radius: 15px; box-shadow: var(--shadow-md);">
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <!-- Max 1 -->
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Salut ! Ça va ?', 'male')">
+                        <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
+                            <strong style="color: #1971c2;">Max:</strong> Salut ! Ça va ?
+                        </div>
+                    </div>
+                    <!-- Lina 1 -->
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Oui, ça va bien, merci. Et toi ?', 'female')">
+                        <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
+                            <strong style="color: #d6336c;">Lina:</strong> Oui, ça va bien, merci. Et toi ?
+                        </div>
+                    </div>
+                    <!-- Max 2 -->
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Ça va ! Je veux t’inviter à mon anniversaire.', 'male')">
+                        <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
+                            <strong style="color: #1971c2;">Max:</strong> Ça va ! Je veux t’inviter à mon anniversaire.
+                        </div>
+                    </div>
+                    <!-- Lina 2 -->
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Ah bon ! C’est quand ?', 'female')">
+                        <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
+                            <strong style="color: #d6336c;">Lina:</strong> Ah bon ! C'est quand ?
+                        </div>
+                    </div>
+                    <!-- Max 3 -->
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('C’est samedi à dix sept heures, chez moi.', 'male')">
+                        <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
+                            <strong style="color: #1971c2;">Max:</strong> C’est samedi à 17h, chez moi.
+                        </div>
+                    </div>
+                    <!-- Lina 3 -->
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Super ! Je peux venir avec plaisir.', 'female')">
+                        <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
+                            <strong style="color: #d6336c;">Lina:</strong> Super ! Je peux venir avec plaisir.
+                        </div>
+                    </div>
+                    <!-- Max 4 -->
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('Génial ! On joue et on mange du gâteau.', 'male')">
+                        <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
+                            <strong style="color: #1971c2;">Max:</strong> Génial ! On joue et on mange du gâteau.
+                        </div>
+                    </div>
+                    <!-- Lina 4 -->
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('Parfait, j’adore ça !', 'female')">
+                        <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
+                            <strong style="color: #d6336c;">Lina:</strong> Parfait, j’adore ça !
+                        </div>
+                    </div>
+                    <!-- Max 5 -->
+                    <div style="align-self: flex-start; max-width: 80%; cursor: pointer;" onclick="speak('À samedi alors !', 'male')">
+                        <div style="background: #e7f5ff; padding: 12px 18px; border-radius: 15px 15px 15px 0; border-left: 5px solid #1971c2;">
+                            <strong style="color: #1971c2;">Max:</strong> À samedi alors !
+                        </div>
+                    </div>
+                    <!-- Lina 5 -->
+                    <div style="align-self: flex-end; max-width: 80%; cursor: pointer;" onclick="speak('À samedi. Merci pour l’invitation !')">
+                        <div style="background: #fff0f6; padding: 12px 18px; border-radius: 15px 15px 0 15px; border-right: 5px solid #d6336c;">
+                            <strong style="color: #d6336c;">Lina:</strong> À samedi. Merci pour l’invitation !
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
