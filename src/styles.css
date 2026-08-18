@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: 'Outfit','Noto Color Emoji', sans-serif;
+    font-family: 'Outfit', 'Noto Color Emoji', sans-serif;
     background-color: var(--bg-light);
     color: var(--text-main);
     line-height: 1.6;
@@ -40,7 +40,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Fredoka','Noto Color Emoji', sans-serif;
+    font-family: 'Fredoka', 'Noto Color Emoji', sans-serif;
     font-weight: 600;
 }
 
@@ -54,12 +54,12 @@ header {
     z-index: 1000;
 }
 
-button{
-  font-family: inherit;
+button {
+    font-family: inherit;
 }
 
 ul {
-  list-style-position: inside;
+    list-style-position: inside;
 }
 
 .header-content {
@@ -633,7 +633,8 @@ header p {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    ;
     border: 1px solid #f1f5f9;
 }
 
@@ -1062,7 +1063,8 @@ footer {
 .pronoun {
     font-weight: 800;
     color: var(--primary-blue);
-    margin-right: 8px; /* Standard single-space gap */
+    margin-right: 8px;
+    /* Standard single-space gap */
 }
 
 .verb {
@@ -1077,7 +1079,7 @@ footer {
 }
 
 /* in conjugation row fill remaining space */
-.conjugation-row > .mu-it{
+.conjugation-row>.mu-it {
     flex: 1;
 }
 
@@ -1119,18 +1121,20 @@ footer {
 .font-bold {
     font-weight: 700;
 }
+
 /* -- font weights end-- */
 
 
 
 /* -- text colors -- */
 *:is(span, h1, h2, h3, h4, p, strong).red {
-  color: var(--primary-red);
+    color: var(--primary-red);
 }
 
 *:is(span, h1, h2, h3, h4, p, strong).blue {
-  color: var(--primary-blue)
+    color: var(--primary-blue)
 }
+
 /* -- text colors end -- */
 
 
@@ -1154,27 +1158,30 @@ footer {
 
 
 /* accent-box colors */
-.accent-box.red{
+.accent-box.red {
     border-color: var(--primary-red);
 }
 
-.accent-box.blue{
+.accent-box.blue {
     border-color: var(--primary-blue);
 }
 
-.accent-box.green{
+.accent-box.green {
     border-color: var(--accent-green);
 }
 
-.accent-box.yellow{
+.accent-box.yellow {
     border-color: var(--accent-yellow);
 }
+
 /* accent-box colors end */
 
 /* accent-box widths */
-.accent-box.w-lg{ /* large width */
+.accent-box.w-lg {
+    /* large width */
     border-width: 8px;
 }
+
 /* accent-box widths end */
 
 
@@ -1188,6 +1195,7 @@ footer {
 .bg-grey {
     background-color: var(--bg-light)
 }
+
 /* fill vertical flexbox containers horizontally */
 .fill-hr {
     flex: 0 0 auto;

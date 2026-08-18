@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <!-- Body gradients -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#0066eb"/>
+    </linearGradient>
+    <linearGradient id="bodyTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#70c4ff"/>
+      <stop offset="100%" stop-color="#2b82f6"/>
+    </linearGradient>
+    <!-- Blade metal gradient -->
+    <linearGradient id="metalBlade" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="35%" stop-color="#cbd5e1"/>
+      <stop offset="65%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <!-- Screw gradient -->
+    <linearGradient id="screwGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <!-- Shadow filter -->
+    <filter id="dropShad" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#dropShad)">
+    <!-- Main Wedge / Plastic Body -->
+    <path d="M 10 14 C 10 10, 14 8, 20 8 L 44 8 C 50 8, 54 10, 54 14 L 50 52 C 50 56, 46 58, 40 58 L 24 58 C 18 58, 14 56, 14 52 Z" 
+          fill="url(#bodyGrad)" stroke="#004fc4" stroke-width="1.5"/>
+
+    <!-- Grip indentations on left and right -->
+    <!-- Left grip ribs -->
+    <path d="M 11 22 C 14 22, 14 28, 11 28" fill="none" stroke="#2b82f6" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 12 32 C 15 32, 15 38, 12 38" fill="none" stroke="#2b82f6" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 13 42 C 16 42, 16 48, 13 48" fill="none" stroke="#2b82f6" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Right grip ribs -->
+    <path d="M 53 22 C 50 22, 50 28, 53 28" fill="none" stroke="#004dbf" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 52 32 C 49 32, 49 38, 52 38" fill="none" stroke="#004dbf" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 51 42 C 48 42, 48 48, 51 48" fill="none" stroke="#004dbf" flood-color="#004dbf" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Top Highlight -->
+    <path d="M 18 11 L 46 11" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Blade recess / channel -->
+    <rect x="22" y="14" width="20" height="38" rx="2" fill="#003580" opacity="0.35"/>
+
+    <!-- Shaving Slot Opening (the narrow slit under the blade) -->
+    <path d="M 24 16 L 27 50 L 29 50 L 26 16 Z" fill="#0b132b" opacity="0.7"/>
+
+    <!-- Metal Blade -->
+    <polygon points="27,15 41,17 38,49 24,49" fill="url(#metalBlade)" stroke="#64748b" stroke-width="0.8"/>
+    <!-- Blade cutting edge highlight -->
+    <line x1="27" y1="15" x2="24" y2="49" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Center Screw -->
+    <circle cx="32.5" cy="32" r="4" fill="url(#screwGrad)" stroke="#475569" stroke-width="0.75"/>
+    <line x1="30.5" y1="30" x2="34.5" y2="34" stroke="#334155" stroke-width="1" stroke-linecap="round"/>
+    <line x1="34.5" y1="30" x2="30.5" y2="34" stroke="#334155" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Pencil insertion hole at the bottom -->
+    <ellipse cx="32" cy="56" rx="8" ry="3" fill="#0a0f1d" stroke="#003580" stroke-width="1"/>
+    <ellipse cx="32" cy="56" rx="6" ry="2" fill="#020617"/>
+  </g>
+</svg>
