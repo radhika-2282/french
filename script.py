@@ -7,7 +7,7 @@ from gtts import gTTS
 # Configuration
 src_folder = Path("./")
 public_folder = Path("./")
-voices_folder = Path("./voices")
+voices_folder = Path("./public/voices")
 
 # Create audio output directory if it doesn't exist
 voices_folder.mkdir(parents=True, exist_ok=True)
