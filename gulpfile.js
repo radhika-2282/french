@@ -14,7 +14,7 @@ const browserSync = browserSyncLib.create();
 // Set the TTS language
 const gTTS = new gTTSLib('fr');
 
-const imageExts = '{ico,jpg,jpeg,png,gif,svg,webp}'
+const imageExts = '{mp3,ico,jpg,jpeg,png,gif,svg,webp}'
 
 function getTextHash(text) {
   return crypto.createHash("md5").update(text, "utf-8").digest("hex");
