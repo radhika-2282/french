@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lesson 3: Introductions - Learn French</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="src/styles.css" />
-  <script src="src/script.js" type="module"></script>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/script.js" type="module" onload="speak('Lesson 3 - Se Présenter')"></script>
 </head>
 
-<body data-name="Lesson 3 - Se Présenter">
+<body>
   <header>
     <div class="header-content">
       <h1>Lesson 3: Se Présenter (Introductions)</h1>
@@ -35,13 +35,13 @@
         </ul>
       </div>
     </div>
-    <load src="/lesson3/01-introductions.html"/>
-    <load src="/lesson3/02-pronouns.html"/>
-    <load src="/lesson3/03-etre-and-avoir.html"/>
-    <load src="/lesson3/04-intoduce-someone.html"/>
-    <load src="/lesson3/05-introdution-video.html"/>
-    <load src="/lesson3/06-er-verbs.html"/>
-    <load src="/lesson3/07-c-and-c.html"/>
+    @@include("./01-introductions.html")
+    @@include("./02-pronouns.html")
+    @@include("./03-etre-and-avoir.html")
+    @@include("./04-intoduce-someone.html")
+    @@include("./05-introdution-video.html")
+    @@include("./06-er-verbs.html")
+    @@include("./07-c-and-c.html")
     
     <footer>
       <p>Keep going! You're making great progress! 🌟</p>

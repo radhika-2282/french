@@ -5,9 +5,8 @@ from pathlib import Path
 from gtts import gTTS
 
 # Configuration
-src_folder = Path("./")
-public_folder = Path("./")
-voices_folder = Path("./public/voices")
+src_folder = Path("./dist/")
+voices_folder = Path("./assets/voices")
 
 # Create audio output directory if it doesn't exist
 voices_folder.mkdir(parents=True, exist_ok=True)
@@ -81,19 +80,24 @@ if orphaned_files:
         print(f" - {file.name}")
 
     # Auto-delete if --yes flag is passed (for CI/CD)
-    auto_delete = "--yes" in sys.argv
-
-    if auto_delete:
+    
+    auto_delete = False
+    if "--yes" in sys.argv and "--no" not in sys.argv:
         print("\nAuto-delete enabled (--yes flag detected).")
+        auto_delete = True
     else:
-        choice = (
-            input(
-                "\nWould you like to delete these unused files? (y/N): "
+        if "--no" in sys.argv:
+            print("\nAuto-delete disabled (--no flag detected).")
+            auto_delete = False
+        else:
+            choice = (
+                input(
+                    "\nWould you like to delete these unused files? (y/N): "
+                )
+                .strip()
+                .lower()
             )
-            .strip()
-            .lower()
-        )
-        auto_delete = choice in ("y", "yes")
+            auto_delete = choice in ("y", "yes")
 
     if auto_delete:
         print("\nDeleting files...")

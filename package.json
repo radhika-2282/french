@@ -1,15 +1,14 @@
 {
-  "name": "french",
-  "version": "0.0.0",
-  "private": true,
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "devDependencies": {
-    "vite": "^8.2.1",
-    "vite-plugin-html-inject": "^1.1.2"
+    "browser-sync": "^3.0.4",
+    "del": "^8.0.1",
+    "gulp": "^5.0.1",
+    "gulp-cli": "^3.1.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-rename": "^2.1.0",
+    "node-gtts": "^2.0.2",
+    "reload": "^3.4.3",
+    "through2": "^5.0.11"
   }
 }

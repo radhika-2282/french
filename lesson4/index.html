@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 4: L'École - Learn French</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/src/styles.css">
-    <script src="/src/script.js" type="module"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" type="module" onload="speak('Lesson 4 -  L’École')"></script>
 </head>
 
-<body data-name="Lesson 4 -  L’École">
+<body>
     <header>
         <div class="header-content">
             <h1>Lesson 4: L'École</h1>
@@ -35,14 +35,14 @@
                 </ul>
             </div>
         </div>
-        <load src="/lesson4/01-days-of-the-week.html"/>
-        <load src="/lesson4/02-ordinal-numbers.html"/>
-        <load src="/lesson4/03-game.html"/>
-        <load src="/lesson4/04-subjects.html"/>
-        <load src="/lesson4/05-timetable.html"/>
-        <load src="/lesson4/06-role-play.html"/>
-        <load src="/lesson4/07-action-verbs.html"/>
-        <load src="/lesson4/08-c-and-c.html"/>
+        @@include("./01-days-of-the-week.html")
+        @@include("./02-ordinal-numbers.html")
+        @@include("./03-game.html")
+        @@include("./04-subjects.html")
+        @@include("./05-timetable.html")
+        @@include("./06-role-play.html")
+        @@include("./07-action-verbs.html")
+        @@include("./08-c-and-c.html")
     </main>
 
 

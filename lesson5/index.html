@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 5: Le Temps - Learn French</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/src/styles.css">
-    <script src="/src/script.js" type="module"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" type="module" onload="speak('Lesson 5 - Le Temps')"></script>
 </head>
 
-<body data-name="Lesson 5 - Le Temps">
+<body>
     <header>
         <div class="header-content">
             <h1>Lesson 5: Le Temps</h1>
@@ -36,14 +36,14 @@
                 </ul>
             </div>
         </div>
-        <load src="/lesson5/01-months.html"/>
-        <load src="/lesson5/02-dates.html"/>
-        <load src="/lesson5/03-birthday.html"/>
-        <load src="/lesson5/04-role-play.html"/>
-        <load src="/lesson5/05-verb-conjugation.html"/>
-        <load src="/lesson5/06-seasons-weather.html"/>
-        <load src="/lesson5/07-games.html"/>
-        <load src="/lesson5/08-c-and-c.html"/>
+        @@include("./01-months.html")
+        @@include("./02-dates.html")
+        @@include("./03-birthday.html")
+        @@include("./04-role-play.html")
+        @@include("./05-verb-conjugation.html")
+        @@include("./06-seasons-weather.html")
+        @@include("./07-games.html")
+        @@include("./08-c-and-c.html")
 
     </main>
 

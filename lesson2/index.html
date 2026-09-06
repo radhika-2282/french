@@ -8,11 +8,11 @@
         content="Learn French numbers 1-100 and how to tell time. Essential Lesson 2 for 4th graders." />
     <title>Lesson 2: Numbers & Time - Learn French with Fun!</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/src/styles.css">
-    <script src="/src/script.js" type="module"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" type="module" onload="speak('Lesson 2 - On Compte!')"></script>
 </head>
 
-<body data-name="Lesson 2 - On Compte!">
+<body>
     <header>
         <div class="header-content">
             <h1>Lesson 2: On Compte!</h1>
@@ -39,12 +39,12 @@
             </div>
         </section>
 
-    <load src="/lesson2/01-numbers-0-60.html"/>
-    <load src="/lesson2/02-time.html"/>
-    <load src="/lesson2/03-role-play.html"/>
-    <load src="/lesson2/04-numbers-61-100.html"/>
-    <load src="/lesson2/05-game.html"/>
-    <load src="/lesson2/06-c-and-c.html"/>  
+    @@include("./01-numbers-0-60.html")
+    @@include("./02-time.html")
+    @@include("./03-role-play.html")
+    @@include("./04-numbers-61-100.html")
+    @@include("./05-game.html")
+    @@include("./06-c-and-c.html")  
 </main>
 
     <footer>
