@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn French family members and professions. Practice possessive adjectives and presenting your family. Lesson 7 for 4th graders." />
+    <title>Lesson 7: Ma Famille - Learn French with Fun!</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" type="module" onload="speak('Lesson 7 - La Famille et les Professions')"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Lesson 7: Ma Famille et les Professions</h1>
+            <p>Meet the Family & Explore Dream Jobs</p>
+        </div>
+    </header>
+
+    <nav class="side-toolbar">
+        <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="./lesson6.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="./lesson8.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+    </nav>
+
+    <main class="lesson-page">
+        <section class="lesson-intro">
+            <div class="goals-box">
+                <h3>🎯 Learning Goals</h3>
+                <ul>
+                    <li>Name family members in French</li>
+                    <li>Use possessive adjectives (mon, ma, mes)</li>
+                    <li>Learn common professions</li>
+                    <li>Use 'C'est' vs 'Il est / Elle est'</li>
+                    <li>Present your family members' jobs</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Family Members Section -->
+        <section class="content-section">
+            <h2>👨‍👩‍👧‍👦 La Famille (The Family)</h2>
+            <div class="grid min-200">
+                <div class="center-card" onclick="speak('Le père')">
+                    <div class="emoji">👨</div>
+                    <h3>Le père</h3>
+                    <p class="font-semibold red">The father</p>
+                </div>
+                <div class="center-card" onclick="speak('La mère')">
+                    <div class="emoji">👩</div>
+                    <h3>La mère</h3>
+                    <p class="font-semibold red">The mother</p>
+                </div>
+                <div class="center-card" onclick="speak('Le frère')">
+                    <div class="emoji">👦</div>
+                    <h3>Le frère</h3>
+                    <p class="font-semibold red">The brother</p>
+                </div>
+                <div class="center-card" onclick="speak('La sœur')">
+                    <div class="emoji">👧</div>
+                    <h3>La sœur</h3>
+                    <p class="font-semibold red">The sister</p>
+                </div>
+                <div class="center-card" onclick="speak('Le grand-père')">
+                    <div class="emoji">👴</div>
+                    <h3>Le grand-père</h3>
+                    <p class="font-semibold red">The grandfather</p>
+                </div>
+                <div class="center-card" onclick="speak('La grand-mère')">
+                    <div class="emoji">👵</div>
+                    <h3>La grand-mère</h3>
+                    <p class="font-semibold red">The grandmother</p>
+                </div>
+                <div class="center-card" onclick="speak('L’oncle')">
+                    <div class="emoji">🧔‍♂️</div>
+                    <h3>L'oncle</h3>
+                    <p class="font-semibold red">The uncle</p>
+                </div>
+                <div class="center-card" onclick="speak('La tante')">
+                    <div class="emoji">👩‍🦱</div>
+                    <h3>La tante</h3>
+                    <p class="font-semibold red">The aunt</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grammar: Possessive Adjectives -->
+        <section class="content-section">
+            <h2>✍️ Grammaire : Mon, Ma, Mes</h2>
+            <p class="section-intro">To say "My" in French, you choose the word based on the family member!</p>
+            <div class="comparison-container">
+                <div class="tu-section" style="border-color: var(--primary-blue);">
+                    <h3>♂️ Masculine (Mon)</h3>
+                    <div class="example-phrase" onclick="speak('Mon père')">
+                        <strong>Mon</strong> père (My father)
+                    </div>
+                    <div class="example-phrase" onclick="speak('Mon frère')">
+                        <strong>Mon</strong> frère (My brother)
+                    </div>
+                </div>
+                <div class="vous-section" style="border-color: var(--primary-red);">
+                    <h3>♀️ Feminine (Ma)</h3>
+                    <div class="example-phrase" onclick="speak('Ma mère')">
+                        <strong>Ma</strong> mère (My mother)
+                    </div>
+                    <div class="example-phrase" onclick="speak('Ma sœur')">
+                        <strong>Ma</strong> sœur (My sister)
+                    </div>
+                </div>
+                <div class="tu-section" style="border-color: var(--accent-green); grid-column: 1 / -1;">
+                    <h3>👥 Plural (Mes)</h3>
+                    <div class="example-phrase" onclick="speak('Mes parents')">
+                        <strong>Mes</strong> parents (My parents)
+                    </div>
+                    <div class="example-phrase" onclick="speak('Mes frères et sœurs')">
+                        <strong>Mes</strong> frères et sœurs (My siblings)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professions Section -->
+        <section class="content-section">
+            <h2>💼 Les Professions (Professions)</h2>
+            <div class="grid min-200">
+                <div class="center-card" onclick="speak('Un professeur')">
+                    <div class="emoji">👨‍🏫</div>
+                    <h3>Un professeur</h3>
+                    <p class="font-semibold red">A teacher</p>
+                </div>
+                <div class="center-card" onclick="speak('Un médecin')">
+                    <div class="emoji">👩‍⚕️</div>
+                    <h3>Un médecin</h3>
+                    <p class="font-semibold red">A doctor</p>
+                </div>
+                <div class="center-card" onclick="speak('Un ingénieur')">
+                    <div class="emoji">👷‍♂️</div>
+                    <h3>Un ingénieur</h3>
+                    <p class="font-semibold red">An engineer</p>
+                </div>
+                <div class="center-card" onclick="speak('Un infirmier')">
+                    <div class="emoji">👨‍⚕️</div>
+                    <h3>Un infirmier</h3>
+                    <p class="font-semibold red">A nurse</p>
+                </div>
+                <div class="center-card" onclick="speak('Un cuisinier')">
+                    <div class="emoji">👨‍🍳</div>
+                    <h3>Un cuisinier</h3>
+                    <p class="font-semibold red">A cook / chef</p>
+                </div>
+                <div class="center-card" onclick="speak('Un pilote')">
+                    <div class="emoji">👨‍✈️</div>
+                    <h3>Un pilote</h3>
+                    <p class="font-semibold red">A pilot</p>
+                </div>
+                <div class="center-card" onclick="speak('Un policier')">
+                    <div class="emoji">👮‍♂️</div>
+                    <h3>Un policier</h3>
+                    <p class="font-semibold red">A police officer</p>
+                </div>
+                <div class="center-card" onclick="speak('Un artiste')">
+                    <div class="emoji">🎨</div>
+                    <h3>Un artiste</h3>
+                    <p class="font-semibold red">An artist</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- C'est vs Il est -->
+        <section class="content-section">
+            <h2>❓ C'est ou Il est ?</h2>
+
+            <div class="accent-box yellow">
+                <h3 onclick="speak('Qui est-ce ?')" style="cursor: pointer; color: var(--text-main); margin-bottom: 0.5rem;">❓ The Question: Qui est-ce ?</h3>
+                <p>This phrase means <strong>"Who is it?"</strong> or <strong>"Who is this?"</strong>. It stays the same whether you are asking about one person or many!</p>
+            </div>
+
+            <div class="grid min-300">
+                <div class="accent-box top yellow w-lg bg-white">
+                    <h3>🆔 Identifying People</h3>
+                    <p style="margin-bottom: 2rem;">To answer, we use <strong>C'est</strong> for one person and <strong>Ce sont</strong> for many!</p>
+                    <div class="accent-box red" style="margin-bottom: 2rem;" onclick="speak('Qui est-ce ? C’est mon père')">
+                        <em>"Qui est-ce ?"</em><br>
+                        <strong>C'est</strong> mon père.<br>
+                        <p class="text-sm mu-it">This is my father.</p>
+                    </div>
+                    <div class="accent-box red" style="margin-bottom: 1rem;" onclick="speak('Qui est-ce ? Ce sont mes parents')">
+                        <em>"Qui est-ce ?"</em><br>
+                        <strong>Ce sont</strong> mes parents.<br>
+                        <p class="text-sm mu-it">They are my parents.</p>
+                    </div>
+                </div>
+                <div class="accent-box top blue w-lg bg-white">
+                    <h3>🔨 Il est... (What is their job?)</h3>
+                    <p style="margin-bottom: 2rem;">Use this for professions. <strong>No article (un/une) is used!</strong></p>
+                    <div class="accent-box red" onclick="speak('Il est médecin')">
+                        <strong>Il est</strong> médecin.<br>
+                        <p class="text-sm mu-it">He is a doctor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Presenting -->
+        <section class="content-section">
+            <h2>🗣️ Presenting my family</h2>
+                <div class="grid min-280">
+                    <div class="left-card" onclick="speak('C’est ma mère. Elle est professeur.')">
+                        <h3 class="text-lg font-bold red">C'est ma mère. Elle est professeur.</h3>
+                        <p class="mu-it">This is my mother. She is a teacher.</p>
+                    </div>
+                    <div class="left-card" onclick="speak('C’est mon oncle. Il est pilote.')">
+                        <h3 class="text-lg font-bold red">C'est mon oncle. Il est pilote.</h3>
+                        <p class="mu-it">This is my uncle. He is a pilot.</p>
+                    </div>
+                    <div class="left-card" onclick="speak('C’est ma tante. Elle est médecin.')">
+                        <h3 class="text-lg font-bold red">C'est ma tante. Elle est médecin.</h3>
+                        <p class="mu-it">This is my aunt. She is a doctor.</p>
+                    </div>
+                    <div class="left-card" onclick="speak('Ce sont mes parents.')">
+                        <h3 class="text-lg font-bold red">Ce sont mes parents.</h3>
+                        <p class="mu-it">These are my parents.</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Role Play Section -->
+        <section class="content-section">
+            <div class="tip-box" style="border-left: 5px solid var(--primary-red); background: #fff5f5;">
+                <h2 style="color: var(--primary-red); text-align: center; margin-bottom: 1.5rem;">🎭 Mini Role-Play</h2>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div onclick="speak('Qui est-ce ?', 'female')">
+                        <strong>Lina:</strong> Qui est-ce ? <small>(Who is this?)</small>
+                    </div>
+                    <div onclick="speak('C’est mon frère Léo. Il est étudiant.', 'male')">
+                        <strong>Max:</strong> C'est mon frère Léo. Il est étudiant. <small>(This is my brother Leo. He is a student.)</small>
+                    </div>
+                    <div onclick="speak('Et ton père ? Quelle est sa profession ?', 'female')">
+                        <strong>Lina:</strong> Et ton père ? Quelle est sa profession ? <small>(And your father? What is his profession?)</small>
+                    </div>
+                    <div onclick="speak('Mon père est ingénieur.', 'male')">
+                        <strong>Max:</strong> Mon père est ingénieur. <small>(My father is an engineer.)</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Game -->
+        <section class="game-section">
+            <div class="game-header">
+                <h2>🎮 Activity: Profession Matcher!</h2>
+                <p>Match the profession name to the correct icon!</p>
+            </div>
+            <div class="game-container" id="prof-game">
+                <div class="game-column" id="prof-names">
+                    <!-- Names generated here -->
+                </div>
+                <div class="game-column" id="prof-icons">
+                    <!-- Icons generated here -->
+                </div>
+            </div>
+            <div id="submit-container" style="display: none; text-align: center; margin-top: 2rem;">
+                <button class="btn-reset" style="background: var(--accent-green);" onclick="location.reload()">Play Again 🔄</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lesson 7 complete! Magnifique ! Tu connais ta famille ! 👨‍👩‍👧‍👦💼</p>
+    </footer>
+
+    <script>
+        // Local Game Logic for Lesson 7
+        const profPairs = [
+            { fr: "Le Médecin", icon: "👩‍⚕️" },
+            { fr: "Le Pilote", icon: "👨‍✈️" },
+            { fr: "L'Artiste", icon: "🎨" },
+            { fr: "Le Cuisinier", icon: "👨‍🍳" },
+            { fr: "Le Policier", icon: "👮‍♂️" },
+            { fr: "Le Professeur", icon: "👨‍🏫" }
+        ];
+
+        let selName = null;
+        let selIcon = null;
+        let profScore = 0;
+
+        function initProfGame() {
+            const nameCol = document.getElementById('prof-names');
+            const iconCol = document.getElementById('prof-icons');
+            
+            const names = [...profPairs].sort(() => Math.random() - 0.5);
+            const icons = [...profPairs].sort(() => Math.random() - 0.5);
+
+            names.forEach(pair => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.textContent = pair.fr;
+                div.onclick = () => {
+                    if(div.classList.contains('matched')) return;
+                    if(selName) selName.classList.remove('selected');
+                    selName = div;
+                    div.classList.add('selected');
+                    speak(pair.fr);
+                    checkProfMatch();
+                };
+                nameCol.appendChild(div);
+            });
+
+            icons.forEach(pair => {
+                const div = document.createElement('div');
+                div.className = 'match-item';
+                div.textContent = pair.icon;
+                div.style.fontSize = '2.5rem';
+                div.onclick = () => {
+                    if(div.classList.contains('matched')) return;
+                    if(selIcon) selIcon.classList.remove('selected');
+                    selIcon = div;
+                    div.classList.add('selected');
+                    checkProfMatch();
+                };
+                iconCol.appendChild(div);
+            });
+        }
+
+        function checkProfMatch() {
+            if (selName && selIcon) {
+                const match = profPairs.find(p => p.fr === selName.textContent && p.icon === selIcon.textContent);
+                if (match) {
+                    selName.classList.add('matched');
+                    selIcon.classList.add('matched');
+                    selName.classList.remove('selected');
+                    selIcon.classList.remove('selected');
+                    selName = null;
+                    selIcon = null;
+                    profScore++;
+                    if(profScore === profPairs.length) {
+                        document.getElementById('submit-container').style.display = 'block';
+                        speak("Excellent travail !");
+                    }
+                } else {
+                    const n = selName;
+                    const i = selIcon;
+                    n.classList.add('incorrect');
+                    i.classList.add('incorrect');
+                    selName = null;
+                    selIcon = null;
+                    setTimeout(() => {
+                        n.classList.remove('selected', 'incorrect');
+                        i.classList.remove('selected', 'incorrect');
+                    }, 500);
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initProfGame();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Useful French classroom phrases, expressions with moi and c'est for young learners." />
+    <title>Ressources Complémentaires - Learn French with Fun!</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" type="module" onload="speak('Ressources Complémentaires')"></script>
+    <style>
+        .classroom-phrases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .classroom-phrase {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            border: none;
+            border-radius: var(--radius-md);
+            background: white;
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            text-align: left;
+            font-family: inherit;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .classroom-phrase::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: var(--phrase-accent, var(--primary-blue));
+            border-radius: var(--radius-md) 0 0 var(--radius-md);
+        }
+
+        .classroom-phrase:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--phrase-accent, var(--primary-blue));
+        }
+
+        .classroom-phrase:active {
+            transform: translateY(-1px);
+        }
+
+
+        .phrase-icon {
+            flex-shrink: 0;
+            font-size: 1.75rem;
+            line-height: 1;
+        }
+
+        .phrase-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .phrase-content .french {
+            display: block;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.35;
+            margin-bottom: 0.25rem;
+        }
+
+        .phrase-content .english {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+
+        .dual-phrase-card {
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .dual-phrase-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--phrase-accent, var(--primary-blue));
+        }
+
+        .dual-phrase-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.85rem 1.25rem;
+            background: linear-gradient(90deg, rgba(42, 82, 190, 0.08), rgba(224, 62, 82, 0.06));
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+
+        .dual-phrase-header span:last-child {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .dual-phrase-card .classroom-phrase {
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .dual-phrase-card .classroom-phrase:last-child {
+            border-bottom: none;
+        }
+
+        .dual-phrase-card .classroom-phrase::before {
+            display: none;
+        }
+
+        .resources-intro {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 1rem;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .resources-banner {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(42, 82, 190, 0.08), rgba(107, 203, 119, 0.12));
+            border-radius: var(--radius-lg);
+            margin-bottom: 2rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .resources-banner .banner-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .phrase-content .example {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.35rem;
+            font-style: normal;
+            line-height: 1.3;
+        }
+
+        .c-est-subheading {
+            text-align: center;
+            margin: 2.5rem 0 1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 999px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.15rem;
+            display: inline-block;
+            width: 100%;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .c-est-subheading.positive {
+            background: linear-gradient(90deg, rgba(107, 203, 119, 0.2), rgba(107, 203, 119, 0.08));
+            color: #15803d;
+            border: 2px solid rgba(107, 203, 119, 0.35);
+        }
+
+        .c-est-subheading.negative {
+            background: linear-gradient(90deg, rgba(224, 62, 82, 0.15), rgba(224, 62, 82, 0.06));
+            color: #be123c;
+            border: 2px solid rgba(224, 62, 82, 0.3);
+        }
+
+        .c-est-section-header {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Ressources Complémentaires</h1>
+            <p>Handy French for the Classroom</p>
+        </div>
+    </header>
+
+    <nav class="side-toolbar">
+        <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+        <a href="./lesson8.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+        <a href="./index.html" class="nav-btn" title="Finish">🏁 <span>Finish</span></a>
+    </nav>
+
+    <main class="lesson-page">
+        <section class="lesson-intro">
+            <div class="resources-banner">
+                <div class="banner-icon">📚✨</div>
+                <p class="resources-intro">
+                    Click any phrase to hear the French pronunciation. Use these sentences whenever you need help in class!
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 style="text-align: center; color: var(--primary-blue); margin-bottom: 0.5rem; cursor: pointer;"
+                onclick="speak('Les phrases utiles en classe')">📋 Les phrases utiles en classe</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">Useful Classroom Phrases</p>
+
+            <div class="classroom-phrases-grid">
+                <button class="classroom-phrase" style="--phrase-accent: #6366f1;"
+                    onclick="speak('Est-ce que je peux aller aux toilettes ?')">
+                    <span class="phrase-icon">🚻</span>
+                    <span class="phrase-content">
+                        <span class="french">Est-ce que je peux aller aux toilettes ?</span>
+                        <span class="english">May I go to the washroom?</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #0ea5e9;"
+                    onclick="speak('Est-ce que je peux boire de l’eau ?')">
+                    <span class="phrase-icon">💧</span>
+                    <span class="phrase-content">
+                        <span class="french">Est-ce que je peux boire de l'eau ?</span>
+                        <span class="english">May I drink some water?</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #14b8a6;"
+                    onclick="speak('Est-ce que je peux remplir ma bouteille d’eau ?')">
+                    <span class="phrase-icon">🍼</span>
+                    <span class="phrase-content">
+                        <span class="french">Est-ce que je peux remplir ma bouteille d'eau ?</span>
+                        <span class="english">May I fill up my water bottle?</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #8b5cf6;"
+                    onclick="speak('Est-ce que je peux entrer ?')">
+                    <span class="phrase-icon">🚪</span>
+                    <span class="phrase-content">
+                        <span class="french">Est-ce que je peux entrer ?</span>
+                        <span class="english">May I come in?</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #e03e52;"
+                    onclick="speak('Comment dit-on en français ?')">
+                    <span class="phrase-icon">🇫🇷</span>
+                    <span class="phrase-content">
+                        <span class="french">Comment dit-on … en français ?</span>
+                        <span class="english">How do you say … in French?</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #f59e0b;"
+                    onclick="speak('Qu’est-ce que ça veut dire ?')">
+                    <span class="phrase-icon">❓</span>
+                    <span class="phrase-content">
+                        <span class="french">Qu'est-ce que ça veut dire … ?</span>
+                        <span class="english">What does … mean?</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #ec4899;"
+                    onclick="speak('Pouvez-vous répéter, s’il vous plaît ?')">
+                    <span class="phrase-icon">🔁</span>
+                    <span class="phrase-content">
+                        <span class="french">Pouvez-vous répéter, s'il vous plaît ?</span>
+                        <span class="english">Can you repeat, please?</span>
+                    </span>
+                </button>
+
+                <div class="dual-phrase-card" style="--phrase-accent: #2a52be;">
+                    <div class="dual-phrase-header">
+                        <span class="phrase-icon">🙋</span>
+                        <span>Questions in class</span>
+                    </div>
+                    <button class="classroom-phrase" style="--phrase-accent: #2a52be;"
+                        onclick="speak('J’ai une question')">
+                        <span class="phrase-icon">💬</span>
+                        <span class="phrase-content">
+                            <span class="french">J'ai une question</span>
+                            <span class="english">I have a question</span>
+                        </span>
+                    </button>
+                    <button class="classroom-phrase" style="--phrase-accent: #64748b;"
+                        onclick="speak('J’ai un doute')">
+                        <span class="phrase-icon">🤔</span>
+                        <span class="phrase-content">
+                            <span class="french">J'ai un doute</span>
+                            <span class="english">I have a doubt</span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="dual-phrase-card" style="--phrase-accent: #6bcb77;">
+                    <div class="dual-phrase-header">
+                        <span class="phrase-icon">🧠</span>
+                        <span>Understanding</span>
+                    </div>
+                    <button class="classroom-phrase" style="--phrase-accent: #6bcb77;"
+                        onclick="speak('Je comprends')">
+                        <span class="phrase-icon">✅</span>
+                        <span class="phrase-content">
+                            <span class="french">Je comprends</span>
+                            <span class="english">I understand</span>
+                        </span>
+                    </button>
+                    <button class="classroom-phrase" style="--phrase-accent: #e03e52;"
+                        onclick="speak('Je ne comprends pas')">
+                        <span class="phrase-icon">❌</span>
+                        <span class="phrase-content">
+                            <span class="french">Je ne comprends pas</span>
+                            <span class="english">I don't understand</span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="dual-phrase-card" style="--phrase-accent: #ffd93d;">
+                    <div class="dual-phrase-header">
+                        <span class="phrase-icon">✋</span>
+                        <span>Knowing the answer</span>
+                    </div>
+                    <button class="classroom-phrase" style="--phrase-accent: #d97706;"
+                        onclick="speak('Je sais la réponse')">
+                        <span class="phrase-icon">🎯</span>
+                        <span class="phrase-content">
+                            <span class="french">Je sais la réponse</span>
+                            <span class="english">I know the answer</span>
+                        </span>
+                    </button>
+                    <button class="classroom-phrase" style="--phrase-accent: #94a3b8;"
+                        onclick="speak('Je ne sais pas')">
+                        <span class="phrase-icon">🤷</span>
+                        <span class="phrase-content">
+                            <span class="french">Je ne sais pas</span>
+                            <span class="english">I don't know</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="margin-top: 3rem;">
+            <h2 style="text-align: center; color: var(--primary-red); margin-bottom: 0.5rem; cursor: pointer;"
+                onclick="speak('Les expressions avec moi')">🗣️ Les expressions avec « moi »</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">Words ending with moi</p>
+
+            <div class="classroom-phrases-grid">
+                <button class="classroom-phrase" style="--phrase-accent: #6366f1;"
+                    onclick="speak('Écoutez-moi')">
+                    <span class="phrase-icon">👂</span>
+                    <span class="phrase-content">
+                        <span class="french">Écoutez-moi</span>
+                        <span class="english">Listen to me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #0ea5e9;"
+                    onclick="speak('Regardez-moi')">
+                    <span class="phrase-icon">👀</span>
+                    <span class="phrase-content">
+                        <span class="french">Regardez-moi</span>
+                        <span class="english">Look at me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #14b8a6;"
+                    onclick="speak('Aidez-moi')">
+                    <span class="phrase-icon">🤝</span>
+                    <span class="phrase-content">
+                        <span class="french">Aidez-moi</span>
+                        <span class="english">Help me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #8b5cf6;"
+                    onclick="speak('Donnez-moi')">
+                    <span class="phrase-icon">🎁</span>
+                    <span class="phrase-content">
+                        <span class="french">Donnez-moi</span>
+                        <span class="english">Give me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #e03e52;"
+                    onclick="speak('Excusez-moi')">
+                    <span class="phrase-icon">🙏</span>
+                    <span class="phrase-content">
+                        <span class="french">Excusez-moi</span>
+                        <span class="english">Excuse me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #ec4899;"
+                    onclick="speak('Pardonnez-moi')">
+                    <span class="phrase-icon">💛</span>
+                    <span class="phrase-content">
+                        <span class="french">Pardonnez-moi</span>
+                        <span class="english">Forgive me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #f59e0b;"
+                    onclick="speak('Suivez-moi')">
+                    <span class="phrase-icon">👣</span>
+                    <span class="phrase-content">
+                        <span class="french">Suivez-moi</span>
+                        <span class="english">Follow me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #2a52be;"
+                    onclick="speak('Dis-moi')">
+                    <span class="phrase-icon">💬</span>
+                    <span class="phrase-content">
+                        <span class="french">Dis-moi</span>
+                        <span class="english">Tell me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #6bcb77;"
+                    onclick="speak('Après moi')">
+                    <span class="phrase-icon">➡️</span>
+                    <span class="phrase-content">
+                        <span class="french">Après moi</span>
+                        <span class="english">After me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #d97706;"
+                    onclick="speak('C’est moi')">
+                    <span class="phrase-icon">🙋</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est moi</span>
+                        <span class="english">It's me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #be4bdb;"
+                    onclick="speak('Toi et moi')">
+                    <span class="phrase-icon">👫</span>
+                    <span class="phrase-content">
+                        <span class="french">Toi et moi</span>
+                        <span class="english">You and me</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #0891b2;"
+                    onclick="speak('Expliquez-moi')">
+                    <span class="phrase-icon">📖</span>
+                    <span class="phrase-content">
+                        <span class="french">Expliquez-moi</span>
+                        <span class="english">Explain to me</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section class="content-section" style="margin-top: 3rem;">
+            <div class="c-est-section-header">
+                <h2 style="color: var(--accent-green); margin-bottom: 0.5rem; cursor: pointer;"
+                    onclick="speak('Les expressions avec c’est')">✨ Les expressions avec « c'est »</h2>
+                <p style="color: var(--text-muted);">Positive and negative expressions with c'est</p>
+            </div>
+
+            <div style="text-align: center;">
+                <h3 class="c-est-subheading positive" style="cursor: pointer;"
+                    onclick="speak('Les expressions positives avec c’est')">😊 Les expressions positives avec c'est</h3>
+            </div>
+
+            <div class="classroom-phrases-grid">
+                <button class="classroom-phrase" style="--phrase-accent: #6bcb77;"
+                    onclick="speak('C’est excellent')">
+                    <span class="phrase-icon">⭐</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est excellent !</span>
+                        <span class="english">It is excellent!</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #22c55e;"
+                    onclick="speak('C’est parfait')">
+                    <span class="phrase-icon">💯</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est parfait !</span>
+                        <span class="english">That's perfect!</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #14b8a6;"
+                    onclick="speak('C’est intéressant')">
+                    <span class="phrase-icon">🤔</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est intéressant.</span>
+                        <span class="english">That's interesting.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #eab308;"
+                    onclick="speak('C’est magnifique')">
+                    <span class="phrase-icon">🌟</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est magnifique !</span>
+                        <span class="english">It's magnificent!</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #ec4899;"
+                    onclick="speak('C’est joli')">
+                    <span class="phrase-icon">🌸</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est joli.</span>
+                        <span class="english">That's pretty.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #8b5cf6;"
+                    onclick="speak('C’est génial')">
+                    <span class="phrase-icon">🎉</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est génial !</span>
+                        <span class="english">That's awesome!</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #0ea5e9;"
+                    onclick="speak('C’est vrai')">
+                    <span class="phrase-icon">✅</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est vrai.</span>
+                        <span class="english">That's true.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #6366f1;"
+                    onclick="speak('C’est facile')">
+                    <span class="phrase-icon">😊</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est facile.</span>
+                        <span class="english">That's easy.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #f59e0b;"
+                    onclick="speak('C’est super')">
+                    <span class="phrase-icon">👍</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est super !</span>
+                        <span class="english">It's great!</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #0891b2;"
+                    onclick="speak('C’est possible')">
+                    <span class="phrase-icon">🙌</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est possible.</span>
+                        <span class="english">It's possible.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #2a52be;"
+                    onclick="speak('C’est bien')">
+                    <span class="phrase-icon">👏</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est bien.</span>
+                        <span class="english">It's good / It's right (verb)</span>
+                        <span class="example">Ex: Tu aides ta maman ? C'est bien.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #d97706;"
+                    onclick="speak('C’est bon')">
+                    <span class="phrase-icon">🍫</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est bon !</span>
+                        <span class="english">It's good / It's correct (noun)</span>
+                        <span class="example">Ex: Le chocolat, c'est bon !</span>
+                    </span>
+                </button>
+            </div>
+
+            <div style="text-align: center;">
+                <h3 class="c-est-subheading negative" style="cursor: pointer;"
+                    onclick="speak('Les expressions négatives avec c’est')">😔 Les expressions négatives avec c'est</h3>
+            </div>
+
+            <div class="classroom-phrases-grid">
+                <button class="classroom-phrase" style="--phrase-accent: #e03e52;"
+                    onclick="speak('C’est mal')">
+                    <span class="phrase-icon">❌</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est mal.</span>
+                        <span class="english">It's bad (verb)</span>
+                        <span class="example">Ex: Mentir, c'est mal.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #be123c;"
+                    onclick="speak('C’est mauvais')">
+                    <span class="phrase-icon">🎬</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est mauvais.</span>
+                        <span class="english">It's bad (noun)</span>
+                        <span class="example">Ex: Le film, c'est mauvais.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #64748b;"
+                    onclick="speak('C’est triste')">
+                    <span class="phrase-icon">😢</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est triste.</span>
+                        <span class="english">That's sad.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #7c3aed;"
+                    onclick="speak('C’est difficile')">
+                    <span class="phrase-icon">😓</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est difficile.</span>
+                        <span class="english">That's difficult.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #dc2626;"
+                    onclick="speak('C’est faux')">
+                    <span class="phrase-icon">🚫</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est faux.</span>
+                        <span class="english">That's false.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #9333ea;"
+                    onclick="speak('C’est fatigant')">
+                    <span class="phrase-icon">😴</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est fatigant.</span>
+                        <span class="english">That's tiring.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #991b1b;"
+                    onclick="speak('C’est horrible')">
+                    <span class="phrase-icon">😱</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est horrible !</span>
+                        <span class="english">That's horrible!</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #a855f7;"
+                    onclick="speak('C’est bizarre')">
+                    <span class="phrase-icon">🤨</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est bizarre.</span>
+                        <span class="english">That's weird.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #f97316;"
+                    onclick="speak('C’est dommage')">
+                    <span class="phrase-icon">😔</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est dommage.</span>
+                        <span class="english">It's a pity / shame / too bad.</span>
+                    </span>
+                </button>
+
+                <button class="classroom-phrase" style="--phrase-accent: #475569;"
+                    onclick="speak('C’est nul')">
+                    <span class="phrase-icon">🗑️</span>
+                    <span class="phrase-content">
+                        <span class="french">C'est nul !</span>
+                        <span class="english">It's rubbish / useless.</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ressources complètes ! Tu es prêt pour la classe ! 📚🇫🇷</p>
+    </footer>
+
+</body>
+
+</html>

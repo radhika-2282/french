@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 3: Introductions - Learn French</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/script.js" type="module" onload="speak('Lesson 3 - Se Présenter')"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Lesson 3: Se Présenter (Introductions)</h1>
+    </div>
+  </header>
+
+  <nav class="side-toolbar">
+    <a href="./index.html" class="nav-btn" title="Home">🏠 <span>Home</span></a>
+    <a href="./lesson2.html" class="nav-btn" title="Previous Lesson">⬅️ <span>Prev</span></a>
+    <a href="./lesson4.html" class="nav-btn" title="Next Lesson">➡️ <span>Next</span></a>
+  </nav>
+  <main class="lesson-page">
+    <div class="lesson-intro">
+      <div class="goals-box">
+        <h3>🎯 Learning Goals</h3>
+        <ul>
+          <li>Introduce yourself in French</li>
+          <li>Introducing others </li>
+          <li>Use subject pronouns (je, tu, il, elle...)</li>
+          <li>Learn basic verbs and nationalities</li>
+          <li>Culture & Civilisation</li>
+        </ul>
+      </div>
+    </div>
+    <section class="content-section">
+      <h2>🙋‍♀️ Introducing Yourself (Se Présenter)</h2>
+      <p class="section-intro">
+        Learn the essential phrases to tell people about yourself!
+      </p>
+      <div class="introduction-phrases" style="grid-template-columns: 1fr; display: grid; gap: 1rem;">
+        <!-- 1. Je m'appelle -->
+        <div class="phrase-card" onclick="speak('Bonjour! Je m’appelle..', 'female')"
+          style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; text-align: left; cursor: pointer;">
+          <div class="phrase-icon" style="margin-bottom: 0; min-width: 120px; display: flex; justify-content: center;">
+            <div>
+              <div>bonjour 👋</div>
+            </div>
+          </div>
+          <div style="flex: 1 1 200px;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Bonjour! Je m'appelle...</h3>
+            <p class="font-semibold red" style="font-size: 1.1rem; margin: 0;">Hello! My name is...</p>
+          </div>
+          <div class="accent-box blue bg-grey"
+            onclick="speak('Bonjour! Je m’appelle Marie.', 'female'); event.stopPropagation();">
+            <strong style="cursor: pointer; display: block; margin-bottom: 0.25rem;">
+              Example: Bonjour! Je m'appelle Marie.
+            </strong>
+            <em style="color: var(--text-muted);">Hello! My name is Marie.</em>
+          </div>
+        </div>
+
+        <!-- 2. J'ai ... ans -->
+        <div class="phrase-card" onclick="speak('J’ai ... ans', 'female')"
+          style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; text-align: left; cursor: pointer;">
+          <div class="phrase-icon" style="margin-bottom: 0; min-width: 120px; display: flex; justify-content: center;">
+            <div class="age-visual">
+              <div>🎂</div>
+              <div>🕯️🕯️🕯️</div>
+            </div>
+          </div>
+          <div style="flex: 1 1 200px;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">J'ai __ ans</h3>
+            <p class="font-semibold red" style="font-size: 1.1rem; margin: 0;">I am __ years old</p>
+          </div>
+          <div class="accent-box blue bg-grey" onclick="speak('J’ai dix ans', 'female'); event.stopPropagation();">
+            <strong style="cursor: pointer; display: block; margin-bottom: 0.25rem;">
+              Example: J'ai dix ans.
+            </strong>
+            <em style="color: var(--text-muted);">I am 10 years old.</em>
+          </div>
+        </div>
+
+        <!-- 3. Je suis ... -->
+        <div class="phrase-card"
+          style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; text-align: left; cursor: default;"
+          onclick="speak('Je suis')">
+          <div class="phrase-icon"
+            style="margin-bottom: 0; min-width: 120px; justify-content: center; cursor: pointer;">
+            <div>
+              <div>👤</div>
+              <div>🖐</div>
+            </div>
+          </div>
+          <div style="flex: 1 1 200px;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Je suis...</h3>
+            <p class="font-semibold red" style="font-size: 1.1rem; margin: 0;">I am...</p>
+          </div>
+          <div style="display: flex; flex: 1 1 250px; flex-direction: column; height: fit-content; gap: 8px;">
+            <div onclick="speak('Je suis étudiant', 'male'); event.stopPropagation();"
+              class="accent-box blue bg-grey fill-hr">
+              <strong style="display: block; margin-bottom: 0.2rem;">👦: Je suis étudiant.</strong>
+              <em style="font-size: 0.9rem; color: var(--text-muted);">I am a student - boy</em>
+            </div>
+            <div onclick="speak('Je suis étudiante', 'female'); event.stopPropagation();"
+              class="accent-box red bg-grey fill-hr">
+              <strong style="display: block; margin-bottom: 0.2rem;">👧: Je suis étudiante.</strong>
+              <em style="font-size: 0.9rem; color: var(--text-muted);">I am a student - girl</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. J'étudie ... -->
+        <div class="phrase-card" onclick="speak('J’étudie à l’école')"
+          style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; text-align: left; cursor: pointer;">
+          <div class="phrase-icon" style="margin-bottom: 0; min-width: 120px; display: flex; justify-content: center;">
+            <div class="school-visual">
+              <div class="school">🏫</div>
+              <div class="book">📖</div>
+            </div>
+          </div>
+          <div style="flex: 1 1 200px;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">J'étudie à l'école...</h3>
+            <p class="font-semibold red" style="font-size: 1.1rem; margin: 0;">I study at ... school</p>
+          </div>
+          <div class="accent-box blue bg-grey"
+            onclick="speak('J’étudie à l’école Silver Oaks'); event.stopPropagation();">
+            <strong style="cursor: pointer; display: block; margin-bottom: 0.25rem;">
+              Example: J'étudie à l'école Silver Oaks
+            </strong>
+            <em style="color: var(--text-muted);">I study at Silver Oaks school.</em>
+          </div>
+        </div>
+
+        <!-- 5. J'habite ... -->
+        <div class="phrase-card"
+          style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; text-align: left; cursor: default;">
+          <div class="phrase-icon" onclick="speak('J’habite à')"
+            style="margin-bottom: 0; min-width: 120px; display: flex; justify-content: center; cursor: pointer;">
+            <div>
+              <div>🏠</div>
+              <div>📍</div>
+            </div>
+          </div>
+          <div style="flex: 1 1 200px;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">J'habite à...</h3>
+            <p class="font-semibold red" style="font-size: 1.1rem; margin: 0;">I live in...</p>
+          </div>
+          <div style="flex: 1 1 250px; display: flex; flex-direction: column; gap: 8px;">
+            <div onclick="speak('J’habite à Paris'); event.stopPropagation();" class="accent-box green bg-grey fill-hr">
+              <strong>Ex 1: J'habite à Paris.</strong>
+            </div>
+            <div onclick="speak('J’habite à Hyderabad en Inde'); event.stopPropagation();"
+              class="accent-box green bg-grey fill-hr">
+              <strong>Ex 2: J'habite à Hyderabad en Inde.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2 style="margin-bottom: 1.5rem;">👥 Subject Pronouns (Les Pronoms Sujets)</h2>
+      <div
+        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 2.5rem; text-align: center;">
+        <div>
+          <div class="video-wrapper"
+            style="position: relative; width: 250px; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/hxw0fCB3maQ" referrerpolicy="no-referrer-when-downgrade"
+              title="Subject Pronouns Song" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <p class="mu-it fs-09" style="margin-top: 0.75rem;">Sing along to learn the pronouns!</p>
+        </div>
+
+        <div>
+          <div class="video-wrapper"
+            style="position: relative; width: 250px; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/lYjqp0c0H2M" referrerpolicy="no-referrer-when-downgrade"
+              title="French Subject Pronouns" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <p class="mu-it fs-09" style="margin-top: 0.75rem;">Learn the pronouns with examples!</p>
+        </div>
+      </div>
+      <p class="section-intro">
+        These little words replace names and help us talk about people!
+      </p>
+      <div class="grid min-200">
+
+        <div class="center-card" onclick="speak('je')">
+          <div class="emoji">🙋‍♀️</div>
+          <h3>Je</h3>
+          <p class="font-semibold red">I</p>
+        </div>
+
+        <div class="center-card" onclick="speak('tu')">
+          <div class="emoji">👤</div>
+          <h3>Tu</h3>
+          <p class="font-semibold red">You (informal)</p>
+        </div>
+
+        <div class="center-card" onclick="speak('il')">
+          <div class="emoji">👦</div>
+          <h3>Il</h3>
+          <p class="font-semibold red">He</p>
+        </div>
+
+        <div class="center-card" onclick="speak('elle')">
+          <div class="emoji">👧</div>
+          <h3>Elle</h3>
+          <p class="font-semibold red">She</p>
+        </div>
+
+        <div class="center-card" onclick="speak('nous')">
+          <div class="emoji">👥</div>
+          <h3>Nous</h3>
+          <p class="font-semibold red">We</p>
+        </div>
+
+        <div class="center-card" onclick="speak('vous')">
+          <div class="emoji">👨‍👩‍👧‍👦</div>
+          <h3>Vous</h3>
+          <p class="font-semibold red">You (formal/plural)</p>
+        </div>
+
+        <div class="center-card" onclick="speak('ils')">
+          <div class="emoji">👦👦</div>
+          <h3>Ils</h3>
+          <p class="font-semibold red">They (masculine/mixed)</p>
+        </div>
+
+        <div class="center-card" onclick="speak('elles')">
+          <div class="emoji">👧</div>
+          <h3>Elles</h3>
+          <p class="font-semibold red">They (feminine)</p>
+        </div>
+
+      </div>
+      <div class="pronoun-tips">
+        <div class="tip-box">
+          <h4>💡 Memory Tip:</h4>
+          <p>
+            <strong>Ils vs Elles:</strong> Use "ils" if there's even one boy
+            in the group. Use "elles" only when the group is all girls!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+  <h2>🔤 Important Verbs</h2>
+
+  <!-- Verb row: S'appeler, Avoir, Être -->
+  <!-- Verb rows: each verb tile on the left (20%), conversation area on the right -->
+  <div class="important-verbs-layout">
+    <!-- Row 1: S'appeler + existing conversation/focus -->
+    <div class="verb-row">
+      <div class="verb-side verb-section" style="margin-bottom: 0;">
+        <h3>S'appeler (To call oneself)</h3>
+        <div class="conjugation-table">
+          <div class="conjugation-row" onclick="speak('Je m’appelle')">
+            <span class="pronoun">Je</span>
+            <span class="verb">m'appelle</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Tu t’appelles')">
+            <span class="pronoun">Tu</span>
+            <span class="verb">t'appelles</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Il s’appelle, Elle s’appelle')">
+            <span class="pronoun">Il/Elle</span>
+            <span class="verb">s'appelle</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Nous nous appelons')">
+            <span class="pronoun">Nous</span>
+            <span class="verb">nous appelons</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Vous vous appelez')">
+            <span class="pronoun">Vous</span>
+            <span class="verb">vous appelez</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Ils s’appellent, Elles s’appellent')">
+            <span class="pronoun">Ils/Elles</span>
+            <span class="verb">s'appellent</span>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <div class="video-wrapper"
+            style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/o3PVFqBrHVU" referrerpolicy="strict-origin-when-cross-origin"
+              title="S'appeler Song" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Sing
+            along to learn s'appeler!</p>
+        </div>
+
+      </div>
+
+
+      <div class="conversation-side">
+        <div class="dialogue-section"
+          style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
+          <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Demander
+            et dire le nom</h3>
+          <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+
+            <div class="accent-box blue bg-grey fill-hr"
+              onclick="speak('Comment tu t’appelles ? Je m’appelle Léo !', 'male')">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                <span style="font-size: 1.5rem;">👤</span>
+                <strong>Comment tu t'appelles ?</strong>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
+                <span style="font-size: 1.5rem;">👦</span>
+                <span style="color: var(--primary-red); font-weight: 700;">Je m'appelle Léo !</span>
+              </div>
+            </div>
+
+            <div class="accent-box green bg-grey fill-hr"
+              onclick="speak('Comment il s’appelle ? Il s’appelle Paul.', 'male')">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                <span style="font-size: 1.5rem;">👥</span>
+                <strong>Comment il s'appelle ?</strong>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
+                <span style="font-size: 1.5rem;">👨</span>
+                <span style="color: var(--primary-red); font-weight: 700;">Il s'appelle Paul.</span>
+              </div>
+            </div>
+
+            <div class="accent-box red bg-grey fill-hr"
+              onclick="speak('Elle s’appelle comment ? Elle s’appelle Sophie.', 'female')">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                <span style="font-size: 1.5rem;">👭</span>
+                <strong>Elle s'appelle comment ?</strong>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-left: 2rem;">
+                <span style="font-size: 1.5rem;">👩</span>
+                <span style="color: var(--primary-red); font-weight: 700;">Elle s'appelle Sophie.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Explanation for 'On' -->
+        <div class="tip-box"
+          style="margin-top: 2rem; border-left: 5px solid var(--accent-yellow); background: #fffdf0;">
+          <h3 class="blue" style="margin-bottom: 1rem;">💡 Focus on "On"</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div>
+              <p><strong>What it means:</strong></p>
+              <ul>
+                <li><strong>On = Nous</strong> (We)</li>
+                <li><strong>On</strong> = we / one / people</li>
+              </ul>
+            </div>
+            <div>
+              <p><strong>How to conjugate:</strong></p>
+              <p>Even though it often means "we", we conjugate it exactly like <strong>il</strong> or
+                <strong>elle</strong>!
+              </p>
+              <ul style="margin-top: 10px;">
+                <li onclick="speak('il a')" style="cursor: pointer;"><strong>Il a</strong> = he has</li>
+                <li onclick="speak('elle a')" style="cursor: pointer;"><strong>Elle a</strong> = she has</li>
+                <li onclick="speak('on a')" style="cursor: pointer; color: var(--primary-red); font-weight: 700;">
+                  <strong>On a</strong> = we have / one has
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Avoir + placeholder conversation -->
+    <div class="verb-row">
+      <div class="verb-side verb-section" style="margin-bottom: 0;">
+        <h3>Avoir (To have)</h3>
+        <div class="conjugation-table">
+          <div class="conjugation-row" onclick="speak('J\'ai')">
+            <span class="pronoun">Je</span>
+            <span class="verb">ai (J'ai)</span>
+            <span class="mu-it">(I
+              have)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Tu as')">
+            <span class="pronoun">Tu</span>
+            <span class="verb">as</span>
+            <span class="mu-it">(You
+              have)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Il a, Elle a, On a')">
+            <span class="pronoun">Il/Elle/On</span>
+            <span class="verb">a</span>
+            <span class="mu-it">(He/She/One
+              has)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Nous avons')">
+            <span class="pronoun">Nous</span>
+            <span class="verb">avons</span>
+            <span class="mu-it">(We
+              have)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Vous avez')">
+            <span class="pronoun">Vous</span>
+            <span class="verb">avez</span>
+            <span class="mu-it">(You
+              have)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Ils ont, Elles ont')">
+            <span class="pronoun">Ils/Elles</span>
+            <span class="verb">ont</span>
+            <span class="mu-it">(They
+              have)</span>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <div class="video-wrapper"
+            style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/sVfbb5oo_3w" referrerpolicy="strict-origin-when-cross-origin"
+              title="Avoir Verb Practice" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice
+            conjugating Avoir with this video!</p>
+        </div>
+      </div>
+      <div class="conversation-side">
+        <div class="dialogue-section"
+          style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
+          <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Avoir
+          </h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+            <div onclick="speak('J\'ai un stylo')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);">J'ai un stylo.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">I have a pen.</span>
+            </div>
+
+            <div onclick="speak('As-tu un ordinateur ?')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);">As-tu un ordinateur ?</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">Do you have a
+                computer?</span>
+            </div>
+
+            <div onclick="speak('Il a une règle')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);">Il a une règle.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">He has a ruler.</span>
+            </div>
+
+            <div onclick="speak('Elle a un taille-crayon')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);">Elle a un taille-crayon.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">She has a
+                pencil sharpener.</span>
+            </div>
+
+            <div onclick="speak('Nous avons des livres')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);">Nous avons des livres.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">We have books.</span>
+            </div>
+
+            <div onclick="speak('Vous avez une colle ?')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);">Vous avez une colle ?</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">Do you have a glue
+                stick?</span>
+            </div>
+
+            <div onclick="speak('Ils ont cours de français maintenant')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);">Ils ont cours de français maintenant.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">They have French class
+                now.</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="content-section" style="margin: 0; padding: 0;">
+      <div class="tip-box"
+        style="border-left: 5px solid var(--accent-green); background: #f8fafc; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+        <h3 style="margin: 0 0 0.4rem; text-align: center; color: var(--primary-blue);">Les Objets de la Classe</h3>
+        <p style="margin: 0 0 1.5rem; text-align: center; color: var(--text-muted); font-style: italic;">Click each
+          item to hear it in French.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr)); gap: 1rem;">
+          <div onclick="speak('Une gomme')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="margin: 0 auto; font-size: 2.2rem; width: 45px; margin-bottom: 0.5rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                clip-rule="evenodd" viewBox="0 0 512 446.201">
+                <g fill-rule="nonzero">
+                  <path
+                    d="M121.683 218.8c-2.858-2.857-2.629-7.723.512-10.864 3.14-3.141 8.007-3.37 10.864-.512l174.464 174.467c2.857 2.857 2.628 7.724-.513 10.865-3.141 3.14-8.007 3.369-10.864.512L121.683 218.8z" />
+                  <path
+                    d="M304.071 407.141l-179.668 38.621c-7.248 1.536-14.411-1.059-19.04-6.192l-83.521-83.944c-30.268-30.425-28.351-42.165 1.249-71.674L297.755 10.135c12.341-14.197 37.43-13.072 49.401.83l151.95 152.417c16.511 16.57 17.726 36.066.38 53.365L314.024 401.733a19.918 19.918 0 01-9.958 5.387l.005.021z" />
+                  <path fill="#E3504D"
+                    d="M299.918 387.549l-179.669 38.622-95.182-95.668c-5.677-5.677-5.677-14.598 0-20.274l287.08-286.195c5.185-5.86 14.445-5.353 19.791 0l155.611 156.092c5.679 5.68 5.676 14.591 0 20.274L299.918 387.549z" />
+                  <path fill="#AF413F"
+                    d="M309.168 378.299l-22.609-20.198 186.884-192.123 14.106 14.148c5.16 5.396 6.421 11.826 0 20.274L309.168 378.299z" />
+                  <path
+                    d="M475.163 446.111c-5.544 0-10.041-4.941-10.041-11.034 0-6.094 4.497-11.034 10.041-11.034h18.919c5.544 0 10.04 4.94 10.04 11.034 0 6.093-4.496 11.034-10.04 11.034h-18.919zm-173.12-38.535l-76.601 16.467h217.962c5.545 0 10.041 4.94 10.041 11.034 0 6.093-4.496 11.034-10.041 11.034h-321.28c-6.447.614-12.619-1.948-16.761-6.541l-89.724-90.179c-20.295-20.398-20.555-37.615.185-58.164l92.631-91.796c7.78-7.738 20.331-7.753 28.133-.077l177.357 173.933c7.877 7.746 7.981 20.413.235 28.29-3.734 3.794-7.341 4.969-12.137 5.999z" />
+                  <path fill="#E4E5E5"
+                    d="M299.918 387.549l-179.669 38.622-95.182-95.668c-5.677-5.677-5.677-14.598 0-20.274l97.496-96.614 177.355 173.934z" />
+                </g>
+              </svg>
+            </div>
+            <strong>Une gomme</strong>
+          </div>
+          <div onclick="speak('Une table')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="margin: 0 auto; font-size: 2.2rem; width: 45px; margin-bottom: 0.5rem;">
+              <svg fill="#000000" viewBox="0 0 24 24" id="desk-8" data-name="Flat Line"
+                xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <rect id="secondary" x="4" y="6" width="16" height="4" style="fill: #2ca9bc; stroke-width: 2;"></rect>
+                  <path id="primary" d="M4,6V18M20,6V18M4,6v4H20V6ZM3,6H21"
+                    style="fill: none; stroke: #ffbb00; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                  </path>
+                </g>
+              </svg>
+            </div>
+            <strong>Une table</strong>
+          </div>
+          <div onclick="speak('Un taille-crayon')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div
+              style="font-size: 2.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; height: 2.2rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="2.2rem" height="2.2rem"
+                style="display: block;">
+                <defs>
+                  <linearGradient id="sharpenerBody" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#38bdf8" />
+                    <stop offset="100%" stop-color="#0284c7" />
+                  </linearGradient>
+                  <linearGradient id="sharpenerBlade" x1="0%" y1="0%" x2="100%" y2="50%">
+                    <stop offset="0%" stop-color="#f8fafc" />
+                    <stop offset="35%" stop-color="#cbd5e1" />
+                    <stop offset="65%" stop-color="#f1f5f9" />
+                    <stop offset="100%" stop-color="#94a3b8" />
+                  </linearGradient>
+                  <linearGradient id="sharpenerScrew" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f1f5f9" />
+                    <stop offset="100%" stop-color="#64748b" />
+                  </linearGradient>
+                </defs>
+                <g>
+                  <!-- Main Body -->
+                  <path
+                    d="M 12 14 C 12 10, 16 8, 22 8 L 42 8 C 48 8, 52 10, 52 14 L 48 52 C 48 56, 44 58, 38 58 L 26 58 C 20 58, 16 56, 16 52 Z"
+                    fill="url(#sharpenerBody)" stroke="#0369a1" stroke-width="1.5" />
+                  <!-- Side Grips -->
+                  <path d="M 13 22 C 16 22, 16 28, 13 28" fill="none" stroke="#bae6fd" stroke-width="2"
+                    stroke-linecap="round" />
+                  <path d="M 14 32 C 17 32, 17 38, 14 38" fill="none" stroke="#bae6fd" stroke-width="2"
+                    stroke-linecap="round" />
+                  <path d="M 15 42 C 18 42, 18 48, 15 48" fill="none" stroke="#bae6fd" stroke-width="2"
+                    stroke-linecap="round" />
+                  <path d="M 51 22 C 48 22, 48 28, 51 28" fill="none" stroke="#0284c7" stroke-width="2"
+                    stroke-linecap="round" />
+                  <path d="M 50 32 C 47 32, 47 38, 50 38" fill="none" stroke="#0284c7" stroke-width="2"
+                    stroke-linecap="round" />
+                  <path d="M 49 42 C 46 42, 46 48, 49 48" fill="none" stroke="#0284c7" stroke-width="2"
+                    stroke-linecap="round" />
+                  <!-- Top Highlight -->
+                  <path d="M 20 11 L 44 11" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.6" />
+                  <!-- Blade Recess -->
+                  <rect x="22" y="14" width="20" height="38" rx="2" fill="#0369a1" opacity="0.4" />
+                  <!-- Shaving Slit -->
+                  <path d="M 25 16 L 27 50 L 29 50 L 27 16 Z" fill="#082f49" opacity="0.8" />
+                  <!-- Metal Blade -->
+                  <polygon points="27,15 41,17 38,49 24,49" fill="url(#sharpenerBlade)" stroke="#64748b"
+                    stroke-width="0.8" />
+                  <line x1="27" y1="15" x2="24" y2="49" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" />
+                  <!-- Screw -->
+                  <circle cx="32.5" cy="32" r="4" fill="url(#sharpenerScrew)" stroke="#475569" stroke-width="0.75" />
+                  <line x1="30.5" y1="30" x2="34.5" y2="34" stroke="#334155" stroke-width="1" stroke-linecap="round" />
+                  <line x1="34.5" y1="30" x2="30.5" y2="34" stroke="#334155" stroke-width="1" stroke-linecap="round" />
+                  <!-- Pencil Entry Hole -->
+                  <ellipse cx="32" cy="56" rx="7" ry="2.5" fill="#082f49" />
+                </g>
+              </svg>
+            </div>
+            <strong>Un taille-crayon</strong>
+          </div>
+          <div onclick="speak('Un crayon')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">✏️</div>
+            <strong>Un crayon</strong>
+          </div>
+
+          <div onclick="speak('Un livre')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📖</div>
+            <strong>Un livre</strong>
+          </div>
+          <div onclick="speak('Une horloge')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🕒</div>
+            <strong>Une horloge</strong>
+          </div>
+          <div onclick="speak('Un sac à dos')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🎒</div>
+            <strong>Un sac à dos</strong>
+          </div>
+          <div onclick="speak('Un stylo')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🖊️</div>
+            <strong>Un stylo</strong>
+          </div>
+
+          <div onclick="speak('Une chaise')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🪑</div>
+            <strong>Une chaise</strong>
+          </div>
+          <div onclick="speak('Des ciseaux')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">✂️</div>
+            <strong>Des ciseaux</strong>
+          </div>
+          <div onclick="speak('Une colle')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🧴</div>
+            <strong>Une colle</strong>
+          </div>
+          <div onclick="speak('Une règle')"
+            style="cursor: pointer; background: white; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid var(--glass-border);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📏</div>
+            <strong>Une règle</strong>
+          </div>
+
+        <div class="tip-box"
+          style="margin-top: 1.5rem; border-left: 5px solid var(--accent-yellow); background: #fffdf0;">
+          <h4 style="margin-bottom: 0.5rem; color: var(--primary-blue);">💡 Focus: Un, Une, Des</h4>
+          <p style="margin: 0;"><strong>Un</strong> - a/an or one (masculine singular).</p>
+          <p style="margin: 0.35rem 0 0;"><strong>Une</strong> - a/an or one (feminine singular).</p>
+          <p style="margin: 0.35rem 0 0;"><strong>Des</strong> - some (plural, masculine or feminine).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 3: Être + placeholder conversation -->
+    <div class="verb-row">
+      <div class="verb-side verb-section" style="margin-bottom: 0;">
+        <h3>Être (To be)</h3>
+        <div class="conjugation-table">
+          <div class="conjugation-row" onclick="speak('Je suis')">
+            <span class="pronoun">Je</span>
+            <span class="verb">suis</span>
+            <span class="mu-it">(I
+              am)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Tu es')">
+            <span class="pronoun">Tu</span>
+            <span class="verb">es</span>
+            <span class="mu-it">(You
+              are)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Il est, Elle est, On est')">
+            <span class="pronoun">Il/Elle/On</span>
+            <span class="verb">est</span>
+            <span class="mu-it">(He/She/One
+              is)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Nous sommes')">
+            <span class="pronoun">Nous</span>
+            <span class="verb">sommes</span>
+            <span class="mu-it">(We
+              are)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Vous êtes')">
+            <span class="pronoun">Vous</span>
+            <span class="verb">êtes</span>
+            <span class="mu-it">(You
+              are)</span>
+          </div>
+          <div class="conjugation-row" onclick="speak('Ils sont, Elles sont')">
+            <span class="pronoun">Ils/Elles</span>
+            <span class="verb">sont</span>
+            <span class="mu-it">(They
+              are)</span>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <div class="video-wrapper"
+            style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/K0Lv8oCLbGc" referrerpolicy="strict-origin-when-cross-origin"
+              title="Être Verb Practice" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem; font-style: italic;">Practice
+            conjugating Être with this video!</p>
+
+          <p style="margin: 1.1rem 0 0.6rem; color: var(--primary-blue); font-weight: 700;">Nationalities</p>
+          <div class="video-wrapper"
+            style="position: relative; max-width: 250px; padding-bottom: 250px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/oRC1-TAs1EY" referrerpolicy="strict-origin-when-cross-origin"
+              title="French Nationalities" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="conversation-side">
+        <div class="dialogue-section"
+          style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
+          <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🗣️ Dialogue : Être
+          </h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+            <div onclick="speak('Je suis indienne')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👧</span>Je suis
+                indienne.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">I am Indian.
+                (female)</span>
+            </div>
+
+            <div onclick="speak('Tu es indien ?')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👦</span>Tu es indien
+                ?</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">Are you Indian?
+                (male)</span>
+            </div>
+
+            <div onclick="speak('Il est américain')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👨</span>Il est
+                américain.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">He is American.</span>
+            </div>
+
+            <div onclick="speak('Elle est américaine')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👩</span>Elle est
+                américaine.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">She is American.</span>
+            </div>
+
+            <div onclick="speak('Nous sommes étudiants')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👨‍🎓👩‍🎓</span>Nous sommes
+                étudiants.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">We are students.</span>
+            </div>
+
+            <div onclick="speak('Vous êtes français ?')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-red); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👫</span>Vous êtes français
+                ?</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">Are you French?</span>
+            </div>
+
+            <div onclick="speak('Ils sont australiens')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--primary-blue); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👨👨</span>Ils sont
+                australiens.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">They are Australian.
+                (male/mixed)</span>
+            </div>
+
+            <div onclick="speak('Elles sont japonaises')"
+              style="cursor: pointer; background: #f8fafc; padding: 1rem; border-radius: 14px; border-left: 5px solid var(--accent-green); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center;">
+              <strong style="color: var(--primary-red);"><span class="dialogue-emoji">👩👩</span>Elles sont
+                japonaises.</strong>
+              <span style="color: var(--text-muted); font-style: italic; text-align: right;">They are Japanese.
+                (female)</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drag and Drop Game -->
+  <div class="game-section tip-box"
+    style="margin-top: 3rem; border-left: 5px solid var(--accent-green); background: #f8fafc; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); position: relative;">
+    <button id="dnd-mute-btn" onclick="toggleGameMute()"
+      style="position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; transition: transform 0.2s;"
+      onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+      title="Mute Sounds">🔊</button>
+    <h3 style="color: var(--primary-blue); margin-bottom: 1rem; text-align: center; font-size: 1.8rem;">🎮 Practice:
+      Être & Avoir</h3>
+    <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted); font-size: 1.1rem;">Drag the French
+      verb from the top and drop it into the correct empty box below!</p>
+
+    <div class="dnd-game-container" style="display: flex; flex-direction: column; gap: 3rem;">
+      <!-- Draggables Top Row -->
+      <div class="dnd-draggables" id="dnd-draggables"
+        style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); min-height: 80px;">
+        <!-- Generated by JS -->
+      </div>
+
+      <!-- Dropzones Bottom Row -->
+      <div class="dnd-dropzones" id="dnd-dropzones"
+        style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <!-- Generated by JS -->
+      </div>
+    </div>
+    <div id="dnd-feedback"
+      style="margin-top: 2rem; text-align: center; font-weight: bold; font-size: 1.5rem; min-height: 1.5em; color: var(--accent-green);">
+    </div>
+    <button onclick="initEtreAvoirGame()"
+      style="display: block; margin: 1rem auto 0; padding: 12px 24px; background: var(--primary-blue); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.2rem; box-shadow: var(--shadow-sm); transition: transform 0.2s;"
+      onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Again
+      🔄</button>
+  </div>
+
+  <script>
+    const etreAvoirPairs = [
+      { fr: "Je suis", en: "I am" },
+      { fr: "Tu es", en: "You are" },
+      { fr: "Il est", en: "He is" },
+      { fr: "Elle est", en: "She is" },
+      { fr: "Nous sommes", en: "We are" },
+      { fr: "Vous êtes", en: "You are (pl/f)" },
+      { fr: "Ils sont", en: "They (m) are" },
+      { fr: "Elles sont", en: "They (f) are" },
+      { fr: "J'ai", en: "I have" },
+      { fr: "Tu as", en: "You have" },
+      { fr: "Il a", en: "He has" },
+      { fr: "Elle a", en: "She has" },
+      { fr: "Nous avons", en: "We have" },
+      { fr: "Vous avez", en: "You have (pl/f)" },
+      { fr: "Ils ont", en: "They (m) have" },
+      { fr: "Elles ont", en: "They (f) have" }
+    ];
+
+    // Audio Context for sounds
+    let gameAudioCtx = null;
+    let gameMuted = false;
+
+    function toggleGameMute() {
+      gameMuted = !gameMuted;
+      document.getElementById('dnd-mute-btn').textContent = gameMuted ? "🔇" : "🔊";
+      document.getElementById('dnd-mute-btn').title = gameMuted ? "Unmute Sounds" : "Mute Sounds";
+    }
+
+    function playGameSound(type) {
+      if (gameMuted) return;
+      try {
+        if (!gameAudioCtx) gameAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (gameAudioCtx.state === 'suspended') gameAudioCtx.resume();
+
+        const osc = gameAudioCtx.createOscillator();
+        const gainNode = gameAudioCtx.createGain();
+        osc.connect(gainNode);
+        gainNode.connect(gameAudioCtx.destination);
+
+        if (type === 'correct') {
+          // Bell / Ding sound
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(880, gameAudioCtx.currentTime); // A5
+          osc.frequency.exponentialRampToValueAtTime(1760, gameAudioCtx.currentTime + 0.1); // A6
+          gainNode.gain.setValueAtTime(0.3, gameAudioCtx.currentTime);
+          gainNode.gain.exponentialRampToValueAtTime(0.01, gameAudioCtx.currentTime + 0.5);
+          osc.start(gameAudioCtx.currentTime);
+          osc.stop(gameAudioCtx.currentTime + 0.5);
+        } else {
+          // Buzz / Click sound
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(150, gameAudioCtx.currentTime);
+          gainNode.gain.setValueAtTime(0.3, gameAudioCtx.currentTime);
+          gainNode.gain.exponentialRampToValueAtTime(0.01, gameAudioCtx.currentTime + 0.2);
+          osc.start(gameAudioCtx.currentTime);
+          osc.stop(gameAudioCtx.currentTime + 0.2);
+        }
+      } catch (e) { console.log('Audio not supported', e); }
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function initEtreAvoirGame() {
+      const draggablesContainer = document.getElementById('dnd-draggables');
+      const dropzonesContainer = document.getElementById('dnd-dropzones');
+      const feedback = document.getElementById('dnd-feedback');
+
+      if (!draggablesContainer || !dropzonesContainer) return;
+
+      draggablesContainer.innerHTML = '';
+      dropzonesContainer.innerHTML = '';
+      feedback.textContent = '';
+
+      let selectedPairs = [...etreAvoirPairs];
+      shuffleArray(selectedPairs);
+      selectedPairs = selectedPairs.slice(0, 8); // 8 pairs per game
+
+      let draggables = [...selectedPairs];
+      shuffleArray(draggables);
+
+      draggables.forEach((pair) => {
+        const dragEl = document.createElement('div');
+        dragEl.textContent = pair.fr;
+        dragEl.className = 'dnd-drag-item';
+        dragEl.draggable = true;
+        dragEl.dataset.fr = pair.fr;
+        dragEl.style.cssText = 'background: white; border: 2px solid var(--primary-blue); padding: 12px 20px; border-radius: 25px; cursor: grab; font-weight: bold; font-size: 1.1rem; user-select: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);';
+
+        dragEl.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData('text/plain', pair.fr);
+          setTimeout(() => dragEl.style.opacity = '0.5', 0);
+        });
+        dragEl.addEventListener('dragend', () => {
+          dragEl.style.opacity = '1';
+        });
+
+        dragEl.addEventListener('mouseover', () => dragEl.style.transform = 'scale(1.05)');
+        dragEl.addEventListener('mouseout', () => dragEl.style.transform = 'scale(1)');
+
+        draggablesContainer.appendChild(dragEl);
+      });
+
+      selectedPairs.forEach((pair) => {
+        const zoneWrapper = document.createElement('div');
+        zoneWrapper.style.cssText = 'display: flex; flex-direction: column; align-items: center; gap: 8px; background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; width: 160px;';
+
+        const dropZone = document.createElement('div');
+        dropZone.className = 'dnd-drop-zone';
+        dropZone.dataset.fr = pair.fr;
+        dropZone.style.cssText = 'width: 100%; height: 50px; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: #f8fafc; transition: all 0.2s; font-size: 1.1rem; position: relative;';
+
+        const label = document.createElement('div');
+        label.textContent = pair.en;
+        label.style.cssText = 'font-weight: 600; color: var(--text-muted); font-size: 1rem; text-align: center;';
+
+        dropZone.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          if (dropZone.dataset.filled === 'true') return;
+          dropZone.style.borderColor = 'var(--primary-blue)';
+          dropZone.style.background = 'rgba(42, 82, 190, 0.05)';
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+          if (dropZone.dataset.filled === 'true') return;
+          dropZone.style.borderColor = '#94a3b8';
+          dropZone.style.background = '#f8fafc';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+          e.preventDefault();
+          if (dropZone.dataset.filled === 'true') return;
+
+          const draggedFr = e.dataTransfer.getData('text/plain');
+          if (draggedFr === dropZone.dataset.fr) {
+            // Correct match
+            playGameSound('correct');
+            if (typeof speak === 'function' && !gameMuted) {
+              setTimeout(() => speak(draggedFr), 300);
+            }
+            dropZone.dataset.filled = 'true';
+            dropZone.innerHTML = `${draggedFr} <span style="position: absolute; right: -10px; top: -10px; background: white; border-radius: 50%; font-size: 1.2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">✅</span>`;
+            dropZone.style.borderColor = 'var(--accent-green)';
+            dropZone.style.background = 'rgba(107, 203, 119, 0.1)';
+            dropZone.style.color = 'var(--accent-green)';
+            dropZone.style.fontWeight = 'bold';
+
+            const dragItem = document.querySelector(`.dnd-drag-item[data-fr="${draggedFr.replace(/"/g, '\\"')}"]`);
+            if (dragItem) dragItem.remove();
+
+            checkEtreAvoirWin();
+          } else {
+            // Incorrect match
+            playGameSound('wrong');
+            dropZone.style.borderColor = 'var(--primary-red)';
+            dropZone.style.background = 'rgba(224, 62, 82, 0.1)';
+            dropZone.innerHTML = `<span style="font-size: 1.5rem;">❌</span>`;
+            setTimeout(() => {
+              dropZone.innerHTML = '';
+              dropZone.style.borderColor = '#94a3b8';
+              dropZone.style.background = '#f8fafc';
+            }, 600);
+          }
+        });
+
+        zoneWrapper.appendChild(dropZone);
+        zoneWrapper.appendChild(label);
+        dropzonesContainer.appendChild(zoneWrapper);
+      });
+    }
+
+    function checkEtreAvoirWin() {
+      const remaining = document.querySelectorAll('.dnd-drag-item');
+      if (remaining.length === 0) {
+        document.getElementById('dnd-feedback').innerHTML = '🎉 <span style="color: var(--accent-green);">Excellent ! You matched all the verbs !</span> 🎉';
+        playGameSound('correct');
+        setTimeout(() => playGameSound('correct'), 200);
+        setTimeout(() => playGameSound('correct'), 400);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initEtreAvoirGame);
+    } else {
+      initEtreAvoirGame();
+    }
+  </script>
+</section>
+    <section class="content-section">
+      <h2>🤝 Présenter Quelqu’un (To introduce someone)</h2>
+      <div class="presentation-card"
+        style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--accent-yellow);">
+        <div style="flex: 1 1 300px; text-align: center;">
+          <img src="images/mon_meilleur_ami.png" alt="2 boys best friends"
+            style="width: 100%; max-width: 350px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); margin-bottom: 1rem;" />
+          <h3 style="color: var(--primary-blue); font-size: 1.5rem;">Mon meilleur ami</h3>
+        </div>
+        <div style="flex: 1.5 1 400px; display: flex; flex-direction: column; gap: 0.5rem;">
+          <div onclick="speak('Bonjour')"
+            style="cursor: pointer; padding: 12px 16px; border-radius: 12px; transition: background 0.2s; border-left: 4px solid transparent;"
+            onmouseover="this.style.background='#f8fafc'; this.style.borderColor='var(--accent-yellow)';"
+            onmouseout="this.style.background='transparent'; this.style.borderColor='transparent';">
+            <span style="font-size: 1.3rem; font-weight: 600; color: var(--text-main);">Bonjour,</span>
+          </div>
+          <div onclick="speak('Je vous présente mon meilleur ami.')"
+            style="cursor: pointer; padding: 12px 16px; border-radius: 12px; transition: background 0.2s; border-left: 4px solid transparent;"
+            onmouseover="this.style.background='#f8fafc'; this.style.borderColor='var(--primary-red)';"
+            onmouseout="this.style.background='transparent'; this.style.borderColor='transparent';">
+            <span style="font-size: 1.3rem; font-weight: 600; color: var(--primary-red);">Je vous présente mon meilleur
+              ami.</span>
+          </div>
+          <div onclick="speak('Il s’appelle Nick.', 'male')"
+            style="cursor: pointer; padding: 12px 16px; border-radius: 12px; transition: background 0.2s; border-left: 4px solid transparent;"
+            onmouseover="this.style.background='#f8fafc'; this.style.borderColor='var(--primary-blue)';"
+            onmouseout="this.style.background='transparent'; this.style.borderColor='transparent';">
+            <span style="font-size: 1.3rem; font-weight: 600; color: var(--text-main);">Il s’appelle Nick.</span>
+          </div>
+          <div onclick="speak('Il a dix ans.', 'male')"
+            style="cursor: pointer; padding: 12px 16px; border-radius: 12px; transition: background 0.2s; border-left: 4px solid transparent;"
+            onmouseover="this.style.background='#f8fafc'; this.style.borderColor='var(--accent-green)';"
+            onmouseout="this.style.background='transparent'; this.style.borderColor='transparent';">
+            <span style="font-size: 1.3rem; font-weight: 600; color: var(--text-main);">Il a 10 ans.</span>
+          </div>
+          <div onclick="speak('Il habite à Mumbai.', 'male')"
+            style="cursor: pointer; padding: 12px 16px; border-radius: 12px; transition: background 0.2s; border-left: 4px solid transparent;"
+            onmouseover="this.style.background='#f8fafc'; this.style.borderColor='var(--accent-yellow)';"
+            onmouseout="this.style.background='transparent'; this.style.borderColor='transparent';">
+            <span style="font-size: 1.3rem; font-weight: 600; color: var(--text-main);">Il habite à Mumbai.</span>
+          </div>
+          <div onclick="speak('Il parle hindi et anglais.', 'male')"
+            style="cursor: pointer; padding: 12px 16px; border-radius: 12px; transition: background 0.2s; border-left: 4px solid transparent;"
+            onmouseover="this.style.background='#f8fafc'; this.style.borderColor='var(--primary-red)';"
+            onmouseout="this.style.background='transparent'; this.style.borderColor='transparent';">
+            <span style="font-size: 1.3rem; font-weight: 600; color: var(--text-main);">Il parle hindi et
+              anglais.</span>
+          </div>
+          <div onclick="speak('Il aime le cricket.', 'male')"
+            style="cursor: pointer; padding: 12px 16px; border-radius: 12px; transition: background 0.2s; border-left: 4px solid transparent;"
+            onmouseover="this.style.background='#f8fafc'; this.style.borderColor='var(--primary-blue)';"
+            onmouseout="this.style.background='transparent'; this.style.borderColor='transparent';">
+            <span style="font-size: 1.3rem; font-weight: 600; color: var(--text-main);">Il aime le cricket.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" style="text-align: center;">
+      <h2>🎵 Activity: Practice Introductions</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 1rem auto;">
+        <div>
+          <div class="video-wrapper"
+            style="position: relative; width: 280px; max-width: 280px; padding-bottom: 280px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/y8trQNgkVPk" referrerpolicy="strict-origin-when-cross-origin"
+              title="Practice Introductions" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <p style="margin-top: 1rem; color: #555; font-style: italic;">Practice introducing yourself and others!</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2>📝 Regular -ER Verbs</h2>
+      <p class="section-intro">
+        Most French verbs end in -ER and follow the same pattern!
+      </p>
+      <div class="er-verbs-section">
+        <div class="verb-pattern">
+          <h3>🔄 The -ER Pattern</h3>
+          <div class="pattern-explanation">
+            <p>Remove <strong>-ER</strong> and add these endings:</p>
+            <div class="endings-grid">
+              <div class="ending-card">
+                <span class="pronoun">Je</span>
+                <span class="ending">-e</span>
+              </div>
+              <div class="ending-card">
+                <span class="pronoun">Tu</span>
+                <span class="ending">-es</span>
+              </div>
+              <div class="ending-card">
+                <span class="pronoun">Il/Elle</span>
+                <span class="ending">-e</span>
+              </div>
+              <div class="ending-card">
+                <span class="pronoun">Nous</span>
+                <span class="ending">-ons</span>
+              </div>
+              <div class="ending-card">
+                <span class="pronoun">Vous</span>
+                <span class="ending">-ez</span>
+              </div>
+              <div class="ending-card">
+                <span class="pronoun">Ils/Elles</span>
+                <span class="ending">-ent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="er-verb-examples" style="margin-top: 3rem;">
+          <h3 style="margin-bottom: 1.5rem; text-align: center; color: var(--primary-blue); font-size: 1.8rem;">Common
+            -ER</h3>
+          <div class="verbs-container" style="grid-template-columns: repeat(2, 1fr); display: grid; gap: 2rem;">
+
+            <!-- Habiter -->
+            <div class="verb-section" style="margin-bottom: 0;">
+              <h3 onclick="speak('Habiter')" style="cursor: pointer;">Habiter (To live)</h3>
+              <div class="conjugation-table">
+                <div class="conjugation-row" onclick="speak('J’habite')">
+                  <span class="pronoun">J'</span>
+                  <span class="verb">habite</span>
+                  <span class="mu-it text-xs">I live</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Tu habites')">
+                  <span class="pronoun">Tu</span>
+                  <span class="verb">habites</span>
+                  <span class="mu-it text-xs">You live</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Il habite, Elle habite, On habite')">
+                  <span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">habite</span>
+                  <span class="mu-it text-xs">He/She/One lives</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Nous habitons')">
+                  <span class="pronoun">Nous</span>
+                  <span class="verb">habitons</span>
+                  <span class="mu-it text-xs">We live</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Vous habitez')">
+                  <span class="pronoun">Vous</span>
+                  <span class="verb">habitez</span>
+                  <span class="mu-it text-xs">You live</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Ils habitent, Elles habitent')">
+                  <span class="pronoun">Ils / Elles</span>&nbsp;<span class="verb">habitent</span>
+                  <span class="mu-it text-xs">They live</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aimer -->
+            <div class="verb-section" style="margin-bottom: 0;">
+              <h3 onclick="speak('Aimer')" style="cursor: pointer;">Aimer (To like)</h3>
+              <div class="conjugation-table">
+                <div class="conjugation-row" onclick="speak('J’aime')">
+                  <span class="pronoun">J'</span>
+                  <span class="verb">aime</span>
+                  <span class="mu-it text-xs">I like</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Tu aimes')">
+                  <span class="pronoun">Tu</span>
+                  <span class="verb">aimes</span>
+                  <span class="mu-it text-xs">You like</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Il aime, Elle aime, On aime')">
+                  <span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">aime</span>
+                  <span class="mu-it text-xs">He/She/One likes</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Nous aimons')">
+                  <span class="pronoun">Nous</span>
+                  <span class="verb">aimons</span>
+                  <span class="mu-it text-xs">We like</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Vous aimez')">
+                  <span class="pronoun">Vous</span>
+                  <span class="verb">aimez</span>
+                  <span class="mu-it text-xs">You like</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Ils aiment, Elles aiment')">
+                  <span class="pronoun">Ils / Elles</span>&nbsp;<span class="verb">aiment</span>
+                  <span class="mu-it text-xs">They like</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Parler -->
+            <div class="verb-section" style="margin-bottom: 0;">
+              <h3 onclick="speak('Parler')" style="cursor: pointer;">Parler (To speak)</h3>
+              <div class="conjugation-table">
+                <div class="conjugation-row" onclick="speak('Je parle')">
+                  <span class="pronoun">Je</span>
+                  <span class="verb">parle</span>
+                  <span class="mu-it text-xs">I speak</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Tu parles')">
+                  <span class="pronoun">Tu</span>
+                  <span class="verb">parles</span>
+                  <span class="mu-it text-xs">You speak</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Il parle, Elle parle, On parle')">
+                  <span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">parle</span>
+                  <span class="mu-it text-xs">He/She/One speaks</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Nous parlons')">
+                  <span class="pronoun">Nous</span>
+                  <span class="verb">parlons</span>
+                  <span class="mu-it text-xs">We speak</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Vous parlez')">
+                  <span class="pronoun">Vous</span>
+                  <span class="verb">parlez</span>
+                  <span class="mu-it text-xs">You speak</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Ils parlent, Elles parlent')">
+                  <span class="pronoun">Ils / Elles</span>
+                  <span class="verb">parlent</span>
+                  <span class="mu-it text-xs">They speak</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Étudier -->
+            <div class="verb-section" style="margin-bottom: 0;">
+              <h3 onclick="speak('Étudier')" style="cursor: pointer;">Étudier (To study)</h3>
+              <div class="conjugation-table">
+                <div class="conjugation-row" onclick="speak('J’étudie')">
+                  <span class="pronoun">J'</span>
+                  <span class="verb">étudie</span>
+                  <span class="mu-it text-xs">I study</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Tu étudies')">
+                  <span class="pronoun">Tu</span>
+                  <span class="verb">étudies</span>
+                  <span class="mu-it text-xs">You study</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Il étudie, Elle étudie, On étudie')">
+                  <span class="pronoun">Il/Elle/On</span>&nbsp;<span class="verb">étudie</span>
+                  <span class="mu-it text-xs">He/She/One studies</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Nous étudions')">
+                  <span class="pronoun">Nous</span>
+                  <span class="verb">étudions</span>
+                  <span class="mu-it text-xs">We study</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Vous étudiez')">
+                  <span class="pronoun">Vous</span>
+                  <span class="verb">étudiez</span>
+                  <span class="mu-it text-xs">You study</span>
+                </div>
+                <div class="conjugation-row" onclick="speak('Ils étudient, Elles étudient')">
+                  <span class="pronoun">Ils / Elles</span>&nbsp;<span class="verb">étudient</span>
+                  <span class="mu-it text-xs">They study</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ER Verbs Drag and Drop Game -->
+      <div class="game-section tip-box"
+        style="margin-top: 4rem; border-left: 5px solid var(--accent-yellow); background: #f8fafc; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); position: relative;">
+        <button id="er-dnd-mute-btn" onclick="toggleErGameMute()"
+          style="position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; transition: transform 0.2s;"
+          onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+          title="Mute Sounds">🔊</button>
+        <h3 style="color: var(--primary-blue); margin-bottom: 1rem; text-align: center; font-size: 1.8rem;">🎮 Practice:
+          Habiter, Aimer, Parler & Étudier</h3>
+        <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted); font-size: 1.1rem;">Drag the French
+          verb from the top and drop it into the correct empty box below!</p>
+
+        <div class="dnd-game-container" style="display: flex; flex-direction: column; gap: 3rem;">
+          <!-- Draggables Top Row -->
+          <div class="dnd-draggables" id="er-dnd-draggables"
+            style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); min-height: 80px;">
+            <!-- Generated by JS -->
+          </div>
+
+          <!-- Dropzones Bottom Row -->
+          <div class="dnd-dropzones" id="er-dnd-dropzones"
+            style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <!-- Generated by JS -->
+          </div>
+        </div>
+        <div id="er-dnd-feedback"
+          style="margin-top: 2rem; text-align: center; font-weight: bold; font-size: 1.5rem; min-height: 1.5em; color: var(--accent-yellow);">
+        </div>
+        <button onclick="initErGame()"
+          style="display: block; margin: 1rem auto 0; padding: 12px 24px; background: var(--accent-yellow); color: var(--text-main); border: none; border-radius: 8px; cursor: pointer; font-size: 1.2rem; font-weight: bold; box-shadow: var(--shadow-sm); transition: transform 0.2s;"
+          onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Again
+          🔄</button>
+      </div>
+
+      <script>
+        const erPairs = [
+          { fr: "J'habite", en: "I live" },
+          { fr: "Tu habites", en: "You live" },
+          { fr: "Il habite", en: "He lives" },
+          { fr: "Nous habitons", en: "We live" },
+          { fr: "Vous habitez", en: "You live (pl/f)" },
+          { fr: "Ils habitent", en: "They live" },
+          { fr: "J'aime", en: "I like" },
+          { fr: "Tu aimes", en: "You like" },
+          { fr: "Elle aime", en: "She likes" },
+          { fr: "Nous aimons", en: "We like" },
+          { fr: "Vous aimez", en: "You like (pl/f)" },
+          { fr: "Elles aiment", en: "They (f) like" },
+          { fr: "Je parle", en: "I speak" },
+          { fr: "Tu parles", en: "You speak" },
+          { fr: "Il parle", en: "He speaks" },
+          { fr: "Nous parlons", en: "We speak" },
+          { fr: "Vous parlez", en: "You speak (pl/f)" },
+          { fr: "Ils parlent", en: "They speak" },
+          { fr: "J'étudie", en: "I study" },
+          { fr: "Tu étudies", en: "You study" },
+          { fr: "Il étudie", en: "He studies" },
+          { fr: "Nous étudions", en: "We study" },
+          { fr: "Vous étudiez", en: "You study (pl/f)" },
+          { fr: "Ils étudient", en: "They study" }
+        ];
+
+        let erGameMuted = false;
+
+        function toggleErGameMute() {
+          erGameMuted = !erGameMuted;
+          document.getElementById('er-dnd-mute-btn').textContent = erGameMuted ? "🔇" : "🔊";
+          document.getElementById('er-dnd-mute-btn').title = erGameMuted ? "Unmute Sounds" : "Mute Sounds";
+        }
+
+        function playErGameSound(type) {
+          if (erGameMuted) return;
+          try {
+            if (!gameAudioCtx) gameAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            if (gameAudioCtx.state === 'suspended') gameAudioCtx.resume();
+
+            const osc = gameAudioCtx.createOscillator();
+            const gainNode = gameAudioCtx.createGain();
+            osc.connect(gainNode);
+            gainNode.connect(gameAudioCtx.destination);
+
+            if (type === 'correct') {
+              osc.type = 'sine';
+              osc.frequency.setValueAtTime(880, gameAudioCtx.currentTime);
+              osc.frequency.exponentialRampToValueAtTime(1760, gameAudioCtx.currentTime + 0.1);
+              gainNode.gain.setValueAtTime(0.3, gameAudioCtx.currentTime);
+              gainNode.gain.exponentialRampToValueAtTime(0.01, gameAudioCtx.currentTime + 0.5);
+              osc.start(gameAudioCtx.currentTime);
+              osc.stop(gameAudioCtx.currentTime + 0.5);
+            } else {
+              osc.type = 'sawtooth';
+              osc.frequency.setValueAtTime(150, gameAudioCtx.currentTime);
+              gainNode.gain.setValueAtTime(0.3, gameAudioCtx.currentTime);
+              gainNode.gain.exponentialRampToValueAtTime(0.01, gameAudioCtx.currentTime + 0.2);
+              osc.start(gameAudioCtx.currentTime);
+              osc.stop(gameAudioCtx.currentTime + 0.2);
+            }
+          } catch (e) { console.log('Audio not supported', e); }
+        }
+
+        function initErGame() {
+          const draggablesContainer = document.getElementById('er-dnd-draggables');
+          const dropzonesContainer = document.getElementById('er-dnd-dropzones');
+          const feedback = document.getElementById('er-dnd-feedback');
+
+          if (!draggablesContainer || !dropzonesContainer) return;
+
+          draggablesContainer.innerHTML = '';
+          dropzonesContainer.innerHTML = '';
+          feedback.textContent = '';
+
+          let selectedPairs = [...erPairs];
+          if (typeof shuffleArray === 'function') {
+            shuffleArray(selectedPairs);
+          }
+          selectedPairs = selectedPairs.slice(0, 8); // 8 pairs per game
+
+          let draggables = [...selectedPairs];
+          if (typeof shuffleArray === 'function') {
+            shuffleArray(draggables);
+          }
+
+          draggables.forEach((pair) => {
+            const dragEl = document.createElement('div');
+            dragEl.textContent = pair.fr;
+            dragEl.className = 'dnd-drag-item';
+            dragEl.draggable = true;
+            dragEl.dataset.fr = pair.fr;
+            dragEl.style.cssText = 'background: white; border: 2px solid var(--accent-yellow); padding: 12px 20px; border-radius: 25px; cursor: grab; font-weight: bold; font-size: 1.1rem; user-select: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);';
+
+            dragEl.addEventListener('dragstart', (e) => {
+              e.dataTransfer.setData('text/plain', pair.fr);
+              setTimeout(() => dragEl.style.opacity = '0.5', 0);
+            });
+            dragEl.addEventListener('dragend', () => {
+              dragEl.style.opacity = '1';
+            });
+
+            dragEl.addEventListener('mouseover', () => dragEl.style.transform = 'scale(1.05)');
+            dragEl.addEventListener('mouseout', () => dragEl.style.transform = 'scale(1)');
+
+            draggablesContainer.appendChild(dragEl);
+          });
+
+          selectedPairs.forEach((pair) => {
+            const zoneWrapper = document.createElement('div');
+            zoneWrapper.style.cssText = 'display: flex; flex-direction: column; align-items: center; gap: 8px; background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; width: 160px;';
+
+            const dropZone = document.createElement('div');
+            dropZone.className = 'dnd-drop-zone';
+            dropZone.dataset.fr = pair.fr;
+            dropZone.style.cssText = 'width: 100%; height: 50px; border: 2px dashed #94a3b8; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: #f8fafc; transition: all 0.2s; font-size: 1.1rem; position: relative;';
+
+            const label = document.createElement('div');
+            label.textContent = pair.en;
+            label.style.cssText = 'font-weight: 600; color: var(--text-muted); font-size: 1rem; text-align: center;';
+
+            dropZone.addEventListener('dragover', (e) => {
+              e.preventDefault();
+              if (dropZone.dataset.filled === 'true') return;
+              dropZone.style.borderColor = 'var(--accent-yellow)';
+              dropZone.style.background = 'rgba(255, 193, 7, 0.05)';
+            });
+
+            dropZone.addEventListener('dragleave', () => {
+              if (dropZone.dataset.filled === 'true') return;
+              dropZone.style.borderColor = '#94a3b8';
+              dropZone.style.background = '#f8fafc';
+            });
+
+            dropZone.addEventListener('drop', (e) => {
+              e.preventDefault();
+              if (dropZone.dataset.filled === 'true') return;
+
+              const draggedFr = e.dataTransfer.getData('text/plain');
+              if (draggedFr === dropZone.dataset.fr) {
+                // Correct match
+                playErGameSound('correct');
+                if (typeof speak === 'function' && !erGameMuted) {
+                  setTimeout(() => speak(draggedFr), 300);
+                }
+                dropZone.dataset.filled = 'true';
+                dropZone.innerHTML = `${draggedFr} <span style="position: absolute; right: -10px; top: -10px; background: white; border-radius: 50%; font-size: 1.2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">✅</span>`;
+                dropZone.style.borderColor = 'var(--accent-green)';
+                dropZone.style.background = 'rgba(107, 203, 119, 0.1)';
+                dropZone.style.color = 'var(--accent-green)';
+                dropZone.style.fontWeight = 'bold';
+
+                const dragItem = document.querySelector(`#er-dnd-draggables .dnd-drag-item[data-fr="${draggedFr.replace(/"/g, '\\"')}"]`);
+                if (dragItem) dragItem.remove();
+
+                checkErWin();
+              } else {
+                // Incorrect match
+                playErGameSound('wrong');
+                dropZone.style.borderColor = 'var(--primary-red)';
+                dropZone.style.background = 'rgba(224, 62, 82, 0.1)';
+                dropZone.innerHTML = `<span style="font-size: 1.5rem;">❌</span>`;
+                setTimeout(() => {
+                  dropZone.innerHTML = '';
+                  dropZone.style.borderColor = '#94a3b8';
+                  dropZone.style.background = '#f8fafc';
+                }, 600);
+              }
+            });
+
+            zoneWrapper.appendChild(dropZone);
+            zoneWrapper.appendChild(label);
+            dropzonesContainer.appendChild(zoneWrapper);
+          });
+        }
+
+        function checkErWin() {
+          const remaining = document.querySelectorAll('#er-dnd-draggables .dnd-drag-item');
+          if (remaining.length === 0) {
+            document.getElementById('er-dnd-feedback').innerHTML = '🎉 <span style="color: var(--accent-green);">Excellent ! You matched all the verbs !</span> 🎉';
+            playErGameSound('correct');
+            setTimeout(() => playErGameSound('correct'), 200);
+            setTimeout(() => playErGameSound('correct'), 400);
+          }
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initErGame);
+        } else {
+          initErGame();
+        }
+      </script>
+    </section>
+
+
+    <section class="content-section" style="text-align: center;">
+      <h2>🎵 Activity: Practice -ER Verbs</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 1rem auto;">
+        <div>
+          <div class="video-wrapper"
+            style="position: relative; width: 280px; max-width: 280px; padding-bottom: 280px; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/fHu2A3kVX7E" referrerpolicy="strict-origin-when-cross-origin"
+              title="Practice Regular -ER Verbs" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <p style="margin-top: 1rem; color: #555; font-style: italic;">Watch and practice regular -ER verb conjugations!</p>
+        </div>
+      </div>
+    </section>
+    <!-- Culture et Civilisation Section -->
+    <section class="content-section tip-box"
+      style="margin-top: 4rem; border-left: 5px solid var(--primary-red); background: #fff5f5; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md);">
+      <h2
+        style="color: var(--primary-red); text-align: center; font-size: 2.2rem; margin-bottom: 0.5rem; cursor: pointer;"
+        onclick="speak('Culture et Civilisation : L’Identité et les Symboles de la France')"
+        title="Click to hear pronunciation">🌍 Culture et Civilisation : L’Identité et les Symboles de la France</h2>
+      <p
+        style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-bottom: 1rem; font-style: italic;">
+        (French Identity and Symbols)</p>
+      <p style="text-align: center; color: var(--text-main); font-size: 1.1rem; margin-bottom: 2.5rem;"><strong>Fun
+          Fact:</strong> France is the most visited country in the world, with over 90 million tourists every year! 🏰🥖
+      </p>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+
+        <!-- Card 1 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-blue); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('L’Hexagone')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🛑</div>
+          <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem;">L'Hexagone</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">France is often called <strong>The Hexagon</strong>
+            because of its shape! It is the largest country in the European Union.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--accent-yellow); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('L’Euro')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">💶</div>
+          <h3 style="color: var(--accent-yellow); margin-bottom: 0.5rem;">L'Euro (€)</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">France uses the <strong>Euro</strong>. Before 2002,
+            they used <strong>Francs</strong>, which were used for over 600 years!</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-red); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Le Coq')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🐓</div>
+          <h3 style="color: var(--primary-red); margin-bottom: 0.5rem;">Le Coq</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">The proud <strong>Rooster</strong> is the national
+            symbol. It represents the bravery and heritage of the French people!</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-blue); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('La Marseillaise')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🎵</div>
+          <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem;">La Marseillaise</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">The national anthem is <strong>La
+              Marseillaise</strong>. It was written in 1792 and is a song about freedom and courage!</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--accent-yellow); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Liberté, Égalité, Fraternité')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🤝</div>
+          <h3 style="color: var(--accent-yellow); margin-bottom: 0.5rem;">La Devise</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">The motto <strong>"Liberté, Égalité,
+              Fraternité"</strong> was born during the French Revolution over 200 years ago!</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-red); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Les Fromages')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🧀</div>
+          <h3 style="color: var(--primary-red); margin-bottom: 0.5rem;">Les Fromages</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">France makes over <strong>1,600</strong> types of
+            cheese! Some people say there's a different cheese for every day of the year.</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--accent-green); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Les Pâtisseries et Le Pain')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🥐🥖</div>
+          <h3 style="color: var(--accent-green); margin-bottom: 0.5rem;">Les Pâtisseries et Le Pain</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">The <strong>Baguette</strong> is so important that its
+            recipe is protected by law! French people buy it fresh every morning.</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-blue); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Les Escargots')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🐌</div>
+          <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem;">Les Escargots</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">Snails are a famous delicacy. French people eat around
+            <strong>30,000 tons</strong> of snails every single year!
+          </p>
+        </div>
+
+        <!-- Card 9 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-red); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Le Vin')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🍷</div>
+          <h3 style="color: var(--primary-red); margin-bottom: 0.5rem;">Le Vin</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">France is one of the world's top wine producers. Wine
+            making has been part of French culture for over 2,000 years!</p>
+        </div>
+
+        <!-- Card 10 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid #9c27b0; cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('La Mode et Les Parfums')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">👗✨</div>
+          <h3 style="color: #9c27b0; margin-bottom: 0.5rem;">La Mode & Les Parfums</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">Paris is the fashion capital! They make beautiful
+            clothes and the best smelling perfumes!</p>
+        </div>
+
+        <!-- Card 11 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--accent-yellow); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Le Tour de France')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🚴‍♂️</div>
+          <h3 style="color: var(--accent-yellow); margin-bottom: 0.5rem;">Le Tour de France</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">The most prestigious bicycle race in the world! It
+            lasts 3 weeks and travels across mountains and through tiny villages.</p>
+        </div>
+
+        <!-- Card 12 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-blue); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Le Drapeau Français')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🇫🇷</div>
+          <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem;">Le Drapeau Français</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">The French flag is called the
+            <strong>Tricolore</strong>. Its colors are Blue, White, and Red (Bleu, Blanc, Rouge)!
+          </p>
+        </div>
+
+        <!-- Card 13 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary-red); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('Le Festival de Cannes')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🎬✨</div>
+          <h3 style="color: var(--primary-red); margin-bottom: 0.5rem;">Le Festival de Cannes</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">One of the most famous film festivals in the world!
+            Movie stars from all over come to the French Riviera to celebrate cinema.</p>
+        </div>
+
+        <!-- Card 14 -->
+        <div
+          style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 4px solid var(--accent-green); cursor: pointer; transition: transform 0.2s;"
+          onclick="speak('La Bise')" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">😘</div>
+          <h3 style="color: var(--accent-green); margin-bottom: 0.5rem;">La Bise</h3>
+          <p style="color: var(--text-main); font-size: 1.1rem;">French people often greet friends by kissing on the
+            cheeks! This is called <strong>"La Bise"</strong>. The number of kisses changes depending on the city!</p>
+        </div>
+      </div>
+
+      <!-- Quiz Section -->
+      <div
+        style="background: white; padding: 2rem; border-radius: 15px; border: 2px dashed var(--primary-red); position: relative;">
+        <button id="quiz-mute-btn" onclick="toggleQuizMute()"
+          style="position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; transition: transform 0.2s;"
+          onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+          title="Mute Sounds">🔊</button>
+        <h3 style="text-align: center; color: var(--primary-red); font-size: 1.8rem; margin-bottom: 1.5rem;">🧠 Fun Quiz
+          Time!</h3>
+        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem; color: var(--text-muted);">Let's see what
+          you learned about France! Click the right answer below.</p>
+
+        <div id="culture-quiz-container" style="max-width: 600px; margin: 0 auto;">
+          <div id="quiz-question"
+            style="font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem; color: var(--primary-blue); text-align: center;">
+          </div>
+          <div id="quiz-options" style="display: flex; flex-direction: column; gap: 10px;"></div>
+          <div id="quiz-feedback"
+            style="margin-top: 1.5rem; text-align: center; font-size: 1.3rem; font-weight: bold; min-height: 2rem;">
+          </div>
+        </div>
+      </div>
+    </section>
+<script>
+      let quizMuted = false;
+      function toggleQuizMute() {
+        quizMuted = !quizMuted;
+        document.getElementById('quiz-mute-btn').textContent = quizMuted ? "🔇" : "🔊";
+        document.getElementById('quiz-mute-btn').title = quizMuted ? "Unmute Sounds" : "Mute Sounds";
+      }
+
+      function playQuizSound(type) {
+        if (quizMuted) return;
+        try {
+          if (!gameAudioCtx) gameAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          if (gameAudioCtx.state === 'suspended') gameAudioCtx.resume();
+
+          const osc = gameAudioCtx.createOscillator();
+          const gainNode = gameAudioCtx.createGain();
+          osc.connect(gainNode);
+          gainNode.connect(gameAudioCtx.destination);
+
+          if (type === 'correct') {
+            // Soft chime
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(523.25, gameAudioCtx.currentTime); // C5
+            osc.frequency.exponentialRampToValueAtTime(1046.50, gameAudioCtx.currentTime + 0.3); // C6
+            gainNode.gain.setValueAtTime(0, gameAudioCtx.currentTime);
+            gainNode.gain.linearRampToValueAtTime(0.2, gameAudioCtx.currentTime + 0.1);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, gameAudioCtx.currentTime + 0.8);
+            osc.start(gameAudioCtx.currentTime);
+            osc.stop(gameAudioCtx.currentTime + 0.8);
+          } else {
+            // Soft low boop
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(200, gameAudioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(150, gameAudioCtx.currentTime + 0.3);
+            gainNode.gain.setValueAtTime(0, gameAudioCtx.currentTime);
+            gainNode.gain.linearRampToValueAtTime(0.2, gameAudioCtx.currentTime + 0.1);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, gameAudioCtx.currentTime + 0.5);
+            osc.start(gameAudioCtx.currentTime);
+            osc.stop(gameAudioCtx.currentTime + 0.5);
+          }
+        } catch (e) { console.log('Audio not supported', e); }
+      }
+
+      const cultureQuiz = [
+        {
+          q: "1. What shape is France often called?",
+          options: ["A Circle", "A Hexagon (6 sides)", "A Triangle"],
+          ans: 1
+        },
+        {
+          q: "2. What is the money used in France called?",
+          options: ["Dollars", "Pounds", "Euro (€)"],
+          ans: 2
+        },
+        {
+          q: "3. Which bird is a famous national symbol of France?",
+          options: ["The Eagle", "The Penguin", "The Rooster (Le Coq)"],
+          ans: 2
+        },
+        {
+          q: "4. What is a very famous long bread from France?",
+          options: ["Baguette", "Pancake", "Croissant Bread"],
+          ans: 0
+        },
+        {
+          q: "5. What are the three colors of the French flag?",
+          options: ["Red, White, and Blue", "Blue, White, and Red", "Green, White, and Orange"],
+          ans: 1
+        },
+        {
+          q: "6. What is the national anthem of France called?",
+          options: ["Le Coq", "La Marseillaise", "L'Euro"],
+          ans: 1
+        },
+        {
+          q: "7. What is the famous motto of France?",
+          options: ["Liberty, Equality, Fraternity", "Peace, Love, Joy", "Work, Rest, Play"],
+          ans: 0
+        },
+        {
+          q: "8. France is known for having over how many varieties of cheese?",
+          options: ["10+", "100+", "400+"],
+          ans: 2
+        },
+        {
+          q: "9. Which city is known as the fashion and perfume capital?",
+          options: ["Marseille", "Paris", "Lyon"],
+          ans: 1
+        },
+        {
+          q: "10. Snails are a popular French food. What are they called in French?",
+          options: ["Les Fromages", "Les Escargots", "Les Pâtisseries"],
+          ans: 1
+        }
+      ];
+
+      let currentQuizIndex = 0;
+
+      function loadQuizQuestion() {
+        if (currentQuizIndex >= cultureQuiz.length) {
+          document.getElementById('quiz-question').innerHTML = "🎉 Yay! You finished the quiz! You are a France Expert! 🇫🇷";
+          document.getElementById('quiz-options').innerHTML = "";
+          document.getElementById('quiz-feedback').innerHTML = `<button onclick="currentQuizIndex=0; loadQuizQuestion();" style="padding: 10px 20px; background: var(--primary-red); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; display: block; margin: 0 auto; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Again 🔄</button>`;
+          playQuizSound('correct');
+          return;
+        }
+
+        const qData = cultureQuiz[currentQuizIndex];
+        document.getElementById('quiz-question').textContent = qData.q;
+
+        const optionsContainer = document.getElementById('quiz-options');
+        optionsContainer.innerHTML = "";
+        document.getElementById('quiz-feedback').innerHTML = "";
+
+        qData.options.forEach((opt, idx) => {
+          const btn = document.createElement('button');
+          btn.textContent = opt;
+          btn.style.cssText = "padding: 15px; font-size: 1.2rem; background: #f8fafc; border: 2px solid var(--primary-blue); border-radius: 10px; cursor: pointer; transition: all 0.2s; font-weight: bold; color: var(--primary-blue);";
+          btn.onmouseover = () => { btn.style.background = 'var(--primary-blue)'; btn.style.color = 'white'; };
+          btn.onmouseout = () => { btn.style.background = '#f8fafc'; btn.style.color = 'var(--primary-blue)'; };
+
+          btn.onclick = () => {
+            if (idx === qData.ans) {
+              btn.style.background = 'var(--accent-green)';
+              btn.style.borderColor = 'var(--accent-green)';
+              btn.style.color = 'white';
+              btn.onmouseout = null; // stop hover override
+              document.getElementById('quiz-feedback').innerHTML = `<span style="color: var(--accent-green);">✅ Correct!</span>`;
+              playQuizSound('correct');
+
+              // Disable other buttons
+              Array.from(optionsContainer.children).forEach(b => b.disabled = true);
+
+              setTimeout(() => {
+                currentQuizIndex++;
+                loadQuizQuestion();
+              }, 2000);
+            } else {
+              btn.style.background = 'var(--primary-red)';
+              btn.style.borderColor = 'var(--primary-red)';
+              btn.style.color = 'white';
+              document.getElementById('quiz-feedback').innerHTML = `<span style="color: var(--primary-red);">❌ Oops! Try again!</span>`;
+              playQuizSound('wrong');
+              setTimeout(() => {
+                btn.style.background = '#f8fafc';
+                btn.style.borderColor = 'var(--primary-blue)';
+                btn.style.color = 'var(--primary-blue)';
+                document.getElementById('quiz-feedback').innerHTML = "";
+              }, 1500);
+            }
+          };
+          optionsContainer.appendChild(btn);
+        });
+      }
+
+      // Initialize quiz
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadQuizQuestion);
+      } else {
+        loadQuizQuestion();
+      }
+    </script>
+    
+    <footer>
+      <p>Keep going! You're making great progress! 🌟</p>
+    </footer>
+
+</body>
+
+</html>
