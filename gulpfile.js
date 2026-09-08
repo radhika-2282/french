@@ -54,6 +54,7 @@ function processHTML() {
 
         // set up variables
         const textHash = getTextHash(textToSpeak);
+        console.log(textHash)
         const audioFileName = `${textHash}.mp3`;
         const audioPath = path.join('assets/voices', audioFileName);
 
