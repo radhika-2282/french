@@ -9,20 +9,84 @@ import path from "path";
 import gTTSLib from 'node-gtts';
 import browserSyncLib from 'browser-sync';
 
-// Initialize BrowserSync instance
+
+// the entry point is index.html
+// all other folders will be compressed into files
+
+
+// Preferences
+let delay = 500;
+const sourceDir = 'assets';
+const destDir = 'dist';
+const pattern = /speak\((['"])(.*?)(?<!\\)\1[^)]*\)/g;
+
+
 const browserSync = browserSyncLib.create();
-// Set the TTS language
 const gTTS = new gTTSLib('fr');
 
-const imageExts = '{mp3,ico,jpg,jpeg,png,gif,svg,webp}'
+
+function copyAssets (cb) {
+  fs.cp(sourceDir, destDir, { recursive: true }, (err) => {
+    if (err) {
+      cb(err); 
+    } else {
+      cb(); 
+    }
+  });
+}
+
+function reloadBrowser() {
+  console.log('Reloading browser...');
+  browserSync.reload();
+}
 
 function getTextHash(text) {
   return crypto.createHash("md5").update(text, "utf-8").digest("hex");
 }
 
-function reloadBrowser(done) {
-  browserSync.reload();
-  done();
+export function cleanDist() {
+  return deleteAsync(['dist/**/*']);
+}
+
+function generateVoiceAssets(options = {}){
+  const { copy = false } = options;
+  return function (file, _ , cb) {
+    //defining matches
+    let content = file.contents.toString();
+    const matches = [...content.matchAll(pattern)];
+
+    console.log(`Scanning: ${file.path}`);
+    let same = 0;
+
+    //  logic per match
+    for (const match of matches) {
+      // take the second match from the pattern
+      // this is due to the odd nature of the regex
+      const rawText = match[2]; 
+      // Clean up escape slashes so gTTS reads it naturally
+      const textToSpeak = rawText.replace(/\\'/g, "'").replace(/\\"/g, '"').trim();
+
+      if (!textToSpeak) continue;
+
+      // set up variables
+      const textHash = getTextHash(textToSpeak);
+      const audioPath = path.join('assets/voices', `${textHash}.mp3`);
+
+      if (!fs.existsSync(audioPath)) {
+        console.log(`Generating audio for: ${textToSpeak}`);
+        console.log(`with hash ${textHash}`)
+        gTTS.save(audioPath, textToSpeak)
+        if (copy) {
+          fs.copyFileSync(audioPath, `dist/voices/${textHash}.mp3`);
+        }
+      } else {
+        same++
+      }
+    }
+    console.log(`--> Skipping ${same} audio files`)
+    this.push(file); // continue the stream
+    cb();
+  }
 }
 
 function processHTML() {
@@ -39,38 +103,9 @@ function processHTML() {
         path.dirname = '';
       }
     }))
-    .pipe(through2.obj(function(file, _ , cb){
-      
-      let content = file.contents.toString();
-      let pattern = /speak\((['"])(.*?)(?<!\\)\1[^)]*\)/g;
-      const matches = [...content.matchAll(pattern)];
-      console.log(`Scanning: ${file.basename}`);
-      let same = 0;
-      for (const match of matches) {
-        const rawText = match[2];
-        // Clean up escape slashes so gTTS reads it naturally
-        const textToSpeak = rawText.replace(/\\'/g, "'").replace(/\\"/g, '"').trim();
-        if (!textToSpeak) continue;
-
-        // set up variables
-        const textHash = getTextHash(textToSpeak);
-        console.log(textHash)
-        const audioFileName = `${textHash}.mp3`;
-        const audioPath = path.join('assets/voices', audioFileName);
-
-        if (!fs.existsSync(audioPath)) {
-          console.log(`Generating audio for: ${textToSpeak}`);
-          gTTS.save(audioPath, textToSpeak)
-        } else {
-          same++
-        }
-      }
-      
-      console.log(`--> Skipping ${same} audio files`)
-      this.push(file); // continue the stream
-      cb();
-    }))
+    .pipe(through2.obj(generateVoiceAssets()))
     .pipe(gulp.dest('dist'));
+    
 }
 
 
@@ -83,96 +118,43 @@ export function dev () {
     notify: false
   });
 
-  gulp.watch(['index.html']).on("change", (path)=>{
+
+  gulp.watch(['index.html'],{ delay: delay }).on("change", (path)=>{
     console.log(path)
-    return gulp.series(()=>{gulp.src(path)
+    return gulp.src(path)
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest("dist"))}, reloadBrowser);
-  });
+    .pipe(through2.obj(generateVoiceAssets({copy: true})))
+    .pipe(gulp.dest("dist"))
+    .on('end', reloadBrowser)
+  });   
   
-  gulp.watch(['lesson*/*.html']).on("change", (filePath)=>{
+  gulp.watch(['lesson*/*.html'],{ delay: delay }).on("change", (filePath)=>{
     let lesson = path.dirname(filePath);
     let subIndex = path.join(lesson, 'index.html');
     console.log(filePath)
-    return gulp.series(()=>{gulp.src(subIndex)
+    return gulp.src(subIndex)
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(through2.obj(function(file, _ , cb){
-      
-      let content = file.contents.toString();
-      let pattern = /speak\((['"])(.*?)(?<!\\)\1[^)]*\)/g;
-      const matches = [...content.matchAll(pattern)];
-      console.log(`Scanning: ${file.basename}`);
-      let same = 0;
-      for (const match of matches) {
-        const rawText = match[2];
-        // Clean up escape slashes so gTTS reads it naturally
-        const textToSpeak = rawText.replace(/\\'/g, "'").replace(/\\"/g, '"').trim();
-        if (!textToSpeak) continue;
-
-        // set up variables
-        const textHash = getTextHash(textToSpeak);
-        const audioFileName = `${textHash}.mp3`;
-        const audioPath = path.join('assets/voices', audioFileName);
-
-        if (!fs.existsSync(audioPath)) {
-          console.log(`Generating audio for: ${textToSpeak}`);
-          gTTS.save(audioPath, textToSpeak)
-          // inline copy to dist/voices to save time
-          
-          fs.copyFileSync(audioPath, `/dist/voices/${audioFileName}`)
-        } else {
-          same++
-        }
-      }
-      
-      console.log(`--> Skipping ${same} audio files`)
-      this.push(file); // continue the stream
-      cb();
+    .pipe(through2.obj(generateVoiceAssets({copy: true})))
+    .pipe(rename((path) => {
+      // rename to "lesson*.html"
+      path.basename = lesson;
     }))
-    .pipe(gulp.dest(`dist/${lesson+".html"}`))},
-    reloadBrowser);
+    .pipe(gulp.dest(`dist`))
+    .on('end', reloadBrowser)
   });
 
-  gulp.watch(['assets/**/*','!assets/voices/*']).on("change", (filePath)=>{
-    console.log(filePath)
-    return gulp.series(()=>{gulp.src(filePath)
-    .pipe(gulp.parallel(
-      ()=>{
-        return gulp.src([`assets/**/*`,`!assets/**/*.${imageExts}`])
-        .pipe(gulp.dest('dist'));
-      },
-      ()=>{
-        return gulp.src([`assets/**/*.${imageExts}`], { encoding: false })
-        .pipe(gulp.dest('dist'));
-      }
-    ))}
-    , reloadBrowser);
+  gulp.watch(['assets/**/*','!assets/voices/*'],{ delay: delay }).on("change", async (filePath)=>{
+    console.log(`${filePath}: changed`)
+    await fs.promises.copyFile(filePath, `dist/${filePath}`);
+    reloadBrowser();
   });
 }
-
-
-
-export function cleanDist() {
-  return deleteAsync(['dist/**/*']);
-}
-
-function copyOthers() {
-  return gulp.src([`assets/**/*`,`!assets/**/*.${imageExts}`])
-    .pipe(gulp.dest('dist'));
-}
-
-function copyImages() {
-  return gulp.src([`assets/**/*.${imageExts}`], { encoding: false })
-    .pipe(gulp.dest('dist'));
-}
-
-let copyAssets = gulp.parallel(copyImages, copyOthers)
 
 
 export const build = gulp.series(

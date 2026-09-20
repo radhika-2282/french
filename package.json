@@ -1,5 +1,9 @@
 {
   "type": "module",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "del": "^8.0.1",
