@@ -13,3 +13,284 @@
         </div>
       </div>
     </section>
+    <!-- Role Play Section: À la papeterie -->
+    <section class="content-section tip-box"
+      style="margin-top: 3rem; border-left: 5px solid var(--primary-blue); background: #f0f7ff; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md);">
+      <h2 style="color: var(--primary-blue); text-align: center; font-size: 2.2rem; margin-bottom: 1.5rem; cursor: pointer;"
+        onclick="speak('À la papeterie')">🎭 Roleplay: À la papeterie (At the stationery shop)</h2>
+
+      <!-- Situation & Characters Overview Card -->
+      <div
+        style="max-width: 800px; margin: 0 auto 2.5rem auto; background: white; padding: 1.5rem; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 2px solid #d0e1fd;">
+        <div style="text-align: center; font-size: 3rem; margin-bottom: 0.5rem;">🏪 ✏️ 🎒 💶</div>
+        <p style="text-align: center; font-size: 1.05rem; color: var(--text-main); margin-bottom: 1.2rem;">
+          <strong>📍 Situation:</strong> <em>A student visits a stationery shop to buy some pens and pencils.</em>
+        </p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 1rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; background: #eef5ff; padding: 0.6rem 1.2rem; border-radius: 12px; border-left: 4px solid var(--primary-blue);">
+            <span style="font-size: 1.5rem;">👨‍💼</span>
+            <div>
+              <strong style="color: var(--primary-blue); display: block;">Vendeur / Vendeuse</strong>
+              <small style="color: var(--text-muted);">Shopkeeper</small>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; background: #fdf2f4; padding: 0.6rem 1.2rem; border-radius: 12px; border-left: 4px solid var(--primary-red);">
+            <span style="font-size: 1.5rem;">🧑‍🎓</span>
+            <div>
+              <strong style="color: var(--primary-red); display: block;">Client(e)</strong>
+              <small style="color: var(--text-muted);">Customer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue Thread -->
+      <div class="dialogue-container"
+        style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
+
+        <!-- 1. Vendeur -->
+        <div style="display: flex; align-items: flex-start; gap: 15px;"
+          onclick="speak('Bonjour !', 'male')">
+          <div
+            style="background: var(--primary-blue); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Vendeur">
+            V
+          </div>
+          <div style="background: white; padding: 14px 20px; border-radius: 0 16px 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <strong style="color: var(--primary-blue); font-size: 1.1rem;">Vendeur:</strong>
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-left: 4px;">Bonjour !</span>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;"> Hello! / Good morning!</div>
+          </div>
+        </div>
+
+        <!-- 2. Client -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+          onclick="speak('Bonjour, monsieur !', 'female')">
+          <div style="background: #fff8f8; padding: 14px 20px; border-radius: 16px 0 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; text-align: right; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-right: 4px;">Bonjour, monsieur !</span>
+            <strong style="color: var(--primary-red); font-size: 1.1rem;">:Client</strong>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">Hello, sir! </div>
+          </div>
+          <div
+            style="background: var(--primary-red); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Client">
+            C
+          </div>
+        </div>
+
+        <!-- 3. Vendeur -->
+        <div style="display: flex; align-items: flex-start; gap: 15px;"
+          onclick="speak('Vous désirez ?', 'male')">
+          <div
+            style="background: var(--primary-blue); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Vendeur">
+            V
+          </div>
+          <div style="background: white; padding: 14px 20px; border-radius: 0 16px 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <strong style="color: var(--primary-blue); font-size: 1.1rem;">Vendeur:</strong>
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-left: 4px;">Vous désirez ?</span>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;"> May I help you? / What would you like?</div>
+          </div>
+        </div>
+
+        <!-- 4. Client -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+          onclick="speak('Je voudrais deux stylos et trois crayons, s’il vous plaît.', 'female')">
+          <div style="background: #fff8f8; padding: 14px 20px; border-radius: 16px 0 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; text-align: right; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-right: 4px;">Je voudrais deux stylos et trois crayons, s’il vous plaît.</span>
+            <strong style="color: var(--primary-red); font-size: 1.1rem;">:Client</strong>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">I would like two pens and three pencils, please. </div>
+          </div>
+          <div
+            style="background: var(--primary-red); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Client">
+            C
+          </div>
+        </div>
+
+        <!-- 5. Vendeur -->
+        <div style="display: flex; align-items: flex-start; gap: 15px;"
+          onclick="speak('Voilà ! Autre chose ?', 'male')">
+          <div
+            style="background: var(--primary-blue); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Vendeur">
+            V
+          </div>
+          <div style="background: white; padding: 14px 20px; border-radius: 0 16px 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <strong style="color: var(--primary-blue); font-size: 1.1rem;">Vendeur:</strong>
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-left: 4px;">Voilà ! Autre chose ?</span>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;"> Here you go! Anything else?</div>
+          </div>
+        </div>
+
+        <!-- 6. Client -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+          onclick="speak('Oui, une gomme, s’il vous plaît.', 'female')">
+          <div style="background: #fff8f8; padding: 14px 20px; border-radius: 16px 0 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; text-align: right; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-right: 4px;">Oui, une gomme, s’il vous plaît.</span>
+            <strong style="color: var(--primary-red); font-size: 1.1rem;">:Client</strong>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">Yes, an eraser, please. </div>
+          </div>
+          <div
+            style="background: var(--primary-red); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Client">
+            C
+          </div>
+        </div>
+
+        <!-- 7. Vendeur -->
+        <div style="display: flex; align-items: flex-start; gap: 15px;"
+          onclick="speak('Très bien. Voilà.', 'male')">
+          <div
+            style="background: var(--primary-blue); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Vendeur">
+            V
+          </div>
+          <div style="background: white; padding: 14px 20px; border-radius: 0 16px 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <strong style="color: var(--primary-blue); font-size: 1.1rem;">Vendeur:</strong>
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-left: 4px;">Très bien. Voilà.</span>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;"> Very good / Very well. Here it is.</div>
+          </div>
+        </div>
+
+        <!-- 8. Client -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+          onclick="speak('C’est combien ?', 'female')">
+          <div style="background: #fff8f8; padding: 14px 20px; border-radius: 16px 0 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; text-align: right; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-right: 4px;">C’est combien ?</span>
+            <strong style="color: var(--primary-red); font-size: 1.1rem;">:Client</strong>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">How much is it? </div>
+          </div>
+          <div
+            style="background: var(--primary-red); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Client">
+            C
+          </div>
+        </div>
+
+        <!-- 9. Vendeur -->
+        <div style="display: flex; align-items: flex-start; gap: 15px;"
+          onclick="speak('Ça fait cinq euros.', 'male')">
+          <div
+            style="background: var(--primary-blue); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Vendeur">
+            V
+          </div>
+          <div style="background: white; padding: 14px 20px; border-radius: 0 16px 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <strong style="color: var(--primary-blue); font-size: 1.1rem;">Vendeur:</strong>
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-left: 4px;">Ça fait cinq euros.</span>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;"> That is / That makes five euros.</div>
+          </div>
+        </div>
+
+        <!-- 10. Client -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+          onclick="speak('Voilà, monsieur.', 'female')">
+          <div style="background: #fff8f8; padding: 14px 20px; border-radius: 16px 0 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; text-align: right; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-right: 4px;">Voilà, monsieur.</span>
+            <strong style="color: var(--primary-red); font-size: 1.1rem;">:Client</strong>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">Here you go, sir. </div>
+          </div>
+          <div
+            style="background: var(--primary-red); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Client">
+            C
+          </div>
+        </div>
+
+        <!-- 11. Vendeur -->
+        <div style="display: flex; align-items: flex-start; gap: 15px;"
+          onclick="speak('Merci beaucoup !', 'male')">
+          <div
+            style="background: var(--primary-blue); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Vendeur">
+            V
+          </div>
+          <div style="background: white; padding: 14px 20px; border-radius: 0 16px 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <strong style="color: var(--primary-blue); font-size: 1.1rem;">Vendeur:</strong>
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-left: 4px;">Merci beaucoup !</span>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;"> Thank you very much!</div>
+          </div>
+        </div>
+
+        <!-- 12. Client -->
+        <div style="display: flex; align-items: flex-start; gap: 15px; align-self: flex-end;"
+          onclick="speak('Merci. Au revoir !', 'female')">
+          <div style="background: #fff8f8; padding: 14px 20px; border-radius: 16px 0 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; text-align: right; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-right: 4px;">Merci. Au revoir !</span>
+            <strong style="color: var(--primary-red); font-size: 1.1rem;">:Client</strong>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">Thank you. Goodbye! </div>
+          </div>
+          <div
+            style="background: var(--primary-red); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Client">
+            C
+          </div>
+        </div>
+
+        <!-- 13. Vendeur -->
+        <div style="display: flex; align-items: flex-start; gap: 15px;"
+          onclick="speak('Au revoir ! Bonne journée !', 'male')">
+          <div
+            style="background: var(--primary-blue); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
+            title="Vendeur">
+            V
+          </div>
+          <div style="background: white; padding: 14px 20px; border-radius: 0 16px 16px 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.06)';">
+            <strong style="color: var(--primary-blue); font-size: 1.1rem;">Vendeur:</strong>
+            <span style="font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin-left: 4px;">Au revoir ! Bonne journée !</span>
+            <div style="font-size: 0.95rem; color: var(--text-muted); font-style: italic; margin-top: 4px;"> Goodbye! Have a nice day!</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Key Vocabulary / Useful Phrases Box -->
+      <div style="max-width: 800px; margin: 2.5rem auto 0 auto; background: white; padding: 1.25rem 1.5rem; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-left: 4px solid var(--accent-green);">
+        <h4 style="margin: 0 0 0.75rem 0; color: var(--accent-green); font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>💡</span> Mots clés & Expressions utiles (Key Words & Phrases)
+        </h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; font-size: 0.95rem;">
+          <div onclick="speak('un stylo')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">🖊️ <strong>un stylo</strong> = a pen</div>
+          <div onclick="speak('un crayon')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">✏️ <strong>un crayon</strong> = a pencil</div>
+          <div onclick="speak('une gomme')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">🧽 <strong>une gomme</strong> = an eraser</div>
+          <div onclick="speak('Vous désirez ?')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">❓ <strong>Vous désirez ?</strong> = May I help you?</div>
+          <div onclick="speak('Je voudrais...')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">🛍️ <strong>Je voudrais...</strong> = I would like...</div>
+          <div onclick="speak('C’est combien ?')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">💶 <strong>C’est combien ?</strong> = How much is it?</div>
+          <div onclick="speak('Autre chose ?')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">➕ <strong>Autre chose ?</strong> = Anything else?</div>
+          <div onclick="speak('Bonne journée !')" style="cursor: pointer; background: #f8fafc; padding: 6px 10px; border-radius: 8px;">☀️ <strong>Bonne journée !</strong> = Have a nice day!</div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    
