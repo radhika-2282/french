@@ -118,22 +118,14 @@ export function dev () {
     notify: false
   });
 
-
-  gulp.watch(['index.html'],{ delay: delay }).on("change", (path)=>{
-    console.log(path)
-    return gulp.src(path)
-    .pipe(fileInclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(through2.obj(generateVoiceAssets({copy: true})))
-    .pipe(gulp.dest("dist"))
-    .on('end', reloadBrowser)
-  });   
-  
   gulp.watch(['lesson*/*.html'],{ delay: delay }).on("change", (filePath)=>{
     let lesson = path.dirname(filePath);
-    let subIndex = path.join(lesson, 'index.html');
+    let subIndex;
+    if (lesson == '.') {
+      subIndex = filePath  
+    } else {
+      subIndex = path.join(lesson, 'index.html');
+    }
     console.log(filePath)
     return gulp.src(subIndex)
     .pipe(fileInclude({
@@ -142,8 +134,10 @@ export function dev () {
     }))
     .pipe(through2.obj(generateVoiceAssets({copy: true})))
     .pipe(rename((path) => {
-      // rename to "lesson*.html"
-      path.basename = lesson;
+      // rename to "lesson*.html" if it is not in root
+      if(lesson !== '.') {
+        path.basename = lesson;
+      }
     }))
     .pipe(gulp.dest(`dist`))
     .on('end', reloadBrowser)
